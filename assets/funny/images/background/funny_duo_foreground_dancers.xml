@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="funny_duo_foreground_dancers.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="25" y="2723" width="3444" height="800" frameX="0" frameY="-92" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0001" x="25" y="2723" width="3444" height="800" frameX="0" frameY="-92" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0002" x="25" y="1849" width="3376" height="849" frameX="-34" frameY="-42" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0003" x="25" y="1849" width="3376" height="849" frameX="-34" frameY="-42" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0004" x="25" y="941" width="3345" height="883" frameX="-50" frameY="-8" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0005" x="25" y="941" width="3345" height="883" frameX="-50" frameY="-8" frameWidth="3444" frameHeight="892"/>
+	<SubTexture name="idle0006" x="25" y="25" width="3338" height="891" frameX="-53" frameY="0" frameWidth="3444" frameHeight="892"/>
+</TextureAtlas>

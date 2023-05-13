@@ -1,0 +1,42 @@
+{
+	"directory": "sikkik",
+	"defaultZoom": 0.9,
+	"boyfriend": [
+		0,
+		175
+	],
+	"girlfriend": [
+		0,
+		0
+	],
+	"opponent": [
+		850,
+		-100
+	],
+	"hide_girlfriend": true,
+	"camera_boyfriend": [
+		150,
+		-100
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"scroll_boyfriend": [
+		0.4,
+		0.35
+	],
+	"scroll_girlfriend": [
+		0,
+		0
+	],
+	"scroll_opponent": [
+		0.6,
+		0.6
+	],
+	"camera_speed": 1
+}

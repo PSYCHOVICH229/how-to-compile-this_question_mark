@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- _________________________ Application Settings _________________________ -->
+
+	<app title="funnying forever" file="funnying" main="BALLFART" version="2.0.1" company="funnying_team" />
+
+	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
+		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
+	<app preloader="flixel.system.FlxPreloader" />
+
+	<!--Minimum without FLX_NO_GAMEPAD: 11.8, without FLX_NO_NATIVE_CURSOR: 11.2-->
+	<set name="SWF_VERSION" value="11.8" />
+
+	<!-- ____________________________ Window Settings ___________________________ -->
+
+	<!--These window settings apply to all targets-->
+	<window width="1280" height="720" background="#000000" hardware="true" vsync="false" />
+
+	<!--HTML5-specific-->
+	<window if="html5" resizable="true" />
+
+	<!--Desktop-specific-->
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="false" vsync="false" />
+
+	<!-- _____________________________ Path Settings ____________________________ -->
+
+	<set name="BUILD_DIR" value="export/release" if="release" />
+	<set name="BUILD_DIR" value="export/debug" if="debug" />
+
+	<set name="BUILD_DIR" value="export/32bit" if="32bits" />
+	<classpath name="source" />
+
+	<!-- PHYSICS ENGINE CUSTOMIZATION -->
+	<define name="VIDEOS_ALLOWED" if="desktop || web" unless="32bits" />
+	<define name="DISCORD_ALLOWED" if="desktop" unless="neko" />
+
+	<define name="CRASH_HANDLER" if="desktop" />
+	<define name="NO_LEAKS" unless="release" />
+	<!-- sigh....remove this if you HATE game jolt....... -->
+	<define name="GAMEJOLT_ALLOWED" if="desktop" />
+
+	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web" />
+	<assets path="assets/preload" rename="assets" exclude="*.mp3" unless="web" />
+
+	<define name="PRELOAD_ALL" unless="web" />
+	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL" />
+
+	<library name="videos" preload="true" />
+	<library name="songs" preload="true" />
+
+	<section if="PRELOAD_ALL">
+		<library name="shared" preload="true" />
+
+		<library name="shuttleman" preload="true" />
+		<library name="squidstage" preload="true" />
+		<library name="compressed" preload="true" />
+		<library name="the-cross" preload="true" />
+		<library name="minion" preload="true" />
+		<library name="sikkik" preload="true" />
+		<library name="week8" preload="true" />
+		<library name="clown" preload="true" />
+		<library name="funny" preload="true" />
+		<library name="kong" preload="true" />
+		<library name="blam" preload="true" />
+		<library name="bend" preload="true" />
+		<library name="fnm" preload="true" />
+	</section>
+	<section if="NO_PRELOAD_ALL">
+		<library name="shared" preload="false" />
+
+		<library name="shuttleman" preload="false" />
+		<library name="squidstage" preload="false" />
+		<library name="compressed" preload="false" />
+		<library name="the-cross" preload="false" />
+		<library name="minion" preload="false" />
+		<library name="sikkik" preload="false" />
+		<library name="week8" preload="false" />
+		<library name="clown" preload="false" />
+		<library name="funny" preload="false" />
+		<library name="kong" preload="false" />
+		<library name="blam" preload="false" />
+		<library name="bend" preload="false" />
+		<library name="fnm" preload="false" />
+	</section>
+
+	<assets path="assets/videos" library="videos" if="VIDEOS_ALLOWED" />
+
+	<assets path="assets/songs" library="songs" exclude="*.ogg" if="web" />
+	<assets path="assets/songs" library="songs" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/shared" library="shared" exclude="*.ogg" if="web" />
+	<assets path="assets/shared" library="shared" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/shuttleman" library="shuttleman" exclude="*.ogg" if="web" />
+	<assets path="assets/shuttleman" library="shuttleman" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/squidstage" library="squidstage" exclude="*.ogg" if="web" />
+	<assets path="assets/squidstage" library="squidstage" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/compressed" library="compressed" exclude="*.ogg" if="web" />
+	<assets path="assets/compressed" library="compressed" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/the-cross" library="the-cross" exclude="*.ogg" if="web" />
+	<assets path="assets/the-cross" library="the-cross" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/minion" library="minion" exclude="*.ogg" if="web" />
+	<assets path="assets/minion" library="minion" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/funny" library="funny" exclude="*.ogg" if="web" />
+	<assets path="assets/funny" library="funny" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/sikkik" library="sikkik" exclude="*.ogg" if="web" />
+	<assets path="assets/sikkik" library="sikkik" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/week8" library="week8" exclude="*.ogg" if="web" />
+	<assets path="assets/week8" library="week8" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/clown" library="clown" exclude="*.ogg" if="web" />
+	<assets path="assets/clown" library="clown" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/kong" library="kong" exclude="*.ogg" if="web" />
+	<assets path="assets/kong" library="kong" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/bend" library="bend" exclude="*.ogg" if="web" />
+	<assets path="assets/bend" library="bend" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/blam" library="blam" exclude="*.ogg" if="web" />
+	<assets path="assets/blam" library="blam" exclude="*.mp3" unless="web" />
+
+	<assets path="assets/fnm" library="fnm" exclude="*.ogg" if="web" />
+	<assets path="assets/fnm" library="fnm" exclude="*.mp3" unless="web" />
+
+	<assets path="the" library="the" />
+	<assets path="assets/fonts" />
+
+	<!-- _______________________________ Libraries ______________________________ -->
+
+	<haxelib name="flixel" />
+	<haxedev set="webgl" />
+
+	<!--In case you want to use the addons package-->
+	<haxelib name="flixel-addons" />
+
+	<!--In case you want to use the ui package-->
+	<haxelib name="flixel-ui" />
+
+	<!--For playing videos-->
+	<haxelib name="hxCodec" if="VIDEOS_ALLOWED" />
+
+	<!-- Enables Discord RPC -->
+	<haxelib name="discord_rpc" if="desktop" unless="neko" />
+
+	<!-- Enables a terminal log prompt on debug builds -->
+	<haxelib name="hxcpp-debug-server" if="debug" />
+
+	<!-- ______________________________ Haxedefines _____________________________ -->
+
+	<!--Disable the Flixel core focus lost screen-->
+	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
+
+	<!--Allow working memory greater than 1 Gig-->
+	<haxedef name="HXCPP_GC_BIG_BLOCKS" />
+
+	<!-- Show debug traces for hxCodec -->
+	<!-- <haxedef name="HXC_DEBUG_TRACE" if="debug" /> -->
+
+	<!--Disable the Flixel core debugger. Automatically gets set whenever you compile in release mode!-->
+	<haxedef name="FLX_NO_DEBUG" unless="debug" />
+
+	<!--Enable this for Nape release builds for a serious peformance improvement-->
+	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+
+	<!--Used for Izzy Engine's crash handler-->
+	<section if="CRASH_HANDLER">
+		<haxedef name="HXCPP_CHECK_POINTER" />
+		<haxedef name="HXCPP_STACK_LINE" />
+	</section>
+
+	<!-- _________________________________ Custom _______________________________ -->
+
+	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+
+	<icon path="art/icon16.png" size="16" />
+	<icon path="art/icon32.png" size="32" />
+	<icon path="art/icon64.png" size="64" />
+	<icon path="art/iconOG.png" />
+</project>

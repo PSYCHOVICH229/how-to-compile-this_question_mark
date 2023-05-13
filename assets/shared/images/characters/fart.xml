@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fart.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DIE_LOL0000" x="0" y="0" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0001" x="797" y="0" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0002" x="1594" y="0" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0003" x="2391" y="0" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0004" x="3188" y="0" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0005" x="0" y="748" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0006" x="797" y="748" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0007" x="1594" y="748" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0008" x="2391" y="748" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0009" x="3188" y="748" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0010" x="0" y="1496" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0011" x="797" y="1496" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0012" x="1594" y="1496" width="797" height="748"/>
+	<SubTexture name="DIE_LOL0013" x="2391" y="1496" width="797" height="748"/>
+	<SubTexture name="Idle0000" x="3188" y="1496" width="470" height="409"/>
+</TextureAtlas>

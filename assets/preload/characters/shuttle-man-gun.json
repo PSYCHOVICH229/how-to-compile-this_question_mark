@@ -1,0 +1,163 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				47,
+				46
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-218
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				33
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				-94
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-29,
+				-94
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "right-loop",
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-12,
+				33
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "up-loop",
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-5,
+				-218
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "down-loop",
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				47,
+				46
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "left-loop",
+			"indices": [
+				6,
+				7,
+				8,
+				9,
+				10
+			],
+			"name": "left"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Shuttleman_With_A_Gun",
+	"position": [
+		70,
+		280
+	],
+	"healthicon": "shittle",
+	"flip_x": false,
+	"healthbar_colors": [
+		128,
+		255,
+		0
+	],
+	"camera_position": [
+		-140,
+		70
+	],
+	"sing_duration": 4,
+	"scale": 1.1
+}

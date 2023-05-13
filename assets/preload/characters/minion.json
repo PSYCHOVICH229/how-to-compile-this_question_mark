@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-100
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "MINION_IDLE"
+		},
+		{
+			"offsets": [
+				170,
+				-54
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "MINION_LEFT"
+		},
+		{
+			"offsets": [
+				65,
+				-190
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MINION_DOWN"
+		},
+		{
+			"offsets": [
+				32,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "MINION_RIGHT"
+		},
+		{
+			"offsets": [
+				-65,
+				22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "MINION_UP"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Minion_Assets",
+	"position": [
+		0,
+		120
+	],
+	"healthicon": "minion",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		233,
+		112
+	],
+	"camera_position": [
+		-180,
+		170
+	],
+	"sing_duration": 4,
+	"scale": 0.9
+}

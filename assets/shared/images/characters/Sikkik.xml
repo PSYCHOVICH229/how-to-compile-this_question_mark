@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sikkik.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down sikkik0000" x="100" y="100" width="348" height="565" pivotX="-71.5" pivotY="630.3" frameX="0" frameY="-60" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0001" x="100" y="100" width="348" height="565" frameX="0" frameY="-60" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0002" x="548" y="100" width="353" height="599" frameX="-19" frameY="-26" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0003" x="548" y="100" width="353" height="599" frameX="-19" frameY="-26" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0004" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0005" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0006" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0007" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0008" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0009" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0010" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0011" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0012" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0013" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="down sikkik0014" x="1001" y="100" width="373" height="625" frameX="-20" frameY="0" frameWidth="393" frameHeight="625"/>
+	<SubTexture name="idle sikkik0000" x="1474" y="100" width="592" height="674" pivotX="164" pivotY="754.2" frameX="-135" frameY="-81" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0001" x="2166" y="100" width="785" height="747" frameX="0" frameY="0" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0002" x="2166" y="100" width="785" height="747" frameX="0" frameY="0" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0003" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0004" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0005" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0006" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0007" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0008" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0009" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0010" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0011" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0012" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0013" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="idle sikkik0014" x="3051" y="100" width="397" height="744" frameX="-228" frameY="-5" frameWidth="785" frameHeight="755"/>
+	<SubTexture name="left sikkik0000" x="3548" y="100" width="418" height="634" pivotX="-10.4" pivotY="667" frameX="0" frameY="-37" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0001" x="3548" y="100" width="418" height="634" frameX="0" frameY="-37" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0002" x="4066" y="100" width="420" height="645" frameX="-26" frameY="-26" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0003" x="4066" y="100" width="420" height="645" frameX="-26" frameY="-26" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0004" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0005" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0006" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0007" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0008" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0009" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0010" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0011" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0012" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0013" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="left sikkik0014" x="4586" y="100" width="433" height="671" frameX="-31" frameY="0" frameWidth="464" frameHeight="671"/>
+	<SubTexture name="right sikkik0000" x="5119" y="100" width="592" height="725" pivotX="74.8" pivotY="733.8" frameX="-47" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0001" x="5119" y="100" width="592" height="725" frameX="-47" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0002" x="5811" y="100" width="554" height="725" frameX="-11" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0003" x="5811" y="100" width="554" height="725" frameX="-11" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0004" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0005" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0006" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0007" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0008" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0009" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0010" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0011" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0012" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0013" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="right sikkik0014" x="6465" y="100" width="558" height="725" frameX="0" frameY="0" frameWidth="639" frameHeight="725"/>
+	<SubTexture name="up sikkik0000" x="7123" y="100" width="868" height="1232" pivotX="215.3" pivotY="1235.9" frameX="0" frameY="0" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0001" x="100" y="1432" width="865" height="1232" frameX="-8" frameY="0" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0002" x="1065" y="1432" width="868" height="1210" frameX="0" frameY="-22" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0003" x="2033" y="1432" width="865" height="1211" frameX="-8" frameY="-21" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0004" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0005" x="3966" y="1432" width="865" height="1206" frameX="-8" frameY="-26" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0006" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0007" x="3966" y="1432" width="865" height="1206" frameX="-8" frameY="-26" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0008" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0009" x="3966" y="1432" width="865" height="1206" frameX="-8" frameY="-26" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0010" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0011" x="3966" y="1432" width="865" height="1206" frameX="-8" frameY="-26" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0012" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0013" x="3966" y="1432" width="865" height="1206" frameX="-8" frameY="-26" frameWidth="873" frameHeight="1232"/>
+	<SubTexture name="up sikkik0014" x="2998" y="1432" width="868" height="1205" frameX="0" frameY="-27" frameWidth="873" frameHeight="1232"/>
+</TextureAtlas>

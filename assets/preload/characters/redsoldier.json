@@ -1,0 +1,90 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				83,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-8,
+				-14
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-51,
+				112
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-101,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				287,
+				230
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "shoot",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/redsoldier",
+	"position": [
+		-50,
+		310
+	],
+	"healthicon": "red_soldier_icons",
+	"flip_x": false,
+	"healthbar_colors": [
+		234,
+		11,
+		56
+	],
+	"playable": false,
+	"camera_position": [
+		-190,
+		70
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

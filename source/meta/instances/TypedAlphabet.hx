@@ -1,0 +1,107 @@
+package meta.instances;
+
+import flixel.FlxG;
+
+using StringTools;
+
+class TypedAlphabet extends Alphabet
+{
+	private inline static final DEFAULT_DELAY:Float = .05;
+
+	public var onFinish:Void->Void = null;
+	public var finishedText:Bool = false;
+	public var delay:Float = DEFAULT_DELAY;
+	public var sound:String = 'dialogue';
+	public var volume:Float = 1;
+
+	public function new(x:Float, y:Float, text:String = "", ?delay:Float = DEFAULT_DELAY, ?bold:Bool = false)
+	{
+		super(x, y, text, bold);
+		this.delay = delay;
+	}
+
+	override private function set_text(newText:String)
+	{
+		super.set_text(newText);
+		resetDialogue();
+
+		for (letter in letters)
+			letter.visible = false;
+		return newText;
+	}
+
+	private var _curLetter:Int = -1;
+	private var _timeToUpdate:Float = 0;
+
+	override function update(elapsed:Float)
+	{
+		if (!finishedText)
+		{
+			var playedSound:Bool = false;
+			_timeToUpdate += elapsed;
+
+			while (_timeToUpdate >= delay)
+			{
+				showCharacterUpTo(_curLetter + 1);
+				if (!playedSound && Paths.formatToSongPath(sound).length > 0 && (delay >= (DEFAULT_DELAY / 2) || _curLetter % 2 == 0))
+					FlxG.sound.play(Paths.sound(sound), volume);
+
+				playedSound = true;
+				_curLetter++;
+
+				if (_curLetter >= letters.length - 1)
+				{
+					finishedText = true;
+					if (onFinish != null)
+						onFinish();
+
+					_timeToUpdate = 0;
+					break;
+				}
+				_timeToUpdate = 0;
+			}
+		}
+
+		super.update(elapsed);
+	}
+
+	public function showCharacterUpTo(upTo:Int)
+	{
+		var start:Int = _curLetter;
+		if (start < 0)
+			start = 0;
+
+		for (i in start...(upTo + 1))
+		{
+			if (letters[i] != null)
+				letters[i].visible = true;
+			// trace('test, showing: $i');
+		}
+	}
+
+	public function resetDialogue()
+	{
+		_curLetter = -1;
+		finishedText = false;
+
+		_timeToUpdate = 0;
+		for (letter in letters)
+			letter.visible = false;
+	}
+
+	public function finishText()
+	{
+		if (finishedText)
+			return;
+
+		showCharacterUpTo(letters.length - 1);
+		if (Paths.formatToSongPath(sound).length > 0)
+			FlxG.sound.play(Paths.sound(sound), volume);
+
+		finishedText = true;
+		if (onFinish != null)
+			onFinish();
+
+		_timeToUpdate = 0;
+	}
+}

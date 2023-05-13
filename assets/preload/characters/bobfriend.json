@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "Bobfriend Idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Bobfriend Left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Bobfriend Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Bobfriend Up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Bobfriend Right"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Bobfriend",
+	"position": [
+		-50,
+		160
+	],
+	"healthicon": "epic",
+	"flip_x": false,
+	"healthbar_colors": [
+		3,
+		3,
+		135
+	],
+	"camera_position": [
+		-140,
+		110
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

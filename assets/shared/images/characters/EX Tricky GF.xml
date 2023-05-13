@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="EX Tricky GF.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Ex Tricky0000" x="100" y="100" width="389" height="423" pivotX="0.5" pivotY="199.75" frameX="-23" frameY="-6" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0001" x="589" y="100" width="394" height="421" frameX="-14" frameY="-8" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0002" x="1083" y="100" width="391" height="421" frameX="-15" frameY="-8" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0003" x="1574" y="100" width="398" height="427" frameX="-14" frameY="-2" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0004" x="2072" y="100" width="406" height="429" frameX="-9" frameY="0" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0005" x="2578" y="100" width="410" height="429" frameX="-8" frameY="0" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0006" x="3088" y="100" width="411" height="429" frameX="-7" frameY="0" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0007" x="100" y="629" width="413" height="429" frameX="-5" frameY="0" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0008" x="613" y="629" width="414" height="429" frameX="-5" frameY="0" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0009" x="1127" y="629" width="425" height="426" frameX="0" frameY="-16" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0010" x="1652" y="629" width="428" height="419" frameX="0" frameY="-34" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0011" x="2180" y="629" width="425" height="419" frameX="-3" frameY="-33" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0012" x="2705" y="629" width="424" height="420" frameX="-4" frameY="-29" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0013" x="3229" y="629" width="425" height="422" frameX="-3" frameY="-22" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0014" x="100" y="1158" width="420" height="423" frameX="-6" frameY="-19" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0015" x="620" y="1158" width="415" height="425" frameX="-10" frameY="-15" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0016" x="1135" y="1158" width="411" height="421" frameX="-11" frameY="-12" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0017" x="1646" y="1158" width="411" height="422" frameX="-13" frameY="-7" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0018" x="2157" y="1158" width="408" height="424" frameX="-15" frameY="-5" frameWidth="428" frameHeight="453"/>
+	<SubTexture name="GF Ex Tricky0019" x="2665" y="1158" width="402" height="427" frameX="-18" frameY="-2" frameWidth="428" frameHeight="453"/>
+</TextureAtlas>

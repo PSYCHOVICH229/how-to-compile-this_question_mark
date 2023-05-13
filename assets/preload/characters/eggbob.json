@@ -1,0 +1,123 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "EggIdle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				144,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "EggRight"
+		},
+		{
+			"offsets": [
+				28,
+				-15
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "EggDown",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-5,
+				170
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "EggUp",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-31,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "EggLeft"
+		},
+		{
+			"offsets": [
+				144,
+				-48
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "RightMiss"
+		},
+		{
+			"offsets": [
+				50,
+				-47
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "DownMiss"
+		},
+		{
+			"offsets": [
+				8,
+				68
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "UpMiss"
+		},
+		{
+			"offsets": [
+				9,
+				-48
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "LeftMiss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Eggbob",
+	"position": [
+		20,
+		380
+	],
+	"healthicon": "nob",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"playable": true,
+	"camera_position": [
+		10,
+		90
+	],
+	"sing_duration": 4,
+	"scale": 0.9
+}

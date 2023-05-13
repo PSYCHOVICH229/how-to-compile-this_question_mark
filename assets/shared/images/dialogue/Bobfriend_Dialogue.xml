@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Bobfriend_Dialogue.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BobfriendTalk0000" x="100" y="100" width="220" height="250" frameX="0" frameY="0" frameWidth="236" frameHeight="250"/>
+	<SubTexture name="BobfriendTalk0001" x="100" y="100" width="220" height="250" frameX="0" frameY="0" frameWidth="236" frameHeight="250"/>
+	<SubTexture name="BobfriendTalk0002" x="420" y="100" width="222" height="221" frameX="-11" frameY="-29" frameWidth="236" frameHeight="250"/>
+	<SubTexture name="BobfriendTalk0003" x="420" y="100" width="222" height="221" frameX="-11" frameY="-29" frameWidth="236" frameHeight="250"/>
+	<SubTexture name="BobfriendTalk0004" x="100" y="450" width="222" height="213" frameX="-14" frameY="-37" frameWidth="236" frameHeight="250"/>
+	<SubTexture name="BobfriendTalkIdle0000" x="422" y="450" width="222" height="214"/>
+</TextureAtlas>

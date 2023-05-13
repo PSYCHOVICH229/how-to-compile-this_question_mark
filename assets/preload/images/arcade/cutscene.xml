@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cutscene.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="coin0000" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0001" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0002" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0003" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0004" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0005" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0006" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0007" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0008" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0009" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0010" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0011" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0012" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0013" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0014" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0015" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0016" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0017" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0018" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0019" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0020" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0021" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0022" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0023" x="781" y="25" width="102" height="102" frameX="-840" frameY="-327" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0024" x="25" y="25" width="226" height="146" frameX="-609" frameY="-297" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0025" x="422" y="25" width="224" height="69" frameX="-261" frameY="-230" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0026" x="25" y="196" width="198" height="44" frameX="-12" frameY="-174" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0027" x="25" y="196" width="198" height="44" frameX="-12" frameY="-174" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0028" x="671" y="25" width="85" height="153" frameX="0" frameY="-102" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0029" x="671" y="25" width="85" height="153" frameX="0" frameY="-102" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0030" x="276" y="25" width="121" height="135" frameX="-10" frameY="-36" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0031" x="276" y="25" width="121" height="135" frameX="-10" frameY="-36" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0032" x="399" y="256" width="146" height="44" frameX="-80" frameY="-46" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0033" x="399" y="256" width="146" height="44" frameX="-80" frameY="-46" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0034" x="772" y="257" width="101" height="56" frameX="-198" frameY="-24" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0035" x="772" y="257" width="101" height="56" frameX="-198" frameY="-24" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0036" x="781" y="152" width="100" height="80" frameX="-280" frameY="0" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0037" x="781" y="152" width="100" height="80" frameX="-280" frameY="0" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0038" x="781" y="152" width="100" height="80" frameX="-280" frameY="0" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0039" x="533" y="119" width="104" height="84" frameX="-336" frameY="-35" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0040" x="533" y="119" width="104" height="84" frameX="-336" frameY="-35" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0041" x="422" y="119" width="86" height="112" frameX="-426" frameY="-120" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0042" x="422" y="119" width="86" height="112" frameX="-426" frameY="-120" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0043" x="662" y="203" width="85" height="79" frameX="-503" frameY="-356" frameWidth="942" frameHeight="571"/>
+	<SubTexture name="coin0044" x="276" y="185" width="98" height="81" frameX="-544" frameY="-490" frameWidth="942" frameHeight="571"/>
+</TextureAtlas>

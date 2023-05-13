@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Eggbob.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DownMiss0000" x="932" y="1271" width="425" height="261" frameX="0" frameY="-130" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0001" x="932" y="1271" width="425" height="261" frameX="0" frameY="-130" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0002" x="652" y="861" width="386" height="336" frameX="-20" frameY="-55" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0003" x="652" y="861" width="386" height="336" frameX="-20" frameY="-55" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0004" x="2907" y="823" width="340" height="382" frameX="-43" frameY="-9" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0005" x="2907" y="823" width="340" height="382" frameX="-43" frameY="-9" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0006" x="3669" y="621" width="333" height="391" frameX="-46" frameY="0" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="DownMiss0007" x="3669" y="621" width="333" height="391" frameX="-46" frameY="0" frameWidth="425" frameHeight="391"/>
+	<SubTexture name="EggDown0000" x="2954" y="430" width="370" height="373" frameX="0" frameY="-54" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0001" x="2954" y="430" width="370" height="373" frameX="0" frameY="-54" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0002" x="652" y="430" width="333" height="400" frameX="-29" frameY="-27" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0003" x="652" y="430" width="333" height="400" frameX="-29" frameY="-27" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0004" x="2180" y="599" width="316" height="413" frameX="-46" frameY="-14" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0005" x="2180" y="599" width="316" height="413" frameX="-46" frameY="-14" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0006" x="1495" y="445" width="310" height="427" frameX="-52" frameY="0" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggDown0007" x="1495" y="445" width="310" height="427" frameX="-52" frameY="0" frameWidth="370" frameHeight="427"/>
+	<SubTexture name="EggIdle0000" x="3267" y="911" width="309" height="413" frameX="0" frameY="-30" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0001" x="3267" y="911" width="309" height="413" frameX="0" frameY="-30" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0002" x="3596" y="1032" width="287" height="428" frameX="-6" frameY="-15" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0003" x="3596" y="1032" width="287" height="428" frameX="-6" frameY="-15" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0004" x="2862" y="1225" width="270" height="437" frameX="-13" frameY="-6" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0005" x="2862" y="1225" width="270" height="437" frameX="-13" frameY="-6" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0006" x="20" y="1250" width="264" height="443" frameX="-15" frameY="0" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggIdle0007" x="20" y="1250" width="264" height="443" frameX="-15" frameY="0" frameWidth="309" frameHeight="443"/>
+	<SubTexture name="EggLeft0000" x="1039" y="20" width="436" height="411" frameX="0" frameY="-22" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0001" x="1039" y="20" width="436" height="411" frameX="0" frameY="-22" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0002" x="2577" y="20" width="357" height="423" frameX="-86" frameY="-10" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0003" x="2577" y="20" width="357" height="423" frameX="-86" frameY="-10" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0004" x="3344" y="459" width="305" height="432" frameX="-141" frameY="-1" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0005" x="3344" y="459" width="305" height="432" frameX="-141" frameY="-1" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0006" x="2074" y="1032" width="285" height="433" frameX="-163" frameY="0" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggLeft0007" x="2074" y="1032" width="285" height="433" frameX="-163" frameY="0" frameWidth="448" frameHeight="433"/>
+	<SubTexture name="EggRight0000" x="1495" y="20" width="436" height="405" frameX="-10" frameY="-21" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0001" x="1495" y="20" width="436" height="405" frameX="-10" frameY="-21" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0002" x="3356" y="20" width="355" height="419" frameX="-5" frameY="-7" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0003" x="3356" y="20" width="355" height="419" frameX="-5" frameY="-7" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0004" x="2577" y="463" width="310" height="425" frameX="-2" frameY="-1" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0005" x="2577" y="463" width="310" height="425" frameX="-2" frameY="-1" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0006" x="1762" y="981" width="292" height="426" frameX="0" frameY="0" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggRight0007" x="1762" y="981" width="292" height="426" frameX="0" frameY="0" frameWidth="446" frameHeight="426"/>
+	<SubTexture name="EggUp0000" x="407" y="430" width="225" height="633" frameX="-24" frameY="0" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0001" x="407" y="430" width="225" height="633" frameX="-24" frameY="0" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0002" x="3731" y="20" width="252" height="581" frameX="-24" frameY="-52" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0003" x="3731" y="20" width="252" height="581" frameX="-24" frameY="-52" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0004" x="2273" y="20" width="284" height="559" frameX="-8" frameY="-74" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0005" x="2273" y="20" width="284" height="559" frameX="-8" frameY="-74" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0006" x="1951" y="20" width="302" height="531" frameX="0" frameY="-102" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="EggUp0007" x="1951" y="20" width="302" height="531" frameX="0" frameY="-102" frameWidth="302" frameHeight="633"/>
+	<SubTexture name="LeftMiss0000" x="20" y="20" width="496" height="390"/>
+	<SubTexture name="LeftMiss0001" x="20" y="20" width="496" height="390"/>
+	<SubTexture name="LeftMiss0002" x="2954" y="20" width="382" height="390" frameX="-114" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="LeftMiss0003" x="2954" y="20" width="382" height="390" frameX="-114" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="LeftMiss0004" x="1825" y="571" width="335" height="390" frameX="-161" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="LeftMiss0005" x="1825" y="571" width="335" height="390" frameX="-161" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="LeftMiss0006" x="20" y="840" width="332" height="390" frameX="-164" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="LeftMiss0007" x="20" y="840" width="332" height="390" frameX="-164" frameY="0" frameWidth="496" frameHeight="390"/>
+	<SubTexture name="RightMiss0000" x="536" y="20" width="483" height="390"/>
+	<SubTexture name="RightMiss0001" x="536" y="20" width="483" height="390"/>
+	<SubTexture name="RightMiss0002" x="20" y="430" width="367" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="RightMiss0003" x="20" y="430" width="367" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="RightMiss0004" x="1005" y="451" width="339" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="RightMiss0005" x="1005" y="451" width="339" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="RightMiss0006" x="1410" y="892" width="332" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="RightMiss0007" x="1410" y="892" width="332" height="390" frameX="0" frameY="0" frameWidth="483" frameHeight="390"/>
+	<SubTexture name="UpMiss0000" x="372" y="1083" width="232" height="519" frameX="-50" frameY="0" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0001" x="372" y="1083" width="232" height="519" frameX="-50" frameY="0" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0002" x="624" y="1217" width="288" height="416" frameX="-22" frameY="-103" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0003" x="624" y="1217" width="288" height="416" frameX="-22" frameY="-103" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0004" x="2516" y="908" width="326" height="395" frameX="-3" frameY="-125" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0005" x="2516" y="908" width="326" height="395" frameX="-3" frameY="-125" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0006" x="1058" y="861" width="332" height="390" frameX="0" frameY="-129" frameWidth="332" frameHeight="520"/>
+	<SubTexture name="UpMiss0007" x="1058" y="861" width="332" height="390" frameX="0" frameY="-129" frameWidth="332" frameHeight="520"/>
+</TextureAtlas>

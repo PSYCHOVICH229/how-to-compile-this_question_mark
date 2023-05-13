@@ -1,0 +1,123 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				10,
+				-26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-31,
+				86
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				67,
+				28
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "miss-right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				-6
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "miss-down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				213
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "miss-up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				81,
+				26
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "miss-left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				81,
+				2
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/front_flarping_boyfirned",
+	"position": [
+		30,
+		360
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"playable": true,
+	"camera_position": [
+		-120,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

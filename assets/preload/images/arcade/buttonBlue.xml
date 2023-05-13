@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="buttonBlue.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="buttonblue0000" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0000" x="253" y="25" width="89" height="59" frameX="0" frameY="-6" frameWidth="89" frameHeight="65"/>
+	<SubTexture name="buttonbluePRESS0001" x="253" y="25" width="89" height="59" frameX="0" frameY="-6" frameWidth="89" frameHeight="65"/>
+	<SubTexture name="buttonbluePRESS0002" x="139" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0003" x="139" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0004" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0005" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0006" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0007" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0008" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0009" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0010" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0011" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0012" x="25" y="25" width="89" height="65"/>
+	<SubTexture name="buttonbluePRESS0013" x="25" y="25" width="89" height="65"/>
+</TextureAtlas>

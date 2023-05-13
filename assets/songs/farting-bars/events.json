@@ -1,0 +1,122 @@
+{
+	"song": {
+
+		"events": [
+			[
+				22153.8461538462,
+				[
+					[
+						"Change Character",
+						"bf",
+						"funnybf-playable"
+					]
+				]
+			],
+			[
+				25846.1538461539,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				29538.4615384615,
+				[
+					[
+						"Change Character",
+						"bf",
+						"funnybf-playable"
+					]
+				]
+			],
+			[
+				33230.7692307692,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				40615.3846153846,
+				[
+					[
+						"Change Character",
+						"dad",
+						"funnybf"
+					]
+				]
+			],
+			[
+				55384.6153846154,
+				[
+					[
+						"Change Character",
+						"bf",
+						"funnybf-playable"
+					],
+					[
+						"Change Character",
+						"dad",
+						"fartingbear"
+					]
+				]
+			],
+			[
+				62769.2307692307,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bf"
+					]
+				]
+			],
+			[
+				66461.5384615384,
+				[
+					[
+						"Change Character",
+						"bf",
+						"fartingbear"
+					]
+				]
+			],
+			[
+				70153.8461538461,
+				[
+					[
+						"Change Character",
+						"bf",
+						"funnybf-playable"
+					]
+				]
+			],
+			[
+				77538.4615384615,
+				[
+					[
+						"Change Character",
+						"bf",
+						"fartingbear"
+					]
+				]
+			],
+			[
+				84923.0769230769,
+				[
+					[
+						"Change Character",
+						"bf",
+						"funnybf-playable"
+					]
+				]
+			]
+		]
+	}
+}

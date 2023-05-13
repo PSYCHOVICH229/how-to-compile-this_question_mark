@@ -1,0 +1,42 @@
+{
+	"directory": "clown",
+	"defaultZoom": 0.55,
+	"boyfriend": [
+		1320,
+		-120
+	],
+	"girlfriend": [
+		400,
+		130
+	],
+	"opponent": [
+		100,
+		100
+	],
+	"hide_girlfriend": false,
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"scroll_boyfriend": [
+		0.9,
+		0.9
+	],
+	"scroll_girlfriend": [
+		0.9,
+		0.9
+	],
+	"scroll_opponent": [
+		0.9,
+		0.9
+	],
+	"camera_speed": 1
+}

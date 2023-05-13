@@ -1,0 +1,57 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "firstDeath"
+		},
+		{
+			"offsets": [
+				-129,
+				-249
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "deathLoop"
+		},
+		{
+			"offsets": [
+				-29,
+				-82
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "deathConfirm"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/front_deading_boyflend",
+	"position": [
+		-10,
+		330
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"playable": true,
+	"camera_position": [
+		-150,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

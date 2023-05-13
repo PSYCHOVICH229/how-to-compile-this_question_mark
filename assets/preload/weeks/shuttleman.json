@@ -1,0 +1,48 @@
+{
+	"songs": [
+		[
+			"Hotshot",
+			"epic",
+			[
+				3,
+				3,
+				135
+			]
+		],
+		[
+			"Plot Armor",
+			"shittle",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Funny Foreplay",
+			"funnybf",
+			[
+				91,
+				175,
+				223
+			]
+		],
+		[
+			"Foursome",
+			"funnybf",
+			[
+				91,
+				175,
+				223
+			]
+		]
+	],
+	"difficulties": "cuh",
+	"weekBackground": "shitter",
+	"storyName": "what mod is this?",
+	"weekBefore": "blam",
+	"weekName": "shuttle man",
+	"startUnlocked": false,
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

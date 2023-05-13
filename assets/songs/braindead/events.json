@@ -1,0 +1,91 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				9600,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				76800,
+				[
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				85200,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						""
+					]
+				]
+			],
+			[
+				86400,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.111111111111111",
+						"0"
+					]
+				]
+			],
+			[
+				105600,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						"0"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			]
+		]
+	}
+}

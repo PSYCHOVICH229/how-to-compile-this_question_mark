@@ -1,0 +1,84 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Lolololololol"
+		},
+		{
+			"sound": "",
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "This is a cool ass carneval they got like fellas wheel and a mini badmintont"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bobfriend",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I love being at carnivals like this everyone just yells for no reason *accidentally walks into bf"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "angry",
+			"expression": "pissed",
+			"text": "Bro dickhead watch your step"
+		},
+		{
+			"sound": "",
+			"speed": 0.025,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Wait hold up are you like one of those Funny BFs holy shit huge fan"
+		},
+		{
+			"sound": "",
+			"speed": 0.5,
+			"portrait": "bobfriend",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.065,
+			"portrait": "bobfriend",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Yes. I'm funny. I can do... cool rap."
+		},
+		{
+			"sound": "",
+			"speed": 0.025,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "Dude do you want to do cool rap and play batminten like at the same time"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bobfriend",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "As long as you don't report me to the\\nauthorities or the SCP containment facility\\nthen yes definitely"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Rap BatTle"
+		}
+	]
+}

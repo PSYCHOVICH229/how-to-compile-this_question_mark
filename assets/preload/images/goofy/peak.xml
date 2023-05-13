@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="peak.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bomb0000" x="50" y="50" width="480" height="480"/>
+	<SubTexture name="bomb0001" x="50" y="580" width="480" height="480"/>
+	<SubTexture name="bomb0002" x="50" y="1110" width="480" height="480"/>
+	<SubTexture name="bomb0003" x="50" y="1640" width="480" height="480"/>
+	<SubTexture name="bomb0004" x="50" y="2170" width="480" height="480"/>
+	<SubTexture name="bomb0005" x="50" y="2700" width="480" height="480"/>
+	<SubTexture name="bomb0006" x="50" y="3230" width="480" height="480"/>
+	<SubTexture name="bomb0007" x="50" y="3760" width="480" height="480"/>
+	<SubTexture name="bomb0008" x="50" y="4290" width="480" height="480"/>
+	<SubTexture name="bomb0009" x="50" y="4820" width="480" height="480"/>
+	<SubTexture name="bomb0010" x="50" y="5350" width="480" height="480"/>
+	<SubTexture name="bomb0011" x="50" y="5880" width="480" height="480"/>
+	<SubTexture name="bomb0012" x="50" y="6410" width="480" height="480"/>
+	<SubTexture name="bomb0013" x="50" y="6940" width="480" height="480"/>
+	<SubTexture name="bomb0014" x="50" y="7470" width="480" height="480"/>
+	<SubTexture name="bomb0015" x="580" y="50" width="480" height="480"/>
+	<SubTexture name="bomb0016" x="580" y="580" width="480" height="480"/>
+	<SubTexture name="bomb0017" x="580" y="1110" width="480" height="480"/>
+	<SubTexture name="bomb0018" x="580" y="1640" width="480" height="480"/>
+	<SubTexture name="bomb0019" x="580" y="2170" width="480" height="480"/>
+	<SubTexture name="bomb0020" x="580" y="2700" width="480" height="480"/>
+	<SubTexture name="bomb0021" x="580" y="3230" width="480" height="480"/>
+	<SubTexture name="bomb0022" x="580" y="3760" width="480" height="480"/>
+	<SubTexture name="bomb0023" x="580" y="4290" width="480" height="480"/>
+	<SubTexture name="bomb0024" x="580" y="4820" width="480" height="480"/>
+	<SubTexture name="bomb0025" x="580" y="5350" width="480" height="480"/>
+	<SubTexture name="bomb0026" x="580" y="5880" width="480" height="480"/>
+	<SubTexture name="bomb0027" x="580" y="6410" width="480" height="480"/>
+	<SubTexture name="bomb0028" x="580" y="6940" width="480" height="480"/>
+	<SubTexture name="bomb0029" x="580" y="7470" width="480" height="480"/>
+	<SubTexture name="bomb0030" x="1110" y="50" width="480" height="480"/>
+	<SubTexture name="bomb0031" x="1110" y="580" width="480" height="480"/>
+	<SubTexture name="bomb0032" x="1110" y="1110" width="480" height="480"/>
+	<SubTexture name="bomb0033" x="1110" y="1640" width="480" height="480"/>
+	<SubTexture name="bomb0034" x="1110" y="2170" width="480" height="480"/>
+	<SubTexture name="bomb0035" x="1110" y="2700" width="480" height="480"/>
+	<SubTexture name="bomb0036" x="1110" y="3230" width="480" height="480"/>
+	<SubTexture name="bomb0037" x="1110" y="3760" width="480" height="480"/>
+	<SubTexture name="bomb0038" x="1110" y="4290" width="480" height="480"/>
+	<SubTexture name="bomb0039" x="1110" y="4820" width="480" height="480"/>
+	<SubTexture name="bomb0040" x="1110" y="5350" width="480" height="480"/>
+	<SubTexture name="bomb0041" x="1110" y="5880" width="480" height="480"/>
+	<SubTexture name="bomb0042" x="1110" y="6410" width="480" height="480"/>
+	<SubTexture name="bomb0043" x="1110" y="6940" width="480" height="480"/>
+	<SubTexture name="bomb0044" x="1110" y="7470" width="480" height="480"/>
+	<SubTexture name="bomb0045" x="1640" y="50" width="480" height="480"/>
+	<SubTexture name="bomb0046" x="1640" y="580" width="480" height="480"/>
+	<SubTexture name="bomb0047" x="1640" y="1110" width="480" height="480"/>
+	<SubTexture name="bomb0048" x="1640" y="1640" width="480" height="480"/>
+	<SubTexture name="bomb0049" x="1640" y="2170" width="480" height="480"/>
+	<SubTexture name="bomb0050" x="1640" y="2700" width="480" height="480"/>
+	<SubTexture name="bomb0051" x="1640" y="3230" width="480" height="480"/>
+	<SubTexture name="bomb0052" x="1640" y="3760" width="480" height="480"/>
+	<SubTexture name="bomb0053" x="1640" y="4290" width="480" height="480"/>
+	<SubTexture name="bomb0054" x="1640" y="4820" width="480" height="480"/>
+	<SubTexture name="bomb0055" x="1640" y="5350" width="480" height="480"/>
+	<SubTexture name="bomb0056" x="1640" y="5880" width="480" height="480"/>
+	<SubTexture name="bomb0057" x="1640" y="6410" width="480" height="480"/>
+	<SubTexture name="bomb0058" x="1640" y="6940" width="480" height="480"/>
+	<SubTexture name="bomb0059" x="1640" y="7470" width="480" height="480"/>
+	<SubTexture name="bomb0060" x="2170" y="50" width="480" height="480"/>
+	<SubTexture name="bomb0061" x="2170" y="580" width="480" height="480"/>
+</TextureAtlas>

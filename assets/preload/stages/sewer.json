@@ -1,0 +1,30 @@
+{
+	"directory": "blam",
+	"defaultZoom": 0.8,
+	"boyfriend": [
+		1550,
+		168
+	],
+	"girlfriend": [
+		0,
+		0
+	],
+	"opponent": [
+		420,
+		210
+	],
+	"hide_girlfriend": true,
+	"camera_boyfriend": [
+		-300,
+		-110
+	],
+	"camera_opponent": [
+		300,
+		-176
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 0.9
+}

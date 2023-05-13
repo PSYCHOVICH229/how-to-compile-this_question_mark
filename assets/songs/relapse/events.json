@@ -1,0 +1,1891 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				8842.10526315789,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"4,sineIn"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						".25",
+						"4,sineInOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						"2",
+						"4,sineInOut"
+					]
+				]
+			],
+			[
+				10105.2631578947,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Flash Camera",
+						".5",
+						"0xFFFFFFFF"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Relapse Float",
+						"",
+						""
+					],
+					[
+						"Relapse CRT Distortion",
+						"",
+						"2,quintOut"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						"",
+						"2,quintOut"
+					]
+				]
+			],
+			[
+				29052.6315789474,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quartOut"
+					],
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				29368.4210526316,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				29526.3157894737,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				29842.1052631579,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				30315.7894736842,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				48000,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						"2,sineOut"
+					],
+					[
+						"Add Camera Zoom",
+						"0",
+						".1"
+					]
+				]
+			],
+			[
+				48631.5789473684,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"5,sineIn"
+					]
+				]
+			],
+			[
+				48947.3684210526,
+				[
+					[
+						"Relapse Chromatic Aberration",
+						"1",
+						"4,sineInOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						"2",
+						"4,sineInOut"
+					]
+				]
+			],
+			[
+				50210.5263157895,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quartOut"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						".2",
+						"1,quartOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						"1",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				50526.3157894737,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Flash Camera",
+						".5",
+						"0xFFFFFFFF"
+					],
+					[
+						"Sustain Shake",
+						".015",
+						""
+					],
+					[
+						"Relapse Spikes",
+						"",
+						""
+					],
+					[
+						"Relapse Chromatic Aberration",
+						".13",
+						"2,quintOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						"1.5",
+						"2,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				50842.1052631579,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				51157.8947368421,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				51947.3684210526,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				52263.1578947368,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				52421.0526315789,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53052.6315789473,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				53368.4210526316,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				53684.2105263158,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				54473.6842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				54789.4736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				54947.3684210526,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				55578.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				55894.7368421052,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				56210.5263157894,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57000,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				57315.7894736842,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				57473.6842105263,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58105.2631578947,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				58421.0526315789,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				58736.8421052631,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59368.4210526315,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				59684.2105263158,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				60631.5789473684,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				60947.3684210526,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				61263.1578947368,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62052.6315789473,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				62368.4210526315,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				62526.3157894736,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63157.8947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				63473.6842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				63789.4736842105,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64578.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				64894.7368421052,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				65052.6315789473,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				65684.2105263157,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				66000,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				66315.7894736842,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				67105.2631578947,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				67421.0526315789,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				67578.947368421,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				68210.5263157894,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				68526.3157894736,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				68842.1052631578,
+				[
+					[
+						"Shift Note Rotation",
+						"",
+						""
+					]
+				]
+			],
+			[
+				69473.6842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				69789.4736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				70105.2631578947,
+				[
+					[
+						"Change Default Zoom",
+						".5",
+						"2,quintIn"
+					],
+					[
+						"Flash Camera",
+						".1",
+						"0xFF000000"
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false,2,quintIn"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						"2.5",
+						"2,quintIn"
+					],
+					[
+						"Relapse CRT Distortion",
+						"4",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				70263.1578947368,
+				[
+					[
+						"Flash Camera",
+						".1",
+						"0xFF000000"
+					]
+				]
+			],
+			[
+				70421.0526315789,
+				[
+					[
+						"Flash Camera",
+						".1",
+						"0xFF000000"
+					]
+				]
+			],
+			[
+				70578.947368421,
+				[
+					[
+						"Flash Camera",
+						".1",
+						"0xFF000000"
+					]
+				]
+			],
+			[
+				70736.8421052631,
+				[
+					[
+						"Shift Note Rotation",
+						"0",
+						""
+					],
+					[
+						"Sustain Shake",
+						"",
+						""
+					],
+					[
+						"Cover Camera",
+						"0xFF000000",
+						"32,0,quintIn"
+					],
+					[
+						"Relapse CRT Distortion",
+						"",
+						""
+					],
+					[
+						"Relapse Chromatic Aberration",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						"32,quintIn"
+					]
+				]
+			],
+			[
+				71684.2105263157,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				73263.1578947368,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				74210.5263157894,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				75789.4736842105,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				76736.8421052631,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				78315.7894736841,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,8,quintIn"
+					]
+				]
+			],
+			[
+				79263.1578947368,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				80842.1052631578,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				88421.0526315789,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"4,sineOut"
+					]
+				]
+			],
+			[
+				89684.2105263157,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				90315.7894736841,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"2,quintOut"
+					]
+				]
+			],
+			[
+				90947.3684210525,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"2,quintOut"
+					]
+				]
+			],
+			[
+				109894.736842105,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						"1",
+						"4,sineIn"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						".12",
+						"4,sineIn"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						"0"
+					]
+				]
+			],
+			[
+				110052.631578947,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				110210.526315789,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				110368.421052631,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				110526.315789474,
+				[
+					[
+						"Change Default Zoom",
+						".25",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				110684.210526316,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				110842.105263158,
+				[
+					[
+						"Change Default Zoom",
+						".35",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				111000,
+				[
+					[
+						"Change Default Zoom",
+						".4",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				111157.894736842,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Relapse Pixelation",
+						"true",
+						""
+					],
+					[
+						"Relapse Chromatic Aberration",
+						".1",
+						"1,quintOut"
+					],
+					[
+						"Relapse CRT Distortion",
+						".6",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				120631.578947368,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				121263.157894737,
+				[
+					[
+						"Relapse CRT Distortion",
+						"",
+						"1,quintOut"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						"",
+						"1,quintOut"
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Relapse Pixelation",
+						"",
+						""
+					],
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				130105.263157895,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				131368.421052631,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				131526.315789474,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				131684.210526316,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				132000,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				132315.789473684,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				132631.578947368,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				132789.47368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				132947.368421052,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133105.263157895,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133263.157894737,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133421.052631579,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133578.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133894.736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				133973.684210526,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134052.631578947,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134210.526315789,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134526.315789474,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134605.263157895,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134684.210526316,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				134842.105263158,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135157.894736842,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135236.842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135315.789473684,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135473.684210526,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135631.578947368,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135789.47368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				135947.368421053,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				136105.263157895,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				136421.052631579,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				136578.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				136736.842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				136894.736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				137052.631578947,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				137368.421052631,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				137684.210526316,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				137842.105263158,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				138000,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				138157.894736842,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				138315.789473684,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				138631.578947368,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				138947.368421053,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139026.315789474,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139105.263157895,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139263.157894737,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139421.052631579,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139578.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139657.894736842,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139736.842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				139894.736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140210.526315789,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					],
+					[
+						"Change Default Zoom",
+						".2",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				140289.47368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140368.421052632,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140526.315789474,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140684.210526316,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140842.105263158,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				140921.052631579,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141000,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141078.947368421,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141157.894736842,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141236.842105263,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141315.789473684,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141394.736842105,
+				[
+					[
+						"Add Camera Zoom",
+						".02",
+						".04"
+					]
+				]
+			],
+			[
+				141473.684210526,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"2,sineOut"
+					]
+				]
+			],
+			[
+				142105.263157895,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"2,sineIn"
+					]
+				]
+			],
+			[
+				142736.842105263,
+				[
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Set Zoom Type",
+						"",
+						""
+					]
+				]
+			],
+			[
+				173052.631578948,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				181894.736842106,
+				[
+					[
+						"Change Default Zoom",
+						".5",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				182210.52631579,
+				[
+					[
+						"Relapse Chromatic Aberration",
+						".5",
+						"3,quintIn"
+					],
+					[
+						"Relapse CRT Distortion",
+						"2",
+						"3,quintIn"
+					]
+				]
+			],
+			[
+				183157.894736842,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Character Visibility",
+						"dad",
+						"false"
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false,4,quintIn"
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				185052.631578948,
+				[
+					[
+						"Change Default Zoom",
+						"1",
+						"2,quintIn"
+					],
+					[
+						"Relapse Chromatic Aberration",
+						"1",
+						"2,quintIn"
+					],
+					[
+						"Relapse CRT Distortion",
+						"4",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				185684.210526316,
+				[
+					[
+						"Cover Camera",
+						"0xFF000000",
+						""
+					]
+				]
+			]
+		]
+	}
+}

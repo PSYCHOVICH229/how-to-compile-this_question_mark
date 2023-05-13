@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"poop time",
+			"funnybf",
+			[
+				91,
+				175,
+				224
+			]
+		],
+		[
+			"Abrasive",
+			"funnybf-youtooz",
+			[
+				121,
+				215,
+				253
+			]
+		]
+	],
+	"difficulties": "Normal",
+	"weekBackground": null,
+	"storyName": "",
+	"weekBefore": null,
+	"weekName": "Covers",
+	"startUnlocked": false,
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

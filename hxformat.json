@@ -1,0 +1,22 @@
+{
+	"indentation": {
+		"character": "tab",
+		"indentCaseLabels": true
+	},
+	"lineEnds": {
+		"leftCurly": "both",
+		"rightCurly": "both",
+		"caseColon": "after",
+		"objectLiteralCurly": {
+			"leftCurly": "after"
+		}
+	},
+	"sameLine": {
+		"ifElse": "next",
+		"doWhile": "next",
+		"tryBody": "next",
+		"tryCatch": "next",
+		"caseBody": "next",
+		"expressionCase": "keep"
+	}
+}

@@ -1,0 +1,156 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-11,
+				25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				13,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				2,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-11,
+				-11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-9,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "missedDown"
+		},
+		{
+			"offsets": [
+				-10,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "missedUp"
+		},
+		{
+			"offsets": [
+				-8,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "missedLeft"
+		},
+		{
+			"offsets": [
+				0,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "missedRight"
+		},
+		{
+			"offsets": [
+				128,
+				406
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "daniyar dies"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				37,
+				627
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "death confirm",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				445
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "daniyar death loop",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/daniyar",
+	"position": [
+		-100,
+		100
+	],
+	"healthicon": "daniyar",
+	"flip_x": true,
+	"playable": true,
+	"healthbar_colors": [
+		127,
+		155,
+		255
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

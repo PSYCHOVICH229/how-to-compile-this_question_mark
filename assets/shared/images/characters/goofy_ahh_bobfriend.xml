@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="goofy_ahh_bobfriend.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="deathConfirm0000" x="100" y="100" width="600" height="600"/>
+	<SubTexture name="deathConfirm0001" x="800" y="100" width="600" height="600"/>
+	<SubTexture name="deathConfirm0002" x="1500" y="100" width="600" height="600"/>
+	<SubTexture name="deathLoop0000" x="2200" y="100" width="600" height="600"/>
+	<SubTexture name="deathLoop0001" x="2900" y="100" width="600" height="600"/>
+	<SubTexture name="deathLoop0002" x="800" y="1500" width="600" height="600"/>
+	<SubTexture name="down0000" x="3600" y="100" width="600" height="600"/>
+	<SubTexture name="down0001" x="4300" y="100" width="600" height="600"/>
+	<SubTexture name="downMiss0000" x="5000" y="100" width="600" height="600"/>
+	<SubTexture name="downMiss0001" x="5700" y="100" width="600" height="600"/>
+	<SubTexture name="firstDeath0000" x="6400" y="100" width="600" height="600"/>
+	<SubTexture name="firstDeath0001" x="7100" y="100" width="600" height="600"/>
+	<SubTexture name="firstDeath0002" x="100" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0003" x="800" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0004" x="1500" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0005" x="2200" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0006" x="2900" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0007" x="3600" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0008" x="4300" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0009" x="5000" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0010" x="5700" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0011" x="6400" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0012" x="7100" y="800" width="600" height="600"/>
+	<SubTexture name="firstDeath0013" x="100" y="1500" width="600" height="600"/>
+	<SubTexture name="firstDeath0014" x="800" y="1500" width="600" height="600"/>
+	<SubTexture name="hey0000" x="1500" y="1500" width="600" height="600"/>
+	<SubTexture name="hey0001" x="2200" y="1500" width="600" height="600"/>
+	<SubTexture name="hey0002" x="2900" y="1500" width="600" height="600"/>
+	<SubTexture name="idle0000" x="3600" y="1500" width="600" height="600"/>
+	<SubTexture name="idle0001" x="4300" y="1500" width="600" height="600"/>
+	<SubTexture name="idle0002" x="5000" y="1500" width="600" height="600"/>
+	<SubTexture name="idle0003" x="5700" y="1500" width="600" height="600"/>
+	<SubTexture name="idle0004" x="6400" y="1500" width="600" height="600"/>
+	<SubTexture name="left0000" x="7100" y="1500" width="600" height="600"/>
+	<SubTexture name="left0001" x="100" y="2200" width="600" height="600"/>
+	<SubTexture name="leftMiss0000" x="800" y="2200" width="600" height="600"/>
+	<SubTexture name="leftMiss0001" x="1500" y="2200" width="600" height="600"/>
+	<SubTexture name="right0000" x="2200" y="2200" width="600" height="600"/>
+	<SubTexture name="right0001" x="2900" y="2200" width="600" height="600"/>
+	<SubTexture name="rightMiss0000" x="3600" y="2200" width="600" height="600"/>
+	<SubTexture name="rightMiss0001" x="4300" y="2200" width="600" height="600"/>
+	<SubTexture name="up0000" x="5000" y="2200" width="600" height="600"/>
+	<SubTexture name="up0001" x="5700" y="2200" width="600" height="600"/>
+	<SubTexture name="upMiss0000" x="6400" y="2200" width="600" height="600"/>
+	<SubTexture name="upMiss0001" x="7100" y="2200" width="600" height="600"/>
+</TextureAtlas>

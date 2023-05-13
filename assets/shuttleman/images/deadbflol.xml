@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="deadbflol.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bopper0000" x="740" y="931" width="909" height="250" frameX="0" frameY="-150" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0001" x="775" y="50" width="748" height="339" frameX="-80" frameY="-60" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0002" x="50" y="50" width="675" height="381" frameX="-117" frameY="-19" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0003" x="50" y="481" width="647" height="396" frameX="-131" frameY="-4" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0004" x="50" y="927" width="640" height="399" frameX="-134" frameY="0" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0005" x="747" y="481" width="639" height="400" frameX="-135" frameY="0" frameWidth="909" frameHeight="400"/>
+	<SubTexture name="bopper0006" x="747" y="481" width="639" height="400" frameX="-135" frameY="0" frameWidth="909" frameHeight="400"/>
+</TextureAtlas>

@@ -1,0 +1,90 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-9
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				36,
+				-22
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				9
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				39,
+				-15
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				21,
+				12
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "laugh",
+			"loop": false,
+			"name": "laugh"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/manica",
+	"position": [
+		-70,
+		140
+	],
+	"healthicon": "funnybf-evil",
+	"flip_x": false,
+	"healthbar_colors": [
+		141,
+		45,
+		32
+	],
+	"playable": false,
+	"camera_position": [
+		-120,
+		80
+	],
+	"sing_duration": 4,
+	"scale": 0.85
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="funnyboyshart.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="100" y="100" width="375" height="531"/>
+	<SubTexture name="idle0000" x="575" y="100" width="364" height="531"/>
+	<SubTexture name="left0000" x="1039" y="100" width="670" height="531"/>
+	<SubTexture name="right0000" x="100" y="731" width="554" height="531"/>
+	<SubTexture name="up0000" x="754" y="731" width="375" height="531"/>
+</TextureAtlas>

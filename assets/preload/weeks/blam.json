@@ -1,0 +1,39 @@
+{
+	"songs": [
+		[
+			"Murked Up",
+			"blammedguy",
+			[
+				187,
+				209,
+				50
+			]
+		],
+		[
+			"Blamger",
+			"blammedguy",
+			[
+				187,
+				209,
+				50
+			]
+		],
+		[
+			"Qico",
+			"blammedguy",
+			[
+				187,
+				209,
+				50
+			]
+		]
+	],
+	"difficulties": "Normal,Raw",
+	"weekBackground": "blammy",
+	"storyName": "vs blammedf guy fnf free style raps",
+	"weekBefore": "trio",
+	"weekName": "blam guy",
+	"startUnlocked": false,
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

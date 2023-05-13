@@ -1,0 +1,30 @@
+{
+	"directory": "squidstage",
+	"defaultZoom": 0.7,
+	"boyfriend": [
+		1188,
+		600
+	],
+	"girlfriend": [
+		0,
+		0
+	],
+	"opponent": [
+		1238,
+		300
+	],
+	"hide_girlfriend": true,
+	"camera_boyfriend": [
+		0,
+		-300
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 0.8
+}

@@ -1,0 +1,102 @@
+{
+	"songs": [
+		[
+			"relapse",
+			"funnybf-relapse",
+			[
+				81,
+				78,
+				80
+			]
+		],
+		[
+			"untitled",
+			"funnybf",
+			[
+				91,
+				175,
+				223
+			]
+		],
+		[
+			"banana",
+			"minion",
+			[
+				255,
+				242,
+				0
+			]
+		],
+		[
+			"braindead",
+			"funnybf-ms",
+			[
+				239,
+				58,
+				47
+			]
+		],
+		[
+			"foolish",
+			"good",
+			[
+				184,
+				202,
+				255
+			]
+		],
+		[
+			"tampon",
+			"sikkik",
+			[
+				36,
+				94,
+				127
+			]
+		],
+		[
+			"shagy",
+			"shagy",
+			[
+				96,
+				50,
+				3
+			]
+		],
+		[
+			"farting bars",
+			"fartingbear",
+			[
+				96,
+				61,
+				38
+			]
+		],
+		[
+			"the kong",
+			"kong",
+			[
+				248,
+				194,
+				132
+			]
+		],
+		[
+			"SQUIDGAMES",
+			"mbest",
+			[
+				227,
+				187,
+				187
+			]
+		]
+	],
+	"difficulties": "Normal",
+	"weekBackground": null,
+	"storyName": "",
+	"weekBefore": null,
+	"weekName": "Extras",
+	"startUnlocked": false,
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

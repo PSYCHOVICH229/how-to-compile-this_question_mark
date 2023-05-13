@@ -1,0 +1,79 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				291,
+				70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-25,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-64,
+				150
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-63,
+				72
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/sans_assets",
+	"position": [
+		-180,
+		190
+	],
+	"healthicon": "im_tired_of_fuckrin_drawing_stupid_shit_just_leave_me_alone_i_cant_fuckint_take_it_anymore",
+	"flip_x": false,
+	"healthbar_colors": [
+		249,
+		187,
+		187
+	],
+	"playable": false,
+	"camera_position": [
+		-130,
+		40
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

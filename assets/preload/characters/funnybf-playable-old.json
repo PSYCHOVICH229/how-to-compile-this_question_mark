@@ -1,0 +1,156 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "FUNNY_IDLE"
+		},
+		{
+			"offsets": [
+				-17,
+				9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "FUNNY_RIGHT"
+		},
+		{
+			"offsets": [
+				-15,
+				-101
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "FUNNY_DOWN"
+		},
+		{
+			"offsets": [
+				-39,
+				78
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "FUNNY_UP"
+		},
+		{
+			"offsets": [
+				-115,
+				8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "FUNNY_LEFT"
+		},
+		{
+			"offsets": [
+				-45,
+				-34
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "missedright"
+		},
+		{
+			"offsets": [
+				-15,
+				-185
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "misseddown"
+		},
+		{
+			"offsets": [
+				-39,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "missedup"
+		},
+		{
+			"offsets": [
+				-127,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "missedleft"
+		},
+		{
+			"offsets": [
+				400,
+				125
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "BF_DIES"
+		},
+		{
+			"offsets": [
+				335,
+				125
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathLoop",
+			"loop": false,
+			"name": "DEATH_LOOP"
+		},
+		{
+			"offsets": [
+				330,
+				135
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "deathConfirm",
+			"loop": false,
+			"name": "DEATH_CONFIRM"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/funnyBfAssets",
+	"position": [
+		-150,
+		170
+	],
+	"healthicon": "funnybf",
+	"flip_x": false,
+	"playable": true,
+	"healthbar_colors": [
+		91,
+		175,
+		223
+	],
+	"camera_position": [
+		50,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 0.85
+}

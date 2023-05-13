@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="KaBlam.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="00000" x="100" y="100" width="55" height="106"/>
+	<SubTexture name="10000" x="255" y="100" width="35" height="106"/>
+	<SubTexture name="20000" x="390" y="100" width="57" height="106"/>
+	<SubTexture name="30000" x="547" y="100" width="55" height="106"/>
+	<SubTexture name="40000" x="702" y="100" width="57" height="106"/>
+	<SubTexture name="50000" x="859" y="100" width="52" height="106"/>
+	<SubTexture name="60000" x="1011" y="100" width="49" height="106"/>
+	<SubTexture name="70000" x="1160" y="100" width="47" height="106"/>
+	<SubTexture name="80000" x="1307" y="100" width="53" height="106"/>
+	<SubTexture name="90000" x="1460" y="100" width="48" height="106"/>
+	<SubTexture name="A capital0000" x="1608" y="100" width="47" height="106"/>
+	<SubTexture name="B capital0000" x="1755" y="100" width="49" height="106"/>
+	<SubTexture name="C capital0000" x="100" y="306" width="47" height="106"/>
+	<SubTexture name="D capital0000" x="247" y="306" width="53" height="106"/>
+	<SubTexture name="E capital0000" x="400" y="306" width="44" height="106"/>
+	<SubTexture name="F capital0000" x="544" y="306" width="38" height="106"/>
+	<SubTexture name="G capital0000" x="682" y="306" width="48" height="106"/>
+	<SubTexture name="H capital0000" x="830" y="306" width="47" height="106"/>
+	<SubTexture name="I capital0000" x="977" y="306" width="26" height="106"/>
+	<SubTexture name="J capital0000" x="1103" y="306" width="49" height="106"/>
+	<SubTexture name="K capital0000" x="1252" y="306" width="45" height="106"/>
+	<SubTexture name="L capital0000" x="1397" y="306" width="33" height="106"/>
+	<SubTexture name="M capital0000" x="1530" y="306" width="59" height="106"/>
+	<SubTexture name="N capital0000" x="1689" y="306" width="52" height="106"/>
+	<SubTexture name="O capital0000" x="1841" y="306" width="48" height="106"/>
+	<SubTexture name="P capital0000" x="100" y="512" width="45" height="106"/>
+	<SubTexture name="Q capital0000" x="245" y="512" width="49" height="106"/>
+	<SubTexture name="R capital0000" x="394" y="512" width="47" height="106"/>
+	<SubTexture name="S capital0000" x="541" y="512" width="47" height="106"/>
+	<SubTexture name="T capital0000" x="688" y="512" width="44" height="106"/>
+	<SubTexture name="U capital0000" x="832" y="512" width="47" height="106"/>
+	<SubTexture name="V capital0000" x="979" y="512" width="44" height="106"/>
+	<SubTexture name="W capital0000" x="1123" y="512" width="54" height="106"/>
+	<SubTexture name="X capital0000" x="1277" y="512" width="50" height="106"/>
+	<SubTexture name="Y capital0000" x="1427" y="512" width="50" height="106"/>
+	<SubTexture name="Z capital0000" x="1577" y="512" width="62" height="106"/>
+	<SubTexture name="a lowercase0000" x="1608" y="100" width="47" height="106"/>
+	<SubTexture name="b lowercase0000" x="1755" y="100" width="49" height="106"/>
+	<SubTexture name="c lowercase0000" x="100" y="306" width="47" height="106"/>
+	<SubTexture name="d lowercase0000" x="247" y="306" width="53" height="106"/>
+	<SubTexture name="e lowercase0000" x="400" y="306" width="44" height="106"/>
+	<SubTexture name="f lowercase0000" x="544" y="306" width="38" height="106"/>
+	<SubTexture name="g lowercase0000" x="682" y="306" width="48" height="106"/>
+	<SubTexture name="h lowercase0000" x="830" y="306" width="47" height="106"/>
+	<SubTexture name="i lowercase0000" x="977" y="306" width="26" height="106"/>
+	<SubTexture name="j lowercase0000" x="1103" y="306" width="49" height="106"/>
+	<SubTexture name="k lowercase0000" x="1252" y="306" width="45" height="106"/>
+	<SubTexture name="l lowercase0000" x="1397" y="306" width="33" height="106"/>
+	<SubTexture name="m lowercase0000" x="1530" y="306" width="59" height="106"/>
+	<SubTexture name="n lowercase0000" x="1689" y="306" width="52" height="106"/>
+	<SubTexture name="o lowercase0000" x="1841" y="306" width="48" height="106"/>
+	<SubTexture name="p lowercase0000" x="100" y="512" width="45" height="106"/>
+	<SubTexture name="q lowercase0000" x="245" y="512" width="49" height="106"/>
+	<SubTexture name="r lowercase0000" x="394" y="512" width="47" height="106"/>
+	<SubTexture name="s lowercase0000" x="541" y="512" width="47" height="106"/>
+	<SubTexture name="t lowercase0000" x="688" y="512" width="44" height="106"/>
+	<SubTexture name="u lowercase0000" x="832" y="512" width="47" height="106"/>
+	<SubTexture name="v lowercase0000" x="979" y="512" width="44" height="106"/>
+	<SubTexture name="w lowercase0000" x="1123" y="512" width="54" height="106"/>
+	<SubTexture name="x lowercase0000" x="1277" y="512" width="50" height="106"/>
+	<SubTexture name="y lowercase0000" x="1427" y="512" width="50" height="106"/>
+	<SubTexture name="z lowercase0000" x="1577" y="512" width="62" height="106"/>
+</TextureAtlas>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Bobfriend.png"><SubTexture name="Bobfriend Right0000" x="0" y="0" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Right0001" x="604" y="0" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Up0000" x="1208" y="0" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Up0001" x="0" y="604" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Down0000" x="604" y="604" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Down0001" x="1208" y="604" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Left0000" x="0" y="1208" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Left0001" x="604" y="1208" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Idle0000" x="1208" y="1208" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Idle0001" x="0" y="1812" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Idle0002" x="604" y="1812" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Idle0003" x="1208" y="1812" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+<SubTexture name="Bobfriend Idle0004" x="0" y="2416" width="604" height="604" frameX="0" frameY="0" frameWidth="604" frameHeight="604" />
+</TextureAtlas>

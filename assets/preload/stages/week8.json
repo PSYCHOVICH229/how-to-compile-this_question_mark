@@ -1,0 +1,30 @@
+{
+	"directory": "week8",
+	"defaultZoom": 1.15,
+	"boyfriend": [
+		740,
+		100
+	],
+	"girlfriend": [
+		500,
+		300
+	],
+	"opponent": [
+		365,
+		100
+	],
+	"hide_girlfriend": false,
+	"camera_boyfriend": [
+		0,
+		0
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 1
+}

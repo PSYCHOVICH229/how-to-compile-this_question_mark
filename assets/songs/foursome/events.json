@@ -1,0 +1,3746 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false"
+					],
+					[
+						"Change Default Zoom",
+						"4",
+						"0"
+					],
+					[
+						"Change Default Zoom",
+						"",
+						"24,sineIn"
+					]
+				]
+			],
+			[
+				7539.26701570681,
+				[
+					[
+						"Change Default Zoom",
+						".5",
+						"4,backOut"
+					]
+				]
+			],
+			[
+				8795.81151832461,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"4,elasticIn"
+					]
+				]
+			],
+			[
+				10052.3560209424,
+				[
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Foursome Lights",
+						"2",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				11151.832460733,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				11780.1047120419,
+				[
+					[
+						"Foursome Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12251.3089005236,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12565.445026178,
+				[
+					[
+						"Foursome Lights",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				13664.9214659686,
+				[
+					[
+						"Foursome Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				14293.1937172775,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				14764.3979057592,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				15078.5340314136,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				16178.0104712042,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				17120.4188481675,
+				[
+					[
+						"Foursome Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				17591.6230366492,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				18848.167539267,
+				[
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,4,quintIn"
+					],
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				19162.3036649215,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				19319.3717277487,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				19633.5078534031,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				19790.5759162304,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				19869.109947644,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				19947.6439790576,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				20026.1780104712,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				20104.7120418848,
+				[
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Subtitles",
+						"Hey,Im funny BF! can you tell me what 2 Time 2 equals",
+						"dad"
+					]
+				]
+			],
+			[
+				23874.3455497382,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				24188.4816753927,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				24345.5497382199,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				24659.6858638744,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				24816.7539267016,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quartOut"
+					]
+				]
+			],
+			[
+				25130.890052356,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Subtitles",
+						"I I I do not know the anser i only Know addition but let me Get my caluclator",
+						"bf"
+					]
+				]
+			],
+			[
+				28900.5235602094,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				29214.6596858639,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				29528.7958115183,
+				[
+					[
+						"Change Default Zoom",
+						"-.05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				29685.8638743456,
+				[
+					[
+						"Change Default Zoom",
+						"-.1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				29842.9319371728,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				30157.0680628272,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Subtitles",
+						"OK I have ADHD i dolnt Care anymore This song its 5 minutes song Refence to my attnetion span. 5 minutes",
+						"dad"
+					]
+				]
+			],
+			[
+				33926.7015706806,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				34240.8376963351,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				34397.9057591623,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				34712.0418848168,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				34869.109947644,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				35183.2460732984,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Subtitles",
+						"Hey Frien.d Thanks for telling me that, I did not know. ADHD can be a very cumbersome issue for the youth of today.",
+						"bf"
+					]
+				]
+			],
+			[
+				38952.8795811518,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				39267.0157068063,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				39581.1518324607,
+				[
+					[
+						"Change Default Zoom",
+						"-.05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				39738.219895288,
+				[
+					[
+						"Change Default Zoom",
+						"-.1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				39895.2879581152,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"1,quintIn"
+					],
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				40209.4240837696,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Subtitles",
+						"PowPow pow POw! I shot you with my cool lazer eys, They work Like a pen laser4",
+						"dad"
+					]
+				]
+			],
+			[
+				42722.5130890052,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"0",
+						"0,1.5"
+					]
+				]
+			],
+			[
+				43036.6492146597,
+				[
+					[
+						"Change Default Zoom",
+						".025",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				43193.7172774869,
+				[
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"1",
+						"2,1.5"
+					]
+				]
+			],
+			[
+				43507.8534031414,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				43664.9214659686,
+				[
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"2",
+						"4,1.5"
+					]
+				]
+			],
+			[
+				43979.057591623,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				45235.6020942408,
+				[
+					[
+						"Subtitles",
+						"Aaaahh you hit me dieclt In my eye and Now iam Going to be totally etenrally fried",
+						"bf"
+					]
+				]
+			],
+			[
+				47748.6910994764,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"2",
+						"3,1.5"
+					]
+				]
+			],
+			[
+				48062.8272251309,
+				[
+					[
+						"Change Default Zoom",
+						".025",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				48219.8952879581,
+				[
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"3",
+						"2,1.5"
+					]
+				]
+			],
+			[
+				48534.0314136126,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quartOut"
+					]
+				]
+			],
+			[
+				48691.0994764398,
+				[
+					[
+						"Add Camera Zoom",
+						".06",
+						".12"
+					],
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quartOut"
+					],
+					[
+						"Foursome Lights",
+						"0",
+						"0,1.5"
+					]
+				]
+			],
+			[
+				49005.2356020942,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				50261.780104712,
+				[
+					[
+						"Subtitles",
+						"1 2 3 4 Who that knokcing at my door. i Have my reaction like flight i can Murk you inj fortnite",
+						"dad"
+					]
+				]
+			],
+			[
+				52460.7329842932,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				52774.8691099476,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						".5,quartOut"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				52931.9371727748,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53089.0052356021,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53246.0732984293,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53403.1413612565,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53560.2094240837,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53717.277486911,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				53874.3455497382,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				54031.4136125654,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				55287.9581151832,
+				[
+					[
+						"Subtitles",
+						"5 6 9 10 I got a ringtoe jam Like I just blew 15 Grand on thos slot machines",
+						"bf"
+					]
+				]
+			],
+			[
+				57801.0471204188,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				57958.115183246,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58115.1832460733,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58272.2513089005,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58429.3193717277,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58586.3874345549,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58743.4554973822,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				58900.5235602094,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				59057.5916230366,
+				[
+					[
+						"Change Default Zoom",
+						".5",
+						"4,quartIn"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				59371.7277486911,
+				[
+					[
+						"Add Camera Zoom",
+						"-.05",
+						"-.025"
+					]
+				]
+			],
+			[
+				59528.7958115183,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".025"
+					]
+				]
+			],
+			[
+				59842.9319371727,
+				[
+					[
+						"Add Camera Zoom",
+						"-.05",
+						"-.025"
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".025"
+					]
+				]
+			],
+			[
+				60314.1361256544,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"4,elasticOut"
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Foursome Lights",
+						"0",
+						""
+					],
+					[
+						"Subtitles",
+						"hey! GHamblinb is not good for Your mental healhh. However, 90percent of gbamblers quit before they hit it big. Spoin spin spin that slot machine until you win win win like stinger flynn Flynn Flynn!",
+						"dad"
+					]
+				]
+			],
+			[
+				61413.612565445,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62041.8848167539,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				62827.22513089,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				63926.7015706806,
+				[
+					[
+						"Foursome Lights",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64712.0418848167,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				65340.3141361256,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						"-1,4"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				67696.335078534,
+				[
+					[
+						"Foursome Lights",
+						"1.5",
+						"-1,4"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				69109.947643979,
+				[
+					[
+						"Foursome Lights",
+						"3.5",
+						"-1,4"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				70052.3560209424,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,sineOut"
+					],
+					[
+						"Subtitles",
+						"Those Staticics are false. They have been inflated by the Goverment, Searc up Stinger Flynn Inflation for more info",
+						"bf"
+					]
+				]
+			],
+			[
+				70366.4921465968,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Foursome Lights",
+						"2",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				71465.9685863874,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				72251.3089005235,
+				[
+					[
+						"Foursome Lights",
+						"3",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				72722.5130890052,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						"-1"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				72879.5811518324,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				73979.057591623,
+				[
+					[
+						"Foursome Lights",
+						"2.5",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				75392.670157068,
+				[
+					[
+						"Foursome Lights",
+						"1",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				77120.4188481675,
+				[
+					[
+						"Foursome Lights",
+						"0",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				77905.7591623037,
+				[
+					[
+						"Foursome Lights",
+						"2",
+						"-1,3"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				79790.5759162304,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"2,quartIn"
+					]
+				]
+			],
+			[
+				80418.8481675393,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				84188.4816753927,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				84345.5497382199,
+				[
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				84502.6178010471,
+				[
+					[
+						"Add Camera Zoom",
+						"-.015",
+						"-.03"
+					]
+				]
+			],
+			[
+				84659.6858638744,
+				[
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				84816.7539267016,
+				[
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				84973.8219895288,
+				[
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				85130.890052356,
+				[
+					[
+						"Add Camera Zoom",
+						"-.015",
+						"-.03"
+					]
+				]
+			],
+			[
+				85287.9581151833,
+				[
+					[
+						"Add Camera Zoom",
+						".015",
+						".03"
+					]
+				]
+			],
+			[
+				85445.0261780105,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				87958.1151832461,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				88272.2513089006,
+				[
+					[
+						"Change Default Zoom",
+						".025",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						"-.025",
+						"-.05"
+					]
+				]
+			],
+			[
+				88429.3193717278,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				88743.4554973822,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						"-.025",
+						"-.05"
+					]
+				]
+			],
+			[
+				88900.5235602095,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				89057.5916230367,
+				[
+					[
+						"Change Default Zoom",
+						".175",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				89214.6596858639,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				90000,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				90157.0680628273,
+				[
+					[
+						"Change Default Zoom",
+						".175",
+						".5,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						"-.05",
+						"-.1"
+					]
+				]
+			],
+			[
+				90471.2041884817,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Subtitles",
+						"Run.Form danger like VersuS imposter,Dont get Soyed Up ,Jak up the heat! Jak it up real good!",
+						"dad"
+					]
+				]
+			],
+			[
+				95497.3821989529,
+				[
+					[
+						"Subtitles",
+						"Catch Up with me,Im way a head of You. I'm gonna giv e you Head,a  Head start that is",
+						"bf"
+					]
+				]
+			],
+			[
+				100837.696335079,
+				[
+					[
+						"Subtitles",
+						"ok You're mad weirs why would you say that. Im funny Bf",
+						"dad"
+					]
+				]
+			],
+			[
+				105235.602094241,
+				[
+					[
+						"Subtitles",
+						"Come On! we just Had our Funny Foreplay! Now it's time For the funny Fellatio!",
+						"bf"
+					]
+				]
+			],
+			[
+				108062.827225131,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						"2,quintOut"
+					]
+				]
+			],
+			[
+				109319.371727749,
+				[
+					[
+						"Change Default Zoom",
+						".5",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				110575.916230367,
+				[
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false,2,quartOut"
+					],
+					[
+						"Change Stage",
+						"park-front",
+						"start-a"
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				129424.083769634,
+				[
+					[
+						"Change Character",
+						"dad",
+						"shuttle-man-foursome"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bf-foursome"
+					],
+					[
+						"Change Default Zoom",
+						".4",
+						"3,quintOut"
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,4,quintIn"
+					]
+				]
+			],
+			[
+				130366.492146597,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,backIn"
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				130445.026178011,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				130523.560209424,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				130602.094240838,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				130680.628272252,
+				[
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				130994.764397906,
+				[
+					[
+						"Subtitles",
+						"Finally! I got you In my sights! now i can Finally kill you! face my Descending pattern Wrath!",
+						"dad"
+					]
+				]
+			],
+			[
+				135706.806282723,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				136020.942408377,
+				[
+					[
+						"Subtitles",
+						"Oh Man i just woke up From you Shooting my chest equipiped with a Inconspicuously Placed Ketchup Patcket!",
+						"bf"
+					]
+				]
+			],
+			[
+				139790.575916231,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"3,quintIn"
+					]
+				]
+			],
+			[
+				140732.984293194,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						" "
+					],
+					[
+						"Subtitles",
+						"Wow that lyric Totally wasnt menat to clean up Plot Holes like your Plot Armor whicfh dosnt exist",
+						"dad"
+					]
+				]
+			],
+			[
+				143560.209424084,
+				[
+					[
+						"Subtitles",
+						"HEY now that a reference To the preivous songs!",
+						"bf"
+					]
+				]
+			],
+			[
+				145759.162303665,
+				[
+					[
+						"Subtitles",
+						"Im Corageous! you're Outrageoujs! I masturbated whiel your ass fellated",
+						"dad"
+					]
+				]
+			],
+			[
+				148272.251308901,
+				[
+					[
+						"Subtitles",
+						"bOth: Check out these Super BIden bars",
+						"bf"
+					]
+				]
+			],
+			[
+				149528.795811518,
+				[
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false,4,quintIn"
+					]
+				]
+			],
+			[
+				150157.068062827,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"2,quartIn"
+					]
+				]
+			],
+			[
+				150785.340314136,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"1,quartOut"
+					],
+					[
+						"Play Video",
+						"binden",
+						"game"
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				160523.560209424,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quartOut"
+					],
+					[
+						"Change Character",
+						"dad",
+						"shuttle-man-gun"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					],
+					[
+						"Change Stage",
+						"park",
+						""
+					]
+				]
+			],
+			[
+				160837.696335079,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,2,quartOut"
+					]
+				]
+			],
+			[
+				161151.832460733,
+				[
+					[
+						"Subtitles",
+						"Now We can finally win Game like the Squid Game, dont Get Shot by the overtowering Doll",
+						"dad"
+					]
+				]
+			],
+			[
+				165863.87434555,
+				[
+					[
+						"Subtitles",
+						" Hey guys im Regular bf my breath smells Minty Fresh like reference to the SOundfont",
+						"bf"
+					]
+				]
+			],
+			[
+				170890.052356021,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					],
+					[
+						"Subtitles",
+						"Im gonna ssue you if You dont take this Leak down! i Got called a fagot in the Plot Armor song and now i have a Super frown!",
+						"dad"
+					]
+				]
+			],
+			[
+				171989.528795811,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				173089.005235602,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				173403.141361256,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				174502.617801047,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				174659.685863874,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				174973.821989529,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				175130.890052356,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				175445.02617801,
+				[
+					[
+						"Change Default Zoom",
+						".25",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				175602.094240838,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				175916.230366492,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Subtitles",
+						"SUper Frown more like a Super Cow becuase you live on a farm and Play badinton with Sheep like wooly from Admanda the adventure",
+						"bf"
+					]
+				]
+			],
+			[
+				178429.319371728,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				179685.863874345,
+				[
+					[
+						"Change Strumline Visibility",
+						"dad",
+						"false,2,quintOut"
+					]
+				]
+			],
+			[
+				180314.136125654,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				180628.272251309,
+				[
+					[
+						"Foursome Frame",
+						"0",
+						""
+					],
+					[
+						"Subtitles",
+						"Hahaha!",
+						"dad"
+					]
+				]
+			],
+			[
+				180942.408376963,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Subtitles",
+						"Holy sht did you just bring Up sheep.. My farm animal Seses are tingling, HORSE POWER ACTIVATE.",
+						"dad"
+					]
+				]
+			],
+			[
+				183455.497382199,
+				[
+					[
+						"Subtitles",
+						"Holy Fuck where did you come from Next thing i know there gonna be a super pooper Coming up!",
+						"bf"
+					]
+				]
+			],
+			[
+				185968.586387434,
+				[
+					[
+						"Foursome Frame",
+						"1",
+						""
+					],
+					[
+						"Subtitles",
+						"we Have HiJaked the radio tower , now Things are going to get Scopped up",
+						"dad"
+					]
+				]
+			],
+			[
+				189267.015706806,
+				[
+					[
+						"Subtitles",
+						"Can you go fuck yourself",
+						"bf"
+					]
+				]
+			],
+			[
+				190209.424083769,
+				[
+					[
+						"Change Default Zoom",
+						".4",
+						"2.5,quintIn"
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"false,4,quartIn"
+					]
+				]
+			],
+			[
+				190994.764397905,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Foursome Frame",
+						"",
+						""
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					]
+				]
+			],
+			[
+				191623.036649214,
+				[
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				193036.649214659,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				193507.853403141,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				195078.534031413,
+				[
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					]
+				]
+			],
+			[
+				196020.942408377,
+				[
+					[
+						"Change Stage",
+						"carnival",
+						"start-b"
+					]
+				]
+			],
+			[
+				200497.382198953,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				200575.916230366,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				200654.45026178,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					],
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					]
+				]
+			],
+			[
+				201047.120418848,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,2,quintOut"
+					],
+					[
+						"Subtitles",
+						"Hey guys i am a Funko pop just kidding I'm a youtooz actually",
+						"dad"
+					]
+				]
+			],
+			[
+				203560.209424083,
+				[
+					[
+						"Subtitles",
+						"your Horse Farm Animal sensers also went off?",
+						"bf"
+					]
+				]
+			],
+			[
+				206073.298429319,
+				[
+					[
+						"Subtitles",
+						"Say Honey how baout you show them That cool",
+						"dad"
+					]
+				]
+			],
+			[
+				208586.387434555,
+				[
+					[
+						"Subtitles",
+						"Can is ee your balls",
+						"bf"
+					]
+				]
+			],
+			[
+				211099.47643979,
+				[
+					[
+						"Set Zoom Type",
+						"0",
+						""
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						""
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				212670.157068062,
+				[
+					[
+						"Subtitles",
+						"What",
+						"dad"
+					]
+				]
+			],
+			[
+				213612.565445026,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						""
+					],
+					[
+						"Subtitles",
+						"Can you stop Harassing me",
+						"dad"
+					]
+				]
+			],
+			[
+				215811.518324607,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,sineOut"
+					]
+				]
+			],
+			[
+				216125.654450261,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						""
+					],
+					[
+						"Subtitles",
+						"weehin!",
+						"dad"
+					]
+				]
+			],
+			[
+				216439.790575916,
+				[
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				217382.198952879,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						""
+					],
+					[
+						"Subtitles",
+						"Ok",
+						"bf"
+					]
+				]
+			],
+			[
+				218324.607329842,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					],
+					[
+						"Subtitles",
+						"Yeah",
+						"bf"
+					]
+				]
+			],
+			[
+				218638.743455497,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						""
+					],
+					[
+						"Subtitles",
+						"yeah Ok",
+						"bf"
+					]
+				]
+			],
+			[
+				219267.015706806,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						""
+					],
+					[
+						"Subtitles",
+						" Now chec ou this sick ass guitar solo",
+						"bf"
+					]
+				]
+			],
+			[
+				219895.287958115,
+				[
+					[
+						"Change Default Zoom",
+						".4",
+						"3,quintIn"
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				220837.696335078,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					],
+					[
+						"Change Character",
+						"bf",
+						"funnybf-guitar"
+					],
+					[
+						"Flash Camera",
+						".5",
+						"0xFFFFFFFF"
+					]
+				]
+			],
+			[
+				221151.832460732,
+				[
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintOut"
+					],
+					[
+						"Subtitles",
+						"*sick ass guitar solo*",
+						"bf"
+					]
+				]
+			],
+			[
+				223664.921465968,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				223979.057591623,
+				[
+					[
+						"Change Default Zoom",
+						".025",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				224136.12565445,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				224450.261780104,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				224607.329842931,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				224921.465968586,
+				[
+					[
+						"Change Default Zoom",
+						".125",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				225235.60209424,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				225392.670157068,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				225706.806282722,
+				[
+					[
+						"Change Default Zoom",
+						".175",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				225863.874345549,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				226178.010471204,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				228691.099476439,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				228926.70157068,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				229162.303664921,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				229476.439790575,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				229633.507853403,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				229790.57591623,
+				[
+					[
+						"Change Default Zoom",
+						".025",
+						".25,quintOut"
+					]
+				]
+			],
+			[
+				229869.109947643,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".25,quintOut"
+					]
+				]
+			],
+			[
+				229947.643979057,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				230183.246073298,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				230418.848167539,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				230575.916230366,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				230890.05235602,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintIn"
+					],
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				230968.586387434,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				231047.120418848,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				231125.654450261,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				231204.188481675,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				232460.732984293,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				233717.27748691,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				236230.366492146,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				236858.638743455,
+				[
+					[
+						"Change Default Zoom",
+						".125",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				237015.706806282,
+				[
+					[
+						"Change Default Zoom",
+						".175",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				237172.774869109,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				237486.910994764,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				238115.183246073,
+				[
+					[
+						"Change Default Zoom",
+						".125",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				238272.2513089,
+				[
+					[
+						"Change Default Zoom",
+						".175",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				238429.319371727,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					],
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				238507.853403141,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				238586.387434554,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				238664.921465968,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				238743.455497382,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				238900.523560209,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239057.591623036,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239214.659685863,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239371.72774869,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239528.795811518,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".25,quintOut"
+					]
+				]
+			],
+			[
+				239607.329842931,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						".25,quintOut"
+					]
+				]
+			],
+			[
+				239685.863874345,
+				[
+					[
+						"Change Default Zoom",
+						".075",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239842.931937172,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						".5,quintOut"
+					]
+				]
+			],
+			[
+				239999.999999999,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						".05",
+						""
+					]
+				]
+			],
+			[
+				240471.204188481,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"3,quintIn"
+					]
+				]
+			],
+			[
+				240942.408376963,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				241020.942408376,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				241099.47643979,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				241178.010471204,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				241256.544502617,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"8,quartOut"
+					],
+					[
+						"Change Strumline Visibility",
+						"bf",
+						"false,8"
+					],
+					[
+						"Change Strumline Visibility",
+						"dad",
+						"false,4"
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				243769.633507853,
+				[
+					[
+						"Play Video",
+						"walt",
+						""
+					]
+				]
+			],
+			[
+				251308.900523559,
+				[
+					[
+						"Stop Videos",
+						"",
+						""
+					],
+					[
+						"Change Character",
+						"bf",
+						"shuttle-man-playable"
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFF0000"
+					]
+				]
+			],
+			[
+				260104.712041884,
+				[
+					[
+						"Change Strumline Visibility",
+						"both",
+						"true,4,quintIn"
+					],
+					[
+						"Change Default Zoom",
+						".2",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				261361.256544502,
+				[
+					[
+						"Set Zoom Type",
+						"1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				261675.392670156,
+				[
+					[
+						"Subtitles",
+						"Im repeating the Same Vocal pattern from earlier also i Missed my gun lol",
+						"bf"
+					]
+				]
+			],
+			[
+				266387.434554973,
+				[
+					[
+						"Subtitles",
+						"Hey whjere did Funny boyfrind go We need someone to spit bars in his place",
+						"dad"
+					]
+				]
+			],
+			[
+				268900.523560209,
+				[
+					[
+						"Change Character",
+						"bf",
+						"eggbob"
+					]
+				]
+			],
+			[
+				269214.659685863,
+				[
+					[
+						"Subtitles",
+						"they call me eggbob cause my lines are cracked",
+						"bf"
+					]
+				]
+			],
+			[
+				270157.068062826,
+				[
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Change Default Zoom",
+						".1",
+						"2,quintOut"
+					]
+				]
+			],
+			[
+				271099.47643979,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						"1,quintIn"
+					],
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				271178.010471203,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				271256.544502617,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				271413.612565444,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".05",
+						".1"
+					],
+					[
+						"Set Zoom Type",
+						"2",
+						""
+					],
+					[
+						"Subtitles",
+						"Oh Hey!Welcome to the mod, You must be Bob Like that collab With the other mod",
+						"dad"
+					]
+				]
+			],
+			[
+				280209.424083769,
+				[
+					[
+						"Change Default Zoom",
+						".3",
+						"4,quintIn"
+					]
+				]
+			],
+			[
+				281151.832460732,
+				[
+					[
+						"Subtitles",
+						"I hope you trip in the shower and crack open your skull",
+						"bf"
+					]
+				]
+			],
+			[
+				281465.968586386,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				290890.05235602,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"2,quintIn"
+					]
+				]
+			],
+			[
+				291518.324607329,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".2",
+						".4"
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					],
+					[
+						"Change Stage",
+						"park-front",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"bobfriend-foursome"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bf-foursome"
+					],
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				291832.460732983,
+				[
+					[
+						"Subtitles",
+						"This Song i almost over, my favorite Sesame street is grover",
+						"dad"
+					]
+				]
+			],
+			[
+				294188.481675392,
+				[
+					[
+						"Subtitles",
+						"Wow it feels like we back at the Start, nmy Favorite simpson is Bart",
+						"bf"
+					]
+				]
+			],
+			[
+				296701.570680627,
+				[
+					[
+						"Subtitles",
+						"i Finally Figured out the Equation. The equation is a sum of four",
+						"dad"
+					]
+				]
+			],
+			[
+				298743.455497381,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					],
+					[
+						"Subtitles",
+						"BOTH: that",
+						"bf"
+					]
+				]
+			],
+			[
+				299057.591623036,
+				[
+					[
+						"Change Default Zoom",
+						".2",
+						"1,quintOut"
+					],
+					[
+						"Set Zoom Type",
+						"-1",
+						""
+					],
+					[
+						"Subtitles",
+						"BOTH: that was awesome times four call that foursome even",
+						"bf"
+					]
+				]
+			],
+			[
+				300157.068062826,
+				[
+					[
+						"Change Default Zoom",
+						".15",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				300942.408376962,
+				[
+					[
+						"Change Default Zoom",
+						".1",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				301256.544502617,
+				[
+					[
+						"Change Default Zoom",
+						".05",
+						"1,quintOut"
+					]
+				]
+			],
+			[
+				301570.680628271,
+				[
+					[
+						"Change Default Zoom",
+						"",
+						""
+					],
+					[
+						"Add Camera Zoom",
+						".1",
+						".2"
+					],
+					[
+						"Flash Camera",
+						"1",
+						"0xFFFFFFFF"
+					]
+				]
+			],
+			[
+				303376.963350784,
+				[
+					[
+						"Subtitles",
+						"",
+						""
+					]
+				]
+			],
+			[
+				305497.382198952,
+				[
+					[
+						"Sustain Shake",
+						".005",
+						".01"
+					],
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305575.916230365,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305654.450261779,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305732.984293193,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305811.518324606,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305890.05235602,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				305968.586387433,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				306047.120418847,
+				[
+					[
+						"Add Camera Zoom",
+						".025",
+						".05"
+					]
+				]
+			],
+			[
+				306125.654450261,
+				[
+					[
+						"Cover Camera",
+						"0xFF000000",
+						"-1"
+					]
+				]
+			]
+		]
+	}
+}

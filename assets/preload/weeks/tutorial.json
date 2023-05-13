@@ -1,0 +1,20 @@
+{
+	"songs": [
+		[
+			"Tutorial",
+			"goll_frill",
+			[
+				165,
+				0,
+				77
+			]
+		]
+	],
+	"weekBackground": "tutorial",
+	"storyName": "totally normal tutorial",
+	"weekBefore": "tutorial",
+	"weekName": "Tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
