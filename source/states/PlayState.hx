@@ -105,7 +105,9 @@ class PlayState extends MusicBeatState
 	private inline static final ICON_SCALE:Int = 150;
 	public inline static final MAX_HEALTH:Float = 2;
 
+	public inline static final MIDDLESCROLL_OPPONENT_TRANSPARENCY:Float = .35;
 	public inline static final MIDDLESCROLL_PADDING:Int = 16;
+
 	public inline static final LOSING_PERCENT:Float = 20;
 
 	private static var defaultCameraOffset:Array<Float> = [0, 0];
@@ -1303,9 +1305,12 @@ class PlayState extends MusicBeatState
 			add(scoreTxt);
 		}
 
-		botplayTxt = new FlxText(0, (timeBar?.bg?.y ?? 0.) + (downScroll ? -120 : 30), FlxG.width - 800, "this person\nis cheating", 32);
-
-		botplayTxt.setFormat(Paths.font("comic.ttf"), 32, 0xFFD6F4FF, CENTER, FlxTextBorderStyle.OUTLINE, 0xFF42CDFF);
+		botplayTxt = new FlxText(
+			0,
+			(timeBar?.bg?.y ?? 0.) + (if (downScroll) -120 else 30) + (if (middleScroll) 120 * (if (downScroll) -1 else 1) else 0),
+			FlxG.width - 800,
+			"this person\nis cheating"
+		).setFormat(Paths.font("comic.ttf"), 32, 0xFFD6F4FF, CENTER, FlxTextBorderStyle.OUTLINE, 0xFF42CDFF);
 		botplayTxt.scrollFactor.set();
 
 		botplayTxt.visible = cpuControlled;
@@ -2858,7 +2863,7 @@ class PlayState extends MusicBeatState
 			var targetAlpha:Float = (player < 1 && !opponentStrumVisible) ? 0 : switch (isWorldStrumLine)
 			{
 				default:
-					(middleScroll && player < 1 && !isFNM) ? .35 : 1;
+					(middleScroll && player < 1 && !isFNM) ? MIDDLESCROLL_OPPONENT_TRANSPARENCY : 1;
 				case true:
 					.65;
 			}
@@ -3911,10 +3916,6 @@ class PlayState extends MusicBeatState
 			CoolUtil.precacheSound('countdown/$shit', introAssetsLibrary);
 
 		var newAlphaShit:Int = CoolUtil.int(isFNM);
-
-		var opponentStrums:Bool = ClientPrefs.getPref('opponentStrums');
-		var middleScroll:Bool = ClientPrefs.getPref('middleScroll');
-
 		startTimer = new FlxTimer().start(startDelay, function(tmr:FlxTimer)
 		{
 			var loopsLeft:Int = tmr.loopsLeft;
@@ -6639,7 +6640,7 @@ class PlayState extends MusicBeatState
 					var strumShit:String = Paths.formatToSongPath(value1);
 
 					var args:Array<String> = value2.split(',');
-					var alpha:Float = Paths.formatToSongPath(args[0]).startsWith('true') ? 1 : 0;
+					var alpha:Float = if (Paths.formatToSongPath(args[0]).startsWith('true')) 1 else 0;
 
 					var beatsString:Null<String> = args[1];
 					var beats:Float = Std.parseFloat(beatsString != null && beatsString.length > 0 ? beatsString.trim() : null);
@@ -6686,7 +6687,7 @@ class PlayState extends MusicBeatState
 							strumline.forEach(function(note:StrumNote)
 							{
 								var i:Int = note.ID;
-								var twn:FlxTween = FlxTween.tween(note, {alpha: alpha}, (Conductor.crochet / 1000) * beats, {
+								var twn:FlxTween = FlxTween.tween(note, {alpha: alpha * (if (strumline == opponentStrums) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1)}, (Conductor.crochet / 1000) * beats, {
 									ease: ease,
 									onComplete: function(thisTween:FlxTween)
 									{
@@ -6722,7 +6723,7 @@ class PlayState extends MusicBeatState
 							cleanTweens(strumline);
 							strumline.forEach(function(note:StrumNote)
 							{
-								note.alpha = alpha;
+								note.alpha = alpha * (if (strumline == opponentStrums) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1);
 							});
 						}
 					}
