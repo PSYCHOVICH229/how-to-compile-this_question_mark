@@ -1,5 +1,7 @@
 package states.substates;
 
+import states.options.OptionsState;
+import states.options.BaseOptionsMenu;
 import meta.PlayerSettings;
 import states.freeplay.FreeplayState;
 import meta.data.ClientPrefs;
@@ -23,8 +25,8 @@ class PauseSubState extends MusicBeatSubstate
 {
 	private var grpMenuShit:FlxTypedGroup<Alphabet>;
 
-	private var menuItemsOG:Array<String> = ['Resume', 'Restart Song', 'Exit to Menu'];
-	private var menuItems:Array<String> = [];
+	private var mainMenuItems:Array<String> = ['Resume', 'Restart Song', 'Options', 'Exit to Menu'];
+	private var menuItems:Array<String>;
 
 	private var difficultyChoices = [];
 	private var curSelected:Int = 0;
@@ -56,27 +58,27 @@ class PauseSubState extends MusicBeatSubstate
 		var num:Int = 0;
 		if (CoolUtil.difficulties.length > 1)
 		{
-			menuItemsOG.insert(2, 'Change Difficulty'); // No need to change difficulty if there is only one!
+			mainMenuItems.insert(2, 'Change Difficulty'); // No need to change difficulty if there is only one!
 			num++;
 		}
 		if (PlayState.chartingMode)
 		{
-			menuItemsOG.insert(3 + num, 'Leave Charting Mode');
+			mainMenuItems.insert(2 + num, 'Leave Charting Mode');
 			if (instance != null && !instance.startingSong)
 			{
-				menuItemsOG.insert(4 + num, 'Skip Time');
+				mainMenuItems.insert(3 + num, 'Skip Time');
 				num++;
 			}
 
-			menuItemsOG.insert(4 + num, 'End Song');
-			menuItemsOG.insert(5 + num, 'Toggle Botplay');
+			mainMenuItems.insert(4 + num, 'End Song');
+			mainMenuItems.insert(5 + num, 'Toggle Botplay');
 		}
 		else if (hadBotplayEnabled)
 		{
-			menuItemsOG.insert(1 + num, 'Toggle Botplay');
+			mainMenuItems.insert(1 + num, 'Toggle Botplay');
 		}
 
-		menuItems = menuItemsOG;
+		menuItems = mainMenuItems;
 		for (difficulty in CoolUtil.difficulties)
 			difficultyChoices.push(difficulty);
 
@@ -221,7 +223,7 @@ class PauseSubState extends MusicBeatSubstate
 					return;
 				}
 
-				menuItems = menuItemsOG;
+				menuItems = mainMenuItems;
 				regenMenu();
 			}
 
@@ -244,6 +246,15 @@ class PauseSubState extends MusicBeatSubstate
 
 				case "restart-song":
 					restartSong();
+				case "options":
+					{
+						trace('option menu');
+
+						CustomFadeTransition.nextCamera = instance?.camOther;
+						OptionsState.toPlayState = CustomFadeTransition.playTitleMusic = true;
+
+						MusicBeatState.switchState(new OptionsState());
+					}
 
 				case "leave-charting-mode":
 					{
@@ -297,7 +308,7 @@ class PauseSubState extends MusicBeatSubstate
 
 						FlxTransitionableState.skipNextTransIn = false;
 
-						CustomFadeTransition.nextCamera = PlayState.instance?.camOther;
+						CustomFadeTransition.nextCamera = instance?.camOther;
 						CustomFadeTransition.playTitleMusic = MusicBeatState.coolerTransition = true;
 
 						if (instance != null)

@@ -33,7 +33,6 @@ using StringTools;
 class BaseOptionsMenu extends MusicBeatSubstate
 {
 	public static var instance:BaseOptionsMenu;
-
 	private var curOption:Option = null;
 
 	private var curSelected:Int = 0;

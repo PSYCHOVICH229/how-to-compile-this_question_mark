@@ -1,7 +1,6 @@
 ### FNF-Specific
-# File used for the NG API (in funnying, for GameJolt). Should not be shared with others.
+# File used for the GameJolt API. Should not be shared with others.
 APIStuff.hx
-AntiCheatEngine.hx
 art/build_x32-officialrelease.bat
 art/build_x64-officialrelease.bat
 art/test_x64-debug-officialrelease.bat

@@ -22,6 +22,7 @@ class ClientPrefs
 			false,
 			false
 		], // Array<Bool>
+		'cutscenes' => 'Campaign Only',
 		'hitsound' => 'Default', // String
 		'scrollUnderlay' => 0, // WHY IS THIS NOT IN NATIVE PHYSICS	// Float
 		'reducedMotion' => false, // Bool

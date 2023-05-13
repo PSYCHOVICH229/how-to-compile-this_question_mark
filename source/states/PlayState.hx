@@ -1330,13 +1330,10 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 
 		startingSong = true;
-		if (isStoryMode && !seenCutscene)
+		if (canPlayStoryCutscene() && !seenCutscene)
 		{
 			switch (curSong)
 			{
-				// case 'hotshot':
-				//	startDialogue(dialogueJson);
-
 				case 'gastric-bypass':
 					startVideo('animation_gastric_bypass');
 				case 'roided':
@@ -1592,7 +1589,6 @@ class PlayState extends MusicBeatState
 		{
 			case 'opposition':
 				{
-					var modulo:Float = Math.PI * 2;
 					var multiply:Float = 200;
 
 					dad.x = Math.sin(circleTime) * multiply;
@@ -1601,14 +1597,14 @@ class PlayState extends MusicBeatState
 					startCharacterPos(dad);
 
 					dad.x -= dad.width;
-					circleTime = (circleTime - (elapsed * 2)) % modulo;
+					circleTime = (circleTime - (elapsed * 2)) % (Math.PI * 2);
 				}
 		}
 
 		for (shader in shaders)
-			shader.update(elapsed);
+			shader?.update(elapsed);
 		for (video in modchartVideos)
-			video.update(elapsed);
+			video?.update(elapsed);
 
 		if (botplayTxt != null && botplayTxt.visible)
 		{
@@ -2245,7 +2241,7 @@ class PlayState extends MusicBeatState
 		{
 			if (worldNotes != null)
 				worldNotes.sort(FlxSort.byY, FlxSort.DESCENDING);
-			notes.sort(FlxSort.byY, ClientPrefs.getPref('downScroll') ? FlxSort.ASCENDING : FlxSort.DESCENDING);
+			notes.sort(FlxSort.byY, (ClientPrefs.getPref('downScroll') && !isFNM) ? FlxSort.ASCENDING : FlxSort.DESCENDING);
 		}
 
 		var zoomFunction:Array<Dynamic> = camZoomTypes[camZoomType];
@@ -2732,7 +2728,7 @@ class PlayState extends MusicBeatState
 				strumAngle += daNote.offsetAngle;
 				strumAlpha *= daNote.multAlpha;
 
-				daNote.distance = .45 * (songPosition - daNote.strumTime) * songSpeed * daNote.multSpeed * (strumScroll ? 1 /* Downscroll */ : -1 /* Upscroll */);
+				daNote.distance = .45 * (songPosition - daNote.strumTime) * songSpeed * daNote.multSpeed * (if (strumScroll) 1 else -1);
 
 				var angleDir = strumDirection * Math.PI / 180;
 				if (daNote.copyAngle && !daNote.isSustainNote)
@@ -3511,18 +3507,33 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	private inline function areCutscenesDisabled():Bool
+		return Paths.formatToSongPath(ClientPrefs.getPref('cutscenes')) == 'disabled';
+	private inline function canPlayStoryCutscene():Bool
+	{
+		var cutsceneMode:String = Paths.formatToSongPath(ClientPrefs.getPref('cutscenes'));
+		return !areCutscenesDisabled() && (isStoryMode || cutsceneMode == 'all-songs');
+	}
 	private inline function doShitAtTheEnd():Void
 	{
 		trace('yaaaaay');
+
+		var cutscenesDisabled:Bool = areCutscenesDisabled();
 		switch (curSong)
 		{
 			case 'banana':
-				startVideo('minion_fucking_dies', true);
+			{
+				if (!cutscenesDisabled)
+					startVideo('minion_fucking_dies', true);
+			}
 			case 'farting-bars':
-				startVideo('billehbawb_loves_fnaf', true);
+			{
+				if (!cutscenesDisabled)
+					startVideo('billehbawb_loves_fnaf', true);
+			}
 			case 'braindead':
 				{
-					switch (ClientPrefs.getPref('flashing'))
+					switch (!cutscenesDisabled && ClientPrefs.getPref('flashing'))
 					{
 						case true:
 							startVideo('sexy_anthony_1', true);
@@ -3532,7 +3543,7 @@ class PlayState extends MusicBeatState
 				}
 			case 'pyromania' | 'funny-duo':
 				{
-					switch (isStoryMode)
+					switch (canPlayStoryCutscene())
 					{
 						case true:
 							startVideo(switch (curSong)

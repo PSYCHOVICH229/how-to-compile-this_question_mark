@@ -31,31 +31,33 @@ using StringTools;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+	private static final options:Array<String> = ['Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+
+	public static var toPlayState:Bool = false;
+	private static var curSelected:Int = 0;
+
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 
-	private static var curSelected:Int = 0;
-	public static var menume1:FlxSprite;
+	private var selectorRight:Alphabet;
+	private var selectorLeft:Alphabet;
 
 	private function openSelectedSubstate(label:String)
 	{
-		switch (label)
+		switch (Paths.formatToSongPath(label))
 		{
-			case 'Controls':
+			case 'controls':
 				openSubState(new ControlsSubState());
-			case 'Graphics':
+			case 'graphics':
 				openSubState(new GraphicsSettingsSubState());
-			case 'Visuals and UI':
+			case 'visuals-and-ui':
 				openSubState(new VisualsUISubState());
-			case 'Gameplay':
+			case 'gameplay':
 				openSubState(new GameplaySettingsSubState());
-			case 'Adjust Delay and Combo':
+
+			case 'adjust-delay-and-combo':
 				LoadingState.loadAndSwitchState(new NoteOffsetState(), false, true);
 		}
 	}
-
-	var selectorLeft:Alphabet;
-	var selectorRight:Alphabet;
 
 	override function create()
 	{
@@ -84,8 +86,9 @@ class OptionsState extends MusicBeatState
 		}
 
 		selectorLeft = new Alphabet(0, 0, '>', true);
-		add(selectorLeft);
 		selectorRight = new Alphabet(0, 0, '<', true);
+
+		add(selectorLeft);
 		add(selectorRight);
 
 		changeSelection();
@@ -114,7 +117,17 @@ class OptionsState extends MusicBeatState
 		if (PlayerSettings.controls.is(BACK))
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
-			MusicBeatState.switchState(new MainMenuState());
+			if (toPlayState)
+			{
+				toPlayState = false;
+
+				FlxG.sound.music?.fadeOut(.5, 0);
+				MusicBeatState.switchState(new PlayState());
+			}
+			else
+			{
+				MusicBeatState.switchState(new MainMenuState());
+			}
 		}
 		if (PlayerSettings.controls.is(ACCEPT))
 			openSelectedSubstate(options[curSelected]);

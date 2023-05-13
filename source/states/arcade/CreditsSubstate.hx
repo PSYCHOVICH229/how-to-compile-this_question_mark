@@ -211,7 +211,7 @@ I wonder what those coordinates lead to...',
 			'Joker_Icon',
 			'Composer',
 			'i made intestinal failure, twice....',
-			'https://twitter.com/JokerDaJokester'
+			'https://twitter.com/constipatedfumo'
 		],
 		[
 			'Gelzazz',

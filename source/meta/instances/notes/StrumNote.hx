@@ -12,11 +12,9 @@ using StringTools;
 class StrumNote extends FlxSprite
 {
 	private var colorSwap:ColorSwap;
-
 	public var resetAnim:Float = 0;
 
 	private var noteData:Int = 0;
-
 	public var direction:Float = 90;
 
 	public var middleScroll:Bool = false;
@@ -142,7 +140,7 @@ class StrumNote extends FlxSprite
 	public inline function postAddedToGroup()
 	{
 		x += Note.noteWidth * (noteData + .5);
-		switch (middleScroll)
+		switch (middleScroll && !PlayState.isFNM)
 		{
 			case true:
 				{
