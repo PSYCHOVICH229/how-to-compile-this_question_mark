@@ -14,9 +14,8 @@ import openfl.utils.Assets;
 
 class CoolUtil
 {
-	public static var defaultDifficulties:Array<String> = ['Easy', 'Normal', 'Raw'];
-
-	public inline static final defaultDifficultyInt:Int = 1;
+	public static final defaultDifficulties:Array<String> = ['Easy', 'Normal', 'Raw'];
+	public static final defaultDifficultyInt:Int = Std.int(defaultDifficulties.length / 2);
 
 	public static var defaultDifficulty:String = defaultDifficulties[defaultDifficultyInt]; // The chart that has no suffix and starting difficulty on Freeplay/Story Mode
 	public static var difficulties:Array<String> = [];

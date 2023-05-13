@@ -476,7 +476,7 @@ class ListState extends MusicBeatState
 		PlayState.storyWeek = songs[curSelected].week;
 		CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
 
-		var diffStr:String = WeekData.getCurrentWeek() ?.data?.difficulties?.trim();
+		var diffStr:String = WeekData.getCurrentWeek()?.data?.difficulties?.trim();
 		if (diffStr != null && diffStr.length > 0)
 		{
 			var diffs:Array<String> = diffStr.split(',');

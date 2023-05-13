@@ -217,7 +217,7 @@ class GameJoltSubstate extends ArcadeSubstate
 		tokenInput = new GameJoltInputText(0, tokenTitle.y + tokenTitle.height + padding);
 		tokenInput.cameras = [mainCamera];
 
-		usernameInput.input.maxLength = tokenInput.input.maxLength = 30;
+		usernameInput.input.maxLength = tokenInput.input.maxLength = 32;
 		tokenTutorial = new GameJoltButton(0, tokenInput.y + tokenInput.height + (padding * 2), 'TUTORIAL', 150, 16);
 
 		tokenTutorial.scrollFactor.set();

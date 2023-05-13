@@ -353,6 +353,10 @@ class TitleState extends MusicBeatState
 						{
 							transitioning = true;
 							// bended hard
+							var extraWeeks:Array<String> = FreeplayState.panels[1][1];
+							if (!extraWeeks.contains(FreeplayState.BEND_HARD_WEEK))
+								extraWeeks.push(FreeplayState.BEND_HARD_WEEK);
+
 							ClientPrefs.prefs.set('bendHard', true);
 							ClientPrefs.saveSettings();
 
@@ -368,7 +372,6 @@ class TitleState extends MusicBeatState
 							FlxTween.tween(acceptButton, {alpha: 0}, 1, {
 								onComplete: function(twn:FlxTween)
 								{
-									// MusicBeatState.switchState(new MainMenuState());
 									var song:String = 'bend-hard';
 
 									CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();

@@ -825,7 +825,7 @@ class PlayState extends MusicBeatState
 
 		storyDifficultyText = CoolUtil.difficulties[storyDifficulty];
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
-		detailsText = isStoryMode ? ('Story Mode: ' + WeekData.getCurrentWeek().data.weekName) : "Freeplay";
+		detailsText = isStoryMode ? ('Story Mode: ' + (WeekData.getCurrentWeek()?.data?.weekName ?? "?")) : "Freeplay";
 		// String for when the game is paused
 		detailsPausedText = 'Paused - $detailsText';
 		curSong = Paths.formatToSongPath(SONG.song);
@@ -3665,52 +3665,50 @@ class PlayState extends MusicBeatState
 			if (storyMisses != null)
 				storyMisses.set(curSong, songMisses);
 			storyPlaylist.shift();
-			if (storyPlaylist.length <= 0 && !ClientPrefs.getGameplaySetting('botplay', false))
+			if (storyPlaylist.length <= 0 && !ClientPrefs.getGameplaySetting('botplay', false) && (Paths.formatToSongPath(storyDifficultyText) != Paths.formatToSongPath(CoolUtil.defaultDifficulties[0])))
 			{
-				if (storyDifficultyText != CoolUtil.defaultDifficulties[0])
+				var curWeek:String = WeekData.weeksList[storyWeek];
+
+				StoryMenuState.weekCompleted.set(curWeek, true);
+				trace(curWeek);
+
+				var achievementName:Null<String> = switch (curWeek)
 				{
-					var curWeek:String = WeekData.weeksList[storyWeek];
+					case 'funny':
+						'week1';
+					case 'trio':
+						'week2';
+					case 'blam':
+						'unblammy';
+					case 'shuttleman':
+						'unbshuttlery';
 
-					StoryMenuState.weekCompleted.set(curWeek, true);
-					trace(curWeek);
-
-					var achievementName:Null<String> = switch (curWeek)
-					{
-						case 'funny':
-							'week1';
-						case 'trio':
-							'week2';
-						case 'blam':
-							'unblammy';
-						case 'shuttleman':
-							'unbshuttlery';
-
-						default:
-							null;
-					};
-					switch (curWeek)
-					{
-						case 'blam':
-							{
-								trace('unlock extra shitssssss');
-
-								var unlocked:Array<Bool> = ClientPrefs.getPref('freeplay');
-								for (index in 0...FreeplayState.panels.length)
-								{
-									if (!FreeplayState.freeplaySectionUnlocked(index))
-										unlocked[index] = true;
-								}
-								ClientPrefs.prefs.set('unlocked', unlocked);
-							}
-					}
-					if (achievementName != null && campaignMisses <= 0)
-					{
-						achievement = Achievement.makeAchievement(achievementName, camOther);
-						if (achievement != null)
+					default:
+						null;
+				};
+				switch (curWeek)
+				{
+					case 'blam':
 						{
-							achievementIndex++;
-							lastAchievementHeight = achievement.bg.height;
+							trace('unlock extra shitssssss');
+
+							var unlocked:Array<Bool> = ClientPrefs.getPref('freeplay');
+							for (index in 0...FreeplayState.panels.length)
+							{
+								if (!FreeplayState.freeplaySectionUnlocked(index))
+									unlocked[index] = true;
+							}
+							ClientPrefs.prefs.set('unlocked', unlocked);
 						}
+				}
+				if (achievementName != null && campaignMisses <= 0)
+				{
+					trace('SUPER FC. $achievementName');
+					achievement = Achievement.makeAchievement(achievementName, camOther);
+					if (achievement != null)
+					{
+						achievementIndex++;
+						lastAchievementHeight = achievement.bg.height;
 					}
 				}
 			}
@@ -6666,6 +6664,7 @@ class PlayState extends MusicBeatState
 						}
 					}
 
+					var middleScroll:Bool = ClientPrefs.getPref('middleScroll');
 					if (beats > 0)
 					{
 						var ease:Dynamic = FlxEase.linear;
@@ -6687,7 +6686,7 @@ class PlayState extends MusicBeatState
 							strumline.forEach(function(note:StrumNote)
 							{
 								var i:Int = note.ID;
-								var twn:FlxTween = FlxTween.tween(note, {alpha: alpha * (if (strumline == opponentStrums) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1)}, (Conductor.crochet / 1000) * beats, {
+								var twn:FlxTween = FlxTween.tween(note, {alpha: alpha * (if (strumline == opponentStrums && middleScroll) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1)}, (Conductor.crochet / 1000) * beats, {
 									ease: ease,
 									onComplete: function(thisTween:FlxTween)
 									{
@@ -6723,7 +6722,7 @@ class PlayState extends MusicBeatState
 							cleanTweens(strumline);
 							strumline.forEach(function(note:StrumNote)
 							{
-								note.alpha = alpha * (if (strumline == opponentStrums) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1);
+								note.alpha = alpha * (if (strumline == opponentStrums && middleScroll) MIDDLESCROLL_OPPONENT_TRANSPARENCY else 1);
 							});
 						}
 					}

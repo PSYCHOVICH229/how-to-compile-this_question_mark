@@ -363,18 +363,16 @@ class StoryMenuState extends MusicBeatState
 				}));
 				stopSpamming = true;
 			}
+			selectedWeek = true;
 
 			PlayState.storyMisses = new Map();
 			PlayState.storyPlaylist = [for (song in loadedWeeks[curWeek].data.songs) song[0]];
 
 			PlayState.isStoryMode = true;
-			selectedWeek = true;
-
 			PlayState.storyDifficulty = curDifficulty;
-			PlayState.SONG = Song.loadFromJson(formattedDiff, PlayState.storyPlaylist[0].toLowerCase());
 
-			PlayState.campaignScore = 0;
-			PlayState.campaignMisses = 0;
+			PlayState.SONG = Song.loadFromJson(formattedDiff, Paths.formatToSongPath(PlayState.storyPlaylist[0]));
+			PlayState.campaignScore = PlayState.campaignMisses = 0;
 
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
@@ -499,7 +497,7 @@ class StoryMenuState extends MusicBeatState
 		PlayState.storyWeek = curWeek;
 		CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
 
-		var diffStr:Null<String> = WeekData.getCurrentWeek() ?.data?.difficulties?.trim();
+		var diffStr:Null<String> = WeekData.getCurrentWeek()?.data?.difficulties?.trim();
 		difficultySelectors.visible = unlocked;
 		if (diffStr != null && diffStr.length > 0)
 		{

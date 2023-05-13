@@ -43,10 +43,15 @@ class FreeplayState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 
 		var extraWeeks:Array<String> = panels[1][1];
-		var coverWeeks:Array<String> = panels[2][1];
-
-		#if !debug if (ClientPrefs.getPref('killgames')) #end extraWeeks.push(KILLGAMES_WEEK);
-		#if !debug if (ClientPrefs.getPref('bendHard')) #end extraWeeks.push(BEND_HARD_WEEK);
+		if (#if debug true #else ClientPrefs.getPref('killgames') #end && !extraWeeks.contains(KILLGAMES_WEEK))
+		{
+			if (extraWeeks.contains(BEND_HARD_WEEK))
+				extraWeeks.insert(extraWeeks.indexOf(BEND_HARD_WEEK), KILLGAMES_WEEK);
+			else
+				extraWeeks.push(KILLGAMES_WEEK);
+		}
+		if (#if debug true #else ClientPrefs.getPref('bendHard') #end && !extraWeeks.contains(BEND_HARD_WEEK))
+			extraWeeks.push(BEND_HARD_WEEK);
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menume2'));
 		bg.antialiasing = ClientPrefs.getPref('globalAntialiasing');
@@ -117,7 +122,7 @@ class FreeplayState extends MusicBeatState
 	{
 		curSelected = CoolUtil.repeat(curSelected, change, panels.length);
 		outlineGroup.forEachAlive(function(outline:FlxSprite) {
-			outline.color = outline.ID == curSelected ? selectedColor : deselectedColor;
+			outline.color = if (outline.ID == curSelected) selectedColor else deselectedColor;
 		});
 	}
 
