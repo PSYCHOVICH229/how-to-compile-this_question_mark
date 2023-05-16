@@ -31,7 +31,7 @@
 	<classpath name="source" />
 
 	<!-- PHYSICS ENGINE CUSTOMIZATION -->
-	<define name="VIDEOS_ALLOWED" if="desktop || web" unless="32bits" />
+	<define name="VIDEOS_ALLOWED" if="desktop || web" unless="linux || 32bits" />
 	<define name="DISCORD_ALLOWED" if="desktop" unless="neko" />
 
 	<define name="CRASH_HANDLER" if="desktop" />
