@@ -3,6 +3,7 @@ package states.arcade;
 
 import openfl.display.Application;
 import sys.io.Process;
+import sys.thread.Thread;
 import openfl.Lib;
 import states.gamejolt.FlxGameJoltCustom;
 import openfl.display.BitmapData;

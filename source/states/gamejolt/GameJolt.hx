@@ -69,7 +69,6 @@ class GameJolt
 				}
 				// #end
 				trace('sync unlocked gamejolt achievmeents !!!');
-
 				var achievements:Array<Array<Dynamic>> = Achievements.achievements;
 
 				var length:Int = achievements.length - 1;
