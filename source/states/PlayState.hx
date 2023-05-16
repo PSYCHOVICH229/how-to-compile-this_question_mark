@@ -114,7 +114,9 @@ class PlayState extends MusicBeatState
 	private static var defaultScrollFactor:Array<Float> = [1, 1];
 
 	// EVENTS
+	#if VIDEOS_ALLOWED
 	public var modchartVideos:Array<VideoSprite> = new Array();
+	#end
 	public var modchartTweens:Array<FlxTween> = new Array();
 	public var modchartTimers:Array<FlxTimer> = new Array();
 
@@ -124,9 +126,10 @@ class PlayState extends MusicBeatState
 	public var stages:Array<Array<Dynamic>> = new Array();
 	public var stageUpdates:Array<Dynamic> = new Array();
 
+	#if VIDEOS_ALLOWED
 	public var videos:Array<VideoSprite> = new Array();
+	#end
 	public var trail:FlxTrail;
-
 	// MECHANICS
 	public static var mechanicsEnabled:Bool = ClientPrefs.getPref('mechanics');
 	// [ divide by, minimum difficulty ]
@@ -1603,8 +1606,10 @@ class PlayState extends MusicBeatState
 
 		for (shader in shaders)
 			shader?.update(elapsed);
+		#if VIDEOS_ALLOWED
 		for (video in modchartVideos)
 			video?.update(elapsed);
+		#end
 
 		if (botplayTxt != null && botplayTxt.visible)
 		{
@@ -2350,8 +2355,10 @@ class PlayState extends MusicBeatState
 				tween.active = false;
 			for (timer in modchartTimers)
 				timer.active = false;
+			#if VIDEOS_ALLOWED
 			for (video in modchartVideos)
 				video.bitmap.pause();
+			#end
 		}
 		super.openSubState(SubState);
 	}
@@ -2382,8 +2389,10 @@ class PlayState extends MusicBeatState
 				tween.active = true;
 			for (timer in modchartTimers)
 				timer.active = true;
+			#if VIDEOS_ALLOWED
 			for (video in modchartVideos)
 				video.bitmap.resume();
+			#end
 
 			paused = false;
 			DiscordClient.changePresence(detailsText, getFormattedSong(), getHealthIconOf(iconP2, dad), startTimer == null ? true : startTimer.finished,
@@ -4028,8 +4037,10 @@ class PlayState extends MusicBeatState
 				cleanupTween(tween);
 			for (timer in modchartTimers)
 				cleanupTimer(timer);
+			#if VIDEOS_ALLOWED
 			for (video in modchartVideos)
 				cleanupVideo(video);
+			#end
 
 			var deathGuy:Character = getCurrentlyControlling();
 
@@ -5005,9 +5016,9 @@ class PlayState extends MusicBeatState
 						hudZoomAdd += hudZoomAdding;
 					}
 				}
+			#if VIDEOS_ALLOWED
 			case 'play-video':
 				{
-					#if VIDEOS_ALLOWED
 					var video:Null<VideoSprite> = videos.shift();
 					if (video != null)
 					{
@@ -5062,15 +5073,13 @@ class PlayState extends MusicBeatState
 
 						modchartVideos.push(video);
 					}
-					#end
 				}
 			case 'stop-videos':
 				{
-					#if VIDEOS_ALLOWED
 					for (video in modchartVideos)
 						cleanupVideo(video);
-					#end
 				}
+			#end
 
 			case 'vignette':
 				{
@@ -7277,6 +7286,7 @@ class PlayState extends MusicBeatState
 		dialogueCount++;
 
 	// CLEANERS
+	#if VIDEOS_ALLOWED
 	public function cleanupVideo(?video:VideoSprite)
 	{
 		if (modchartVideos.contains(video))
@@ -7307,6 +7317,7 @@ class PlayState extends MusicBeatState
 			video = null;
 		}
 	}
+	#end
 
 	public function cleanupTween(?twn:FlxTween)
 	{
