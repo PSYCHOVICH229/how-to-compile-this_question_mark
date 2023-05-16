@@ -1472,6 +1472,7 @@ class PlayState extends MusicBeatState
 		if (inCutscene)
 		{
 			sinkCutscene = true;
+			#if VIDEOS_ALLOWED
 			if (PlayerSettings.controls.is(ACCEPT) && video != null)
 			{
 				trace('skiped');
@@ -1489,6 +1490,7 @@ class PlayState extends MusicBeatState
 				video.destroy();
 				video = null;
 			}
+			#end
 		}
 		else
 		{
