@@ -17,11 +17,11 @@ class Carnival extends BaseStage
 	private inline static final CARNIVAL_SCALE:Float = 1.2;
 	public var eggbob:Character;
 
-	private var bgGroup:FlxTypedGroup<BGSprite>;
+	private final bgGroup:FlxTypedGroup<BGSprite>;
 	private var bg:BGSprite;
 
-	private var rotatingWheel:BGSprite;
-	private var carts:FlxSpriteGroup;
+	private final rotatingWheel:BGSprite;
+	private final carts:FlxSpriteGroup;
 
 	public var cartShaking:Float = 0;
 
@@ -280,8 +280,11 @@ class Carnival extends BaseStage
 
 	override function update(elapsed:Float)
 	{
-		rotatingWheel.angle = (Conductor.songPosition / 50) % 360;
-		repositionCarts();
+		if (rotatingWheel != null)
+		{
+			rotatingWheel.angle = (Conductor.songPosition / 50) % 360;
+			repositionCarts();
+		}
 
 		cartShaking = FlxMath.lerp(cartShaking, 0, FlxMath.bound(elapsed * 8, 0, 1));
 		eggbob?.update(elapsed);
@@ -347,7 +350,7 @@ class Carnival extends BaseStage
 		var cos:Float = Math.cos(angle);
 		// i know this is the opposite
 		rotatingWheel.offset.set(cartShaking, -cartShaking);
-		carts.forEachAlive(function(cart:FlxSprite)
+		carts?.forEachAlive(function(cart:FlxSprite)
 		{
 			var id:Int = cart.ID;
 			var position:Array<Dynamic> = ferrisCarts[id];

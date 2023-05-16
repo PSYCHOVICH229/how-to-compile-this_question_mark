@@ -20,8 +20,8 @@ class ParkFront extends BaseStage
 	private var flyingScrollingGroup:Array<Dynamic>;
 	private var flyingGroup:FlxGroup;
 
-	private var skyWindRight:BGSprite;
-	private var skyWindLeft:BGSprite;
+	private final skyWindRight:BGSprite;
+	private final skyWindLeft:BGSprite;
 
 	private var deadBF:BGSprite;
 	private var doingAirShit:Bool = false;
@@ -34,12 +34,12 @@ class ParkFront extends BaseStage
 		flyingGroup.visible = false;
 
 		flyingScrollingGroup = [];
-		var bg:BGSprite = new BGSprite('park/3d/bg', 500, -920, 1, 1, false);
+		final bg:BGSprite = new BGSprite('park/3d/bg', 500, -920, 1, 1, false);
 
 		bg.setGraphicSize(Std.int(bg.width * UPSCALING));
 		bg.updateHitbox();
 
-		var badminton:BGSprite = new BGSprite('park/3d/badminton', bg.x, bg.y, bg.scrollFactor.x, bg.scrollFactor.y, bg.antialiasing);
+		final badminton:BGSprite = new BGSprite('park/3d/badminton', bg.x, bg.y, bg.scrollFactor.x, bg.scrollFactor.y, bg.antialiasing);
 
 		badminton.setGraphicSize(Std.int(badminton.width * UPSCALING));
 		badminton.updateHitbox();
@@ -49,18 +49,18 @@ class ParkFront extends BaseStage
 
 		add(flyingGroup);
 
-		var stageData:Null<StageFile> = StageData.getStageFile('park-front');
+		final stageData:Null<StageFile> = StageData.getStageFile('park-front');
 		if (stageData != null)
 		{
-			var stageScale:Float = 1 / ((stageData.defaultZoom ?? -1.) > 0 ? stageData.defaultZoom : 1);
-			var flyingBackground:FlxSprite = new FlxSprite().makeGraphic(Std.int(FlxG.width * stageScale), Std.int(FlxG.height * stageScale), 0xFFB2FFFF);
+			final stageScale:Float = 1 / ((stageData.defaultZoom ?? -1.) > 0 ? stageData.defaultZoom : 1);
+			final flyingBackground:FlxSprite = new FlxSprite().makeGraphic(Std.int(FlxG.width * stageScale), Std.int(FlxG.height * stageScale), 0xFFB2FFFF);
 
 			flyingGroup.add(flyingBackground);
 
 			flyingBackground.scrollFactor.set();
 			flyingBackground.screenCenter();
 
-			var backClouds:BGSprite = new BGSprite('sky/backclouds', 0, 0, 0, 0, false);
+			final backClouds:BGSprite = new BGSprite('sky/backclouds', 0, 0, 0, 0, false);
 
 			flyingGroup.add(backClouds);
 			flyingScrollingGroup.push([backClouds, .5]);
@@ -68,29 +68,32 @@ class ParkFront extends BaseStage
 			backClouds.setGraphicSize(Std.int(backClouds.width * stageScale));
 			backClouds.updateHitbox();
 
-			var mountains:BGSprite = new BGSprite('sky/mountains', 0, 0, 0, 0, false);
+			if (!ClientPrefs.getPref('lowQuality'))
+			{
+				final mountains:BGSprite = new BGSprite('sky/mountains', 0, 0, 0, 0, false);
 
-			flyingGroup.add(mountains);
-			flyingScrollingGroup.push([mountains, .25]);
+				flyingGroup.add(mountains);
+				flyingScrollingGroup.push([mountains, .25]);
 
-			mountains.setGraphicSize(Std.int(mountains.width * stageScale));
-			mountains.updateHitbox();
+				mountains.setGraphicSize(Std.int(mountains.width * stageScale));
+				mountains.updateHitbox();
 
-			var towers:BGSprite = new BGSprite('sky/towers', 0, 0, 0, 0, false);
+				final towers:BGSprite = new BGSprite('sky/towers', 0, 0, 0, 0, false);
 
-			flyingGroup.add(towers);
-			flyingScrollingGroup.push([towers, .4]);
+				flyingGroup.add(towers);
+				flyingScrollingGroup.push([towers, .4]);
 
-			towers.setGraphicSize(Std.int(towers.width * stageScale));
-			towers.updateHitbox();
+				towers.setGraphicSize(Std.int(towers.width * stageScale));
+				towers.updateHitbox();
 
-			var clouds:BGSprite = new BGSprite('sky/clouds', 0, 0, 0, 0, false);
+				final clouds:BGSprite = new BGSprite('sky/clouds', 0, 0, 0, 0, false);
 
-			flyingGroup.add(clouds);
-			flyingScrollingGroup.push([clouds, .6]);
+				flyingGroup.add(clouds);
+				flyingScrollingGroup.push([clouds, .6]);
 
-			clouds.setGraphicSize(Std.int(clouds.width * stageScale));
-			clouds.updateHitbox();
+				clouds.setGraphicSize(Std.int(clouds.width * stageScale));
+				clouds.updateHitbox();
+			}
 
 			skyWindLeft = new BGSprite('sky/wind', 0, 0, 0, 0, false);
 			skyWindRight = new BGSprite('sky/wind', skyWindLeft.x + skyWindLeft.width, 0, 0, 0, false);

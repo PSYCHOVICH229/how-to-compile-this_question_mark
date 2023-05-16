@@ -3604,30 +3604,13 @@ class PlayState extends MusicBeatState
 		seenCutscene = false;
 
 		var achievement:Achievement = null;
-		var fzoneMode:Bool = CoolUtil.difficulties[storyDifficulty] == CoolUtil.defaultDifficulties[0];
+		var fzoneMode:Bool = storyDifficultyText == CoolUtil.defaultDifficulties[0];
 
 		var fzoneSound:FlxSound = null;
 		var fzone:FlxSprite = null;
 
 		var lastAchievementHeight:Float = 0;
 		var achievementIndex:Int = 0;
-
-		if (fzoneMode)
-		{
-			fzone = new FlxSprite().loadGraphic(Paths.image('fzone'));
-
-			fzone.antialiasing = ClientPrefs.getPref('globalAntialiasing');
-			fzone.cameras = [camOther];
-
-			fzone.setGraphicSize(FlxG.width, FlxG.height);
-			fzone.updateHitbox();
-
-			fzone.screenCenter();
-			fzone.alpha = 1;
-
-			fzoneSound = new FlxSound().loadEmbedded(Paths.soundRandom('fzone', 1, 7));
-			add(fzone);
-		}
 
 		switch (curSong)
 		{
@@ -3746,6 +3729,20 @@ class PlayState extends MusicBeatState
 
 		if (fzoneMode)
 		{
+			fzone = new FlxSprite().loadGraphic(Paths.image('fzone'));
+
+			fzone.antialiasing = ClientPrefs.getPref('globalAntialiasing');
+			fzone.cameras = [camOther];
+
+			fzone.setGraphicSize(FlxG.width, FlxG.height);
+			fzone.updateHitbox();
+
+			fzone.screenCenter();
+			fzone.alpha = 1;
+
+			fzoneSound = new FlxSound().loadEmbedded(Paths.soundRandom('fzone', 1, 7));
+			add(fzone);
+
 			var fzoneAchievement:Achievement = Achievement.makeAchievement('benjuu', camOther, false, null, null, null,
 				(Achievement.padding + lastAchievementHeight) * achievementIndex);
 			if (fzoneAchievement != null)
@@ -5201,7 +5198,12 @@ class PlayState extends MusicBeatState
 								subtitlesTxt.color = color;
 							}
 
-							subtitlesTxt.borderColor = FlxColor.WHITE.getDarkened(subtitlesTxt.color.brightness);
+							final baseColor:FlxColor = subtitlesTxt.color;
+							final invertedColor:FlxColor = baseColor.getInverted().getComplementHarmony();
+
+							final brightness:Float = ((baseColor.red + baseColor.green + baseColor.blue) / 3) / 255;
+
+							subtitlesTxt.borderColor = if (brightness < .5) invertedColor.getLightened(1 - (brightness * .5)) else invertedColor.getDarkened(brightness);
 							subtitlesTxt.alpha = .8;
 
 							subtitlesTxt.visible = true;
@@ -5211,9 +5213,10 @@ class PlayState extends MusicBeatState
 						{
 							modchartTweens.push(subtitlesTwn = FlxTween.tween(subtitlesTxt, { alpha: 0 }, Conductor.crochet / 500, { ease: FlxEase.linear, onComplete: function(twn:FlxTween) {
 								subtitlesTxt.visible = false;
-								remove(subtitlesTxt, true);
 
+								remove(subtitlesTxt, true);
 								cleanupTween(twn);
+
 								subtitlesTwn = null;
 							} }));
 						}

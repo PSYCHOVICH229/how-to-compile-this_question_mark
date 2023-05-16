@@ -71,7 +71,7 @@ class Paths
 		@:privateAccess
 		for (key in FlxG.bitmap._cache.keys())
 		{
-			var obj = FlxG.bitmap._cache.get(key);
+			var obj:FlxGraphic = FlxG.bitmap._cache.get(key);
 			if (obj != null && !currentTrackedAssets.exists(key))
 			{
 				OpenFlAssets.cache.removeBitmapData(key);

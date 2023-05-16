@@ -1,5 +1,6 @@
 package meta.instances;
 
+import openfl.Assets;
 import meta.data.ClientPrefs;
 import flixel.group.FlxGroup;
 import openfl.geom.Matrix;
@@ -15,21 +16,19 @@ import flixel.FlxSprite;
 
 class FoursomeFrame extends FlxGroup
 {
+	private inline static final BOTTOM_CACHE:String = 'SHUTTLE_FOURSOME_FRAME_BOTTOM';
+	private inline static final TOP_CACHE:String = 'SHUTTLE_FOURSOME_FRAME_TOP';
+
 	private inline static final GRAPHIC_PATHS:String = 'shuttleman';
 
 	private inline static final INACTIVE_POLLING_RATE:Float = 1 / 24;
 	private inline static final POLLING_RATE:Float = INACTIVE_POLLING_RATE * .5;
 
-	private var leTweens:Array<FlxTween> = new Array();
+	private final bottomFrameOutline:FlxSprite;
+	private final topFrameOutline:FlxSprite;
 
-	private final bottomGraphic:FlxGraphic = Paths.image('slice/superframebottom', GRAPHIC_PATHS);
-	private final topGraphic:FlxGraphic = Paths.image('slice/superframetop', GRAPHIC_PATHS);
-
-	private final bottomBackground:FlxGraphic = Paths.image('slice/bobfriendside', GRAPHIC_PATHS);
-	private final topBackground:FlxGraphic = Paths.image('slice/funnyboyside', GRAPHIC_PATHS);
-
-	private var bottomFrameOutline:FlxSprite;
-	private var topFrameOutline:FlxSprite;
+	private final bottomGraphic:FlxGraphic;
+	private final topGraphic:FlxGraphic;
 
 	private var bottomData:BitmapData;
 	private var topData:BitmapData;
@@ -42,10 +41,10 @@ class FoursomeFrame extends FlxGroup
 
 	public var type(default, set):Int = -1;
 
+	private var leTweens:Array<FlxTween> = new Array();
 	private var poll:Float = -1;
 
 	private var instance:PlayState;
-
 	public function new()
 	{
 		super();
@@ -53,49 +52,60 @@ class FoursomeFrame extends FlxGroup
 		active = false;
 		instance = PlayState.instance;
 
-		bottomFrameOutline = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image('slice/superoutlinebottom', GRAPHIC_PATHS));
-		topFrameOutline = new FlxSprite().loadGraphic(Paths.image('slice/superoutlinetop', GRAPHIC_PATHS));
+		if (ClientPrefs.getPref('lowQuality'))
+		{
+			trace('shit fart ass quality mode');
+
+			bottomFrameOutline = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image('slice/superbottomprebakewd', GRAPHIC_PATHS));
+			topFrameOutline = new FlxSprite().loadGraphic(Paths.image('slice/supertopprebaked', GRAPHIC_PATHS));
+		}
+		else
+		{
+			bottomGraphic = Paths.image('slice/superframebottom', GRAPHIC_PATHS);
+			topGraphic = Paths.image('slice/superframetop', GRAPHIC_PATHS);
+
+			bottomFrameOutline = new FlxSprite(0, FlxG.height).loadGraphic(Paths.image('slice/superoutlinebottom', GRAPHIC_PATHS));
+			topFrameOutline = new FlxSprite().loadGraphic(Paths.image('slice/superoutlinetop', GRAPHIC_PATHS));
+
+			bottomMask = new FlxSprite(0, bottomFrameOutline.y + (bottomFrameOutline.height - bottomGraphic.height));
+			topMask = new FlxSprite(0, -topGraphic.height);
+
+			topMask.antialiasing = bottomMask.antialiasing = topFrameOutline.antialiasing = bottomFrameOutline.antialiasing = false;
+
+			bottomMask.scrollFactor.set();
+			topMask.scrollFactor.set();
+
+			bottomCharacter = new Character(-95, -100, 'bobfriend-foursome', false);
+			topCharacter = new Character(0, 0, 'funnybf', false);
+
+			bottomCharacter.active = topCharacter.active = false;
+
+			var bottomRect:Rectangle = bottomGraphic.bitmap.rect;
+			var topRect:Rectangle = topGraphic.bitmap.rect;
+
+			bottomData = new BitmapData(bottomGraphic.width, bottomGraphic.height, true, FlxColor.BLACK);
+			topData = new BitmapData(topGraphic.width, topGraphic.height, true, FlxColor.BLACK);
+
+			var bottomMatrix:Matrix = new Matrix();
+			bottomMatrix.scale(.85, .85);
+
+			topData.copyPixels(Paths.image('slice/funnyboyside', GRAPHIC_PATHS).bitmap, new Rectangle(0, 75, topRect.width, topRect.height), topRect.topLeft);
+			bottomData.draw(Paths.image('slice/bobfriendside', GRAPHIC_PATHS).bitmap, bottomMatrix, null, null, bottomRect, false);
+
+			bottomData.copyChannel(bottomGraphic.bitmap, bottomRect, bottomRect.topLeft, ALPHA, ALPHA);
+			topData.copyChannel(topGraphic.bitmap, topRect, topRect.topLeft, ALPHA, ALPHA);
+
+			bottomMask.visible = topMask.visible = false;
+
+			add(bottomMask);
+			add(topMask);
+		}
+		bottomFrameOutline.visible = topFrameOutline.visible = false;
 
 		bottomFrameOutline.scrollFactor.set();
 		topFrameOutline.scrollFactor.set();
 
 		topFrameOutline.y = -topFrameOutline.height;
-
-		bottomMask = new FlxSprite(0,
-			bottomFrameOutline.y + (bottomFrameOutline.height - bottomGraphic.height)).makeGraphic(bottomGraphic.width, bottomGraphic.height, FlxColor.WHITE,
-				true);
-		topMask = new FlxSprite(0, -topGraphic.height).makeGraphic(topGraphic.width, topGraphic.height, FlxColor.WHITE, true);
-
-		topMask.antialiasing = bottomMask.antialiasing = topFrameOutline.antialiasing = bottomFrameOutline.antialiasing = false;
-
-		bottomMask.scrollFactor.set();
-		topMask.scrollFactor.set();
-
-		bottomCharacter = new Character(-95, -100, 'bobfriend-foursome', false);
-		topCharacter = new Character(0, 0, 'funnybf', false);
-
-		FlxG.bitmap.add(bottomCharacter.graphic);
-		FlxG.bitmap.add(topCharacter.graphic);
-
-		bottomCharacter.active = topCharacter.active = false;
-
-		var bottomRect:Rectangle = bottomGraphic.bitmap.rect;
-		var topRect:Rectangle = topGraphic.bitmap.rect;
-
-		bottomData = new BitmapData(bottomGraphic.width, bottomGraphic.height, true, FlxColor.BLACK);
-		topData = new BitmapData(topGraphic.width, topGraphic.height, true, FlxColor.BLACK);
-
-		var bottomMatrix:Matrix = new Matrix();
-
-		bottomMatrix.scale(.85, .85);
-		bottomData.draw(bottomBackground.bitmap, bottomMatrix, null, null, bottomRect, false);
-		bottomData.copyChannel(bottomGraphic.bitmap, bottomRect, bottomRect.topLeft, ALPHA, ALPHA);
-		topData.copyPixels(topBackground.bitmap, new Rectangle(0, 75, topRect.width, topRect.height), topRect.topLeft);
-		topData.copyChannel(topGraphic.bitmap, topRect, topRect.topLeft, ALPHA, ALPHA);
-		bottomMask.visible = topMask.visible = bottomFrameOutline.visible = topFrameOutline.visible = false;
-
-		add(bottomMask);
-		add(topMask);
 
 		add(bottomFrameOutline);
 		add(topFrameOutline);
@@ -103,31 +113,27 @@ class FoursomeFrame extends FlxGroup
 
 	override function destroy()
 	{
-		if (topCharacter != null)
-		{
-			topCharacter.destroy();
-			topCharacter = null;
-		}
-		if (bottomCharacter != null)
-		{
-			bottomCharacter.destroy();
-			bottomCharacter = null;
-		}
+		bottomCharacter?.destroy();
+		topCharacter?.destroy();
+
+		bottomCharacter = null;
+		topCharacter = null;
+
 		super.destroy();
 	}
 
 	override function update(elapsed:Float)
 	{
-		if (type >= 0)
+		if (type >= 0 && topMask != null && bottomMask != null)
 		{
 			// Limit how often the bitmap is updated since it is not being used for anything crazy
-			final pollingRate:Float = type >= 1 ? INACTIVE_POLLING_RATE : POLLING_RATE;
-			poll = (poll < 0) ? pollingRate : (poll + elapsed);
+			final pollingRate:Float = if (type >= 1) INACTIVE_POLLING_RATE else POLLING_RATE;
+			poll = if (poll < 0) pollingRate else (poll + elapsed);
 			if (poll >= pollingRate)
 			{
-				maskShit(pollingRate, topData, topGraphic, topMask, .3, topCharacter);
+				maskShit(pollingRate, TOP_CACHE, topData, topGraphic.bitmap, topMask, .3, topCharacter);
 				if (type >= 1)
-					maskShit(pollingRate, bottomData, bottomGraphic, bottomMask, .65, bottomCharacter);
+					maskShit(pollingRate, BOTTOM_CACHE, bottomData, bottomGraphic.bitmap, bottomMask, .65, bottomCharacter);
 				poll %= pollingRate;
 			}
 		}
@@ -138,42 +144,40 @@ class FoursomeFrame extends FlxGroup
 		super.update(elapsed);
 	}
 
-	private inline function maskShit(rate:Float, data:BitmapData, graphic:FlxGraphic, mask:FlxSprite, downscale:Float = 1, ?character:Character = null)
+	private inline function maskShit(rate:Float, cache:String, base:BitmapData, bitmap:BitmapData, mask:FlxSprite, scale:Float = 1, ?character:Character = null)
 	{
-		mask.pixels.lock();
-
-		mask.pixels.image.dirty = true;
-		mask.graphic.persist = false;
-
-		mask.pixels.disposeImage();
-		mask.pixels.dispose();
-
-		mask.graphic.dump();
-		mask.graphic.destroy();
-
-		FlxG.bitmap.remove(mask.graphic);
-
-		var maskData:BitmapData = data.clone();
-		var bitmap:BitmapData = graphic.bitmap;
+		var data:BitmapData = base.clone();
 		// Copy the character
 		if (character != null)
 		{
 			character.update(Math.round(poll / rate) * rate);
 
-			var framePixels:BitmapData = character.updateFramePixels();
-			var matrix:Matrix = new Matrix();
+			var frame:BitmapData = character.updateFramePixels();
+			var matrix:Matrix = null;
 
-			matrix.scale(downscale, downscale);
-			matrix.translate(character.x + (character.offset.x * (downscale - 1)), character.y + (character.offset.y * (downscale - 1)));
+			if (scale != 1)
+			{
+				matrix = new Matrix();
 
-			maskData.draw(framePixels, matrix, null, null,
-				new Rectangle(framePixels.rect.x + matrix.tx, framePixels.rect.y + matrix.ty, framePixels.width * downscale, framePixels.height * downscale),
+				matrix.scale(scale, scale);
+				matrix.translate(character.x + (character.offset.x * (scale - 1)), character.y + (character.offset.y * (scale - 1)));
+			}
+			data.draw(frame, matrix, null, null,
+				new Rectangle(frame.rect.x + matrix.tx, frame.rect.y + matrix.ty, frame.width * scale, frame.height * scale),
 				false // !character.noAntialiasing && ClientPrefs.getPref('globalAntialiasing') HUGE PERFORMANCE HIT!!!!!!
 			);
 			// Finally, copy the alpha channel for the mask effect
-			maskData.copyChannel(bitmap, bitmap.rect, bitmap.rect.topLeft, ALPHA, ALPHA);
+			data.copyChannel(bitmap, bitmap.rect, bitmap.rect.topLeft, ALPHA, ALPHA);
 		}
-		mask.loadGraphic(maskData);
+
+		Assets.cache.removeBitmapData(cache);
+		FlxG.bitmap.removeByKey(cache);
+
+		if (mask.graphic != null)
+			FlxG.bitmap.remove(mask.graphic);
+
+		mask.loadGraphic(data, false, 0, 0, false, cache);
+		mask.graphic.persist = false;
 	}
 
 	private inline function pushTween(twn:FlxTween)
@@ -198,18 +202,24 @@ class FoursomeFrame extends FlxGroup
 			{
 				case 0:
 					{
-						topMask.visible = topFrameOutline.visible = true;
-
-						pushTween(FlxTween.tween(topMask, {y: 0}, Conductor.crochet / 1000, {ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
+						topFrameOutline.visible = true;
+						if (topMask != null)
+						{
+							topMask.visible = true;
+							pushTween(FlxTween.tween(topMask, {y: 0}, Conductor.crochet / 1000, {ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
+						}
 						pushTween(FlxTween.tween(topFrameOutline, {y: 0}, Conductor.crochet / 1000,
 							{ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
 					}
 				case 1:
 					{
-						bottomMask.visible = bottomFrameOutline.visible = true;
-
-						pushTween(FlxTween.tween(bottomMask, {y: FlxG.height - bottomGraphic.height}, Conductor.crochet / 1000,
-							{ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
+						bottomFrameOutline.visible = true;
+						if (bottomMask != null)
+						{
+							bottomMask.visible = true;
+							pushTween(FlxTween.tween(bottomMask, {y: FlxG.height - bottomGraphic.height}, Conductor.crochet / 1000,
+								{ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
+						}
 						pushTween(FlxTween.tween(bottomFrameOutline, {y: FlxG.height - bottomFrameOutline.height}, Conductor.crochet / 1000,
 							{ease: FlxEase.quintOut, onComplete: instance.cleanupTween}));
 					}
@@ -219,28 +229,34 @@ class FoursomeFrame extends FlxGroup
 						this.type = -1;
 						for (tween in leTweens)
 							cleanupTween(tween);
-						pushTween(FlxTween.tween(topMask, {y: -topGraphic.height}, Conductor.crochet / 500, {
-							ease: FlxEase.quintOut,
-							onComplete: function(twn:FlxTween)
-							{
-								topMask.visible = false;
-								cleanupTween(twn);
-							}
-						}));
+						if (topMask != null)
+						{
+							pushTween(FlxTween.tween(topMask, {y: -topGraphic.height}, Conductor.crochet / 500, {
+								ease: FlxEase.quintOut,
+								onComplete: function(twn:FlxTween)
+								{
+									topMask.visible = false;
+									cleanupTween(twn);
+								}
+							}));
+						}
+						if (bottomMask != null)
+						{
+							pushTween(FlxTween.tween(bottomMask, {y: FlxG.height + (bottomFrameOutline.height - bottomGraphic.height)}, Conductor.crochet / 500, {
+								ease: FlxEase.quintOut,
+								onComplete: function(twn:FlxTween)
+								{
+									bottomMask.visible = false;
+									cleanupTween(twn);
+								}
+							}));
+						}
+
 						pushTween(FlxTween.tween(topFrameOutline, {y: -topFrameOutline.height}, Conductor.crochet / 500, {
 							ease: FlxEase.quintOut,
 							onComplete: function(twn:FlxTween)
 							{
 								topFrameOutline.visible = false;
-								cleanupTween(twn);
-							}
-						}));
-
-						pushTween(FlxTween.tween(bottomMask, {y: FlxG.height + (bottomFrameOutline.height - bottomGraphic.height)}, Conductor.crochet / 500, {
-							ease: FlxEase.quintOut,
-							onComplete: function(twn:FlxTween)
-							{
-								bottomMask.visible = false;
 								cleanupTween(twn);
 							}
 						}));

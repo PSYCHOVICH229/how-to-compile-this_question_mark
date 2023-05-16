@@ -28,10 +28,8 @@ class BaseStage extends FlxBasic
 
 	public function add(object:FlxBasic)
 	{
-		if (_instances != null)
-			_instances.add(object);
-		if (parent != null)
-			parent.add(object);
+		_instances?.add(object);
+		parent?.add(object);
 	}
 
 	public function remove(object:FlxBasic, splice:Bool = false)
@@ -44,10 +42,8 @@ class BaseStage extends FlxBasic
 
 	public function insert(position:Int, object:FlxBasic)
 	{
-		if (_instances != null)
-			_instances.add(object);
-		if (parent != null)
-			parent.insert(position, object);
+		_instances?.add(object);
+		parent?.insert(position, object);
 	}
 
 	inline public function addToStage(object:FlxBasic, offset:Int = 0)
@@ -93,38 +89,33 @@ class BaseStage extends FlxBasic
 
 	override function kill()
 	{
-		if (_instances != null)
-			_instances.kill();
+		_instances?.kill();
 		super.kill();
 	}
 
 	override function revive()
 	{
-		if (_instances != null)
-			_instances.revive();
+		_instances?.revive();
 		super.revive();
 	}
 
 	override function destroy()
 	{
-		if (_instances != null && _instances.exists)
+		_instances?.forEach(function(instance:FlxBasic)
 		{
-			_instances.forEach(function(instance:FlxBasic)
+			if (instance != null)
 			{
-				if (instance != null)
-				{
-					instance.kill();
-					_instances.remove(instance);
+				_instances.remove(instance);
+				if (parent.members.contains(instance))
+					parent.remove(instance, true);
+				instance.destroy();
+			}
+		});
 
-					if (parent.members.contains(instance))
-						parent.remove(instance, true);
-					instance.destroy();
-				}
-			});
+		_instances?.clear();
+		_instances?.destroy();
 
-			_instances.clear();
-			_instances.destroy();
-		}
+		_instances = null;
 		super.destroy();
 	}
 

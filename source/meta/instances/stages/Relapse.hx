@@ -113,7 +113,7 @@ class Relapse extends BaseStage
 		addToStage(bfRock);
 		addToStage(arch);
 
-		if (!ClientPrefs.getPref('lowQuality'))
+		if (!lowQuality)
 		{
 			frontPillars = new BGSprite('relapse/frontpillars', -90 * UPSCALING, FRONT_PILLAR_Y, .95, .95);
 
@@ -121,43 +121,40 @@ class Relapse extends BaseStage
 			frontPillars.updateHitbox();
 
 			addBehindBF(frontPillars, 1);
-			if (!ClientPrefs.getPref('lowQuality'))
+			var noiseGraphic:FlxGraphic = Paths.image('noise');
+
+			var noise:FlxSprite = new FlxSprite().loadGraphic(noiseGraphic, true, Std.int(noiseGraphic.width / 4), Std.int(noiseGraphic.height / 4));
+			var vignette:FlxSprite = new FlxSprite().loadGraphic(Paths.image('miyamotoVignette'));
+
+			noise.setGraphicSize(FlxG.width, FlxG.height);
+			noise.updateHitbox();
+
+			noise.screenCenter();
+			noise.alpha = .1;
+
+			noise.animation.callback = function(name:String, frameNumber:Int, frameIndex:Int)
 			{
-				var noiseGraphic:FlxGraphic = Paths.image('noise');
+				noise.flipX = FlxG.random.bool();
+				noise.flipY = FlxG.random.bool();
+			};
 
-				var noise:FlxSprite = new FlxSprite().loadGraphic(noiseGraphic, true, Std.int(noiseGraphic.width / 4), Std.int(noiseGraphic.height / 4));
-				var vignette:FlxSprite = new FlxSprite().loadGraphic(Paths.image('miyamotoVignette'));
+			noise.animation.add('noise', [0, 1, 2, 3], 24, true);
+			noise.animation.play('noise');
 
-				noise.setGraphicSize(FlxG.width, FlxG.height);
-				noise.updateHitbox();
+			noise.antialiasing = vignette.antialiasing = ClientPrefs.getPref('globalAntialiasing');
+			noise.cameras = vignette.cameras = [parent.camOther];
 
-				noise.screenCenter();
-				noise.alpha = .1;
+			vignette.setGraphicSize(FlxG.width, FlxG.height);
+			vignette.updateHitbox();
 
-				noise.animation.callback = function(name:String, frameNumber:Int, frameIndex:Int)
-				{
-					noise.flipX = FlxG.random.bool();
-					noise.flipY = FlxG.random.bool();
-				};
+			vignette.screenCenter();
+			vignette.alpha = .75;
 
-				noise.animation.add('noise', [0, 1, 2, 3], 24, true);
-				noise.animation.play('noise');
+			vignette.scrollFactor.set();
+			noise.scrollFactor.set();
 
-				noise.antialiasing = vignette.antialiasing = ClientPrefs.getPref('globalAntialiasing');
-				noise.cameras = vignette.cameras = [parent.camOther];
-
-				vignette.setGraphicSize(FlxG.width, FlxG.height);
-				vignette.updateHitbox();
-
-				vignette.screenCenter();
-				vignette.alpha = .75;
-
-				vignette.scrollFactor.set();
-				noise.scrollFactor.set();
-
-				add(noise);
-				add(vignette);
-			}
+			add(noise);
+			add(vignette);
 		}
 	}
 

@@ -16,15 +16,15 @@ class Park extends BaseStage
 	private var bgGroup:FlxTypedGroup<BGSprite>;
 	private var fgGroup:FlxTypedGroup<BGSprite>;
 
-	private var deadBF:BGSprite;
+	private final deadBF:BGSprite;
 	private var tweened:Bool = false;
 
 	override function new(parent:Dynamic)
 	{
 		super(parent);
 
-		var bg:BGSprite = new BGSprite('park/background', -100, -400, .1, .4, false);
-		var fg:BGSprite = new BGSprite('park/foreground', 150, 0, 1, 1, false);
+		final bg:BGSprite = new BGSprite('park/background', -100, -400, .1, .4, false);
+		final fg:BGSprite = new BGSprite('park/foreground', 150, 0, 1, 1, false);
 
 		bgGroup = new FlxTypedGroup();
 		fgGroup = new FlxTypedGroup();
@@ -43,7 +43,7 @@ class Park extends BaseStage
 
 		if (!ClientPrefs.getPref('lowQuality'))
 		{
-			var city:BGSprite = new BGSprite('park/city', -50, -100, .25, .8, false);
+			final city:BGSprite = new BGSprite('park/city', -50, -100, .25, .8, false);
 
 			city.setGraphicSize(Std.int(city.width * SHIT_UPSCALING));
 			city.updateHitbox();
@@ -65,7 +65,7 @@ class Park extends BaseStage
 			}
 		}
 
-		var ferrisWheel:BGSprite = new BGSprite('park/ferris_wheel', 10, 0, .4, .9, false);
+		final ferrisWheel:BGSprite = new BGSprite('park/ferris_wheel', 10, 0, .4, .9, false);
 
 		ferrisWheel.setGraphicSize(Std.int(ferrisWheel.width * SHIT_UPSCALING));
 		ferrisWheel.updateHitbox();

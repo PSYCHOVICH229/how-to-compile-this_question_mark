@@ -82,7 +82,7 @@ class GameJolt
 					{
 						FlxGameJoltCustom.fetchTrophy(achievement[3], function(fetched:Map<String, String>)
 						{
-							if (fetched.get('success') == 'true' && fetched.exists('achieved') && fetched.get('achieved') != 'false')
+							if (fetched.get('success') == 'true' && (fetched.exists('achieved') && fetched.get('achieved') == 'true'))
 							{
 								var name:String = achievement[0];
 

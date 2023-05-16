@@ -294,17 +294,12 @@ class StoryMenuState extends MusicBeatState
 			if (wheel != 0)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'), .4);
-
 				changeWeek(wheel);
-				changeDifficulty();
 			}
 
 			if (vertDelta != 0)
 			{
 				changeWeek(vertDelta);
-				// yayaeyaa
-				changeDifficulty();
-
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 			}
 			if (horDelta != 0)
@@ -525,6 +520,8 @@ class StoryMenuState extends MusicBeatState
 		// trace('Pos of ' + lastDifficultyName + ' is ' + newPos);
 		if (newPos >= 0)
 			curDifficulty = newPos;
+		// yayaeyaa
+		changeDifficulty();
 		updateText();
 	}
 

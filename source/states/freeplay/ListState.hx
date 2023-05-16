@@ -243,10 +243,7 @@ class ListState extends MusicBeatState
 				{
 					var holdDelta:Int = PlayerSettings.controls.diff(UI_DOWN, UI_UP, PRESSED, PRESSED);
 					if (holdDelta != 0)
-					{
 						changeSelection(holdDiff * shiftMult * holdDelta);
-						changeDiff();
-					}
 				}
 			}
 			else
@@ -256,9 +253,7 @@ class ListState extends MusicBeatState
 			if (FlxG.mouse.wheel != 0)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'), .2);
-
 				changeSelection(-shiftMult * FlxG.mouse.wheel, false);
-				changeDiff();
 			}
 		}
 
@@ -500,6 +495,7 @@ class ListState extends MusicBeatState
 		var newPos:Int = CoolUtil.difficulties.indexOf(lastDifficultyName);
 		if (newPos > -1)
 			curDifficulty = newPos;
+		changeDiff();
 		FreeplayState.panels[selectedMenu][2] = curSelected;
 	}
 
