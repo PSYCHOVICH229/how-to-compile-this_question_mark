@@ -2580,7 +2580,7 @@ class PlayState extends MusicBeatState
 					timerExtensions.push(event.strumTime);
 					maskedSongLength = timerExtensions[0];
 				}
-
+			#if VIDEOS_ALLOWED
 			case 'play-video':
 				{
 					var bitmap:VideoHandler = new VideoHandler();
@@ -2621,7 +2621,7 @@ class PlayState extends MusicBeatState
 					video.scrollFactor.set();
 					videos.push(video);
 				}
-
+			#end
 			case 'change-character':
 				{
 					var newCharacter:String = event.value2;
@@ -3508,11 +3508,15 @@ class PlayState extends MusicBeatState
 	}
 
 	private inline function areCutscenesDisabled():Bool
-		return Paths.formatToSongPath(ClientPrefs.getPref('cutscenes')) == 'disabled';
+		return #if VIDEOS_ALLOWED Paths.formatToSongPath(ClientPrefs.getPref('cutscenes')) == 'disabled' #else true #end;
 	private inline function canPlayStoryCutscene():Bool
 	{
+		#if VIDEOS_ALLOWED
 		var cutsceneMode:String = Paths.formatToSongPath(ClientPrefs.getPref('cutscenes'));
 		return !areCutscenesDisabled() && (isStoryMode || cutsceneMode == 'all-songs');
+		#else
+		return false;
+		#end
 	}
 	private inline function doShitAtTheEnd():Void
 	{

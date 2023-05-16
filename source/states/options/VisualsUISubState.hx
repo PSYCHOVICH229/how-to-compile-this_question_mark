@@ -21,8 +21,10 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		addOption(new Option('Time Bar:', "What should the Time Bar display?", 'timeBarType', 'string', 'time-left',
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']));
+		#if VIDEOS_ALLOWED
 		addOption(new Option('Cutscenes For:', "Should song cutscenes only be displayed when playing in story mode?", 'cutscenes', 'string', 'campaign-only',
 			['Campaign Only', 'All Songs', 'Disabled']));
+		#end
 
 		addOption(new Option('Flashing Lights', "Uncheck this if you're sensitive to flashing lights!", 'flashing', 'bool', true));
 		addOption(new Option('Reduced Motion', "If checked, extra effects such as the camera moving when a character hits a note are disabled.",
