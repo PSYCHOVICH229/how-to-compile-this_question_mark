@@ -84,7 +84,7 @@ class CustomFadeTransition extends MusicBeatSubstate
 		if (playTitleMusic)
 		{
 			TitleState.playTitleMusic(0);
-			FlxG.sound.music.fadeIn(1, 0, 1);
+			FlxG.sound.music?.fadeIn(1, 0, 1);
 
 			playTitleMusic = false;
 		}

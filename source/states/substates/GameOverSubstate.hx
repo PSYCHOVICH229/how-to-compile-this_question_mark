@@ -163,7 +163,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		}
 		else if (PlayerSettings.controls.is(BACK) && !isEnding)
 		{
-			FlxG.sound.music.stop();
+			FlxG.sound.music?.stop();
 
 			PlayState.mechanicsEnabled = ClientPrefs.getPref('mechanics');
 			PlayState.deathCounter = 0;
@@ -221,7 +221,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			}
 		}
 
-		if (FlxG.sound.music.playing)
+		if (FlxG.sound.music?.playing)
 			Conductor.songPosition = FlxG.sound.music.time;
 		if (swagShader != null)
 		{
@@ -273,7 +273,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			if (boyfriend != null)
 				boyfriend.playAnim('deathConfirm', true);
 
-			FlxG.sound.music.stop();
+			FlxG.sound.music?.stop();
 			FlxG.sound.play(Paths.music(endSoundName, endSoundLibrary));
 
 			new FlxTimer().start(.7, function(tmr:FlxTimer)

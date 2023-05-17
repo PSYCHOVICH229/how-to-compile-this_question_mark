@@ -142,7 +142,7 @@ class LoadingState extends MusicBeatState
 	private function onLoad()
 	{
 		if (stopMusic && FlxG.sound.music != null)
-			FlxG.sound.music.stop();
+			FlxG.sound.music?.stop();
 
 		#if PRELOAD_ALL
 		var song:SwagSong = PlayState.SONG;
@@ -180,8 +180,8 @@ class LoadingState extends MusicBeatState
 		var loaded:Bool = false;
 		if (song != null)
 		{
-			loaded = isSoundLoaded(getSongPath())
-				&& (!song.needsVoices || isSoundLoaded(getVocalPath()))
+			loaded = isSoundLoaded(Paths.inst(song.song))
+				&& (!song.needsVoices || isSoundLoaded(Paths.voices(song.song)))
 				&& isLibraryLoaded(DEFAULT_LIBRARY)
 				&& isLibraryLoaded(directory);
 		}
@@ -191,7 +191,7 @@ class LoadingState extends MusicBeatState
 		#end
 
 		if (stopMusic && FlxG.sound.music != null)
-			FlxG.sound.music.fadeOut(.6, 0);
+			FlxG.sound.music?.fadeOut(.6, 0);
 		return #if PRELOAD_ALL (song != null
 			&& !skipLoadingScreen
 			&& (!MusicBeatState.coolerTransition || ClientPrefs.getPref('lowQuality'))) ? new LoadingState(target, stopMusic,

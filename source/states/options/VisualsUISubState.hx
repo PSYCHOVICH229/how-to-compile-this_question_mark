@@ -96,10 +96,10 @@ class VisualsUISubState extends BaseOptionsMenu
 				FlxG.sound.music.volume = 0;
 			default:
 				{
-					FlxG.sound?.music?.stop();
+					FlxG.sound.music?.stop();
 
 					FlxG.sound.playMusic(Paths.music(path));
-					FlxG.sound.music.play(true);
+					FlxG.sound.music?.play(true);
 				}
 		}
 		changedMusic = true;

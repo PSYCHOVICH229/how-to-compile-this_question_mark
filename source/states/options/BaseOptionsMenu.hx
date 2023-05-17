@@ -33,7 +33,6 @@ using StringTools;
 class BaseOptionsMenu extends MusicBeatSubstate
 {
 	public static var instance:BaseOptionsMenu;
-	private var curOption:Option = null;
 
 	private var curSelected:Int = 0;
 	private var optionsArray:Array<Option>;
@@ -43,6 +42,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 	private var grpTexts:FlxTypedGroup<AttachedText>;
 
 	private var boyfriend:Character = null;
+	private var curOption:Option = null;
 
 	private var descBox:FlxSprite;
 	private var descText:FlxText;
@@ -278,7 +278,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 			}
 		}
 
-		if (boyfriend != null && boyfriend.animation.curAnim.finished)
+		if (boyfriend?.animation?.curAnim?.finished ?? false)
 			boyfriend.dance();
 		if (nextAccept > 0)
 			nextAccept -= 1;
@@ -352,11 +352,14 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		{
 			wasVisible = boyfriend.visible;
 			boyfriend.kill();
+
 			remove(boyfriend, true);
+
 			boyfriend.destroy();
+			boyfriend = null;
 		}
 
-		boyfriend = new Character(840, 170, 'bf', true);
+		boyfriend = new Character(840, 170, 'bf', true, true);
 		boyfriend.setGraphicSize(Std.int(boyfriend.width * .75));
 
 		boyfriend.updateHitbox();

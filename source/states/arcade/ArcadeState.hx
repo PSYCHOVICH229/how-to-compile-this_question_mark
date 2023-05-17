@@ -29,16 +29,26 @@ class ArcadeState extends MusicBeatState
 	public inline static final screenWidth:Int = 500;
 
 	private inline static final ratio:Float = screenWidth / screenHeight;
+	private inline static final itemSize:Int = 150;
+
+	private inline static final itemPadding:Float = itemSize + 20;
+	private inline static final itemBorder:Int = itemSize + 4;
+
+	private inline static final itemY:Float = (screenHeight - itemSize) / 2;
+
+	private inline static final menuInterpolation:Float = 1 / 360 / 60;
+	private inline static final substateCooldown:Float = 1 / 5;
+
 	private static var menuSelected:Int = 0;
 
 	private static var currentMenu:Dynamic;
-	private static var menus:Array<Dynamic> = [
+	private static final menus:Array<Dynamic> = [
 		AchievementsSubstate,
 		CreditsSubstate
 		#if GAMEJOLT_ALLOWED, GameJoltSubstate #end
 	];
-	private static var menuNames:Array<String> = ['achievements', 'credits' #if GAMEJOLT_ALLOWED, 'gamejolt' #end];
 
+	private static final menuNames:Array<String> = ['achievements', 'credits' #if GAMEJOLT_ALLOWED, 'gamejolt' #end];
 	public static var instance:ArcadeState;
 
 	public var camArcade:FlxCamera;
@@ -69,6 +79,7 @@ class ArcadeState extends MusicBeatState
 	private var stickAnim:String;
 
 	private var stickOffsets:Map<String, FlxPoint>;
+
 	private var stickAnimsHorizontal:Map<Int, String> = [-1 => 'left', 1 => 'right'];
 	private var stickAnimsVertical:Map<Int, String> = [-1 => 'down', 1 => 'up'];
 
@@ -80,20 +91,9 @@ class ArcadeState extends MusicBeatState
 	private var scrollGoal:FlxPoint;
 
 	private static var previousScroll:FlxPoint;
-	private inline static final itemSize:Int = 150;
-
-	private inline static final itemPadding:Float = itemSize + 20;
-	private inline static final itemBorder:Int = itemSize + 4;
-
-	private inline static final itemY:Float = (screenHeight - itemSize) / 2;
-
-	private inline static final menuInterpolation:Float = 1 / 360 / 60;
-
 	private static var currentSubstateTimer:Float = 0;
-	private static var substateCooldown:Float = 1 / 5;
 
 	private var didThing:Bool = false;
-
 	override function create()
 	{
 		Paths.clearStoredMemory();
@@ -104,8 +104,8 @@ class ArcadeState extends MusicBeatState
 		camBack = new FlxCamera();
 
 		camScreen = new FlxCamera(0, 0, screenWidth, screenHeight, 1);
-		camScreen.bgColor = FlxColor.BLACK;
 
+		camScreen.bgColor = FlxColor.BLACK;
 		camOther.bgColor.alpha = camArcade.bgColor.alpha = camBack.bgColor.alpha = 0;
 
 		// camScreen.active = false;
@@ -183,7 +183,7 @@ class ArcadeState extends MusicBeatState
 
 		add(menuEncased);
 
-		FlxG.sound?.music?.stop();
+		FlxG.sound.music?.stop();
 		FlxG.sound.playMusic(Paths.music('arcade/arcade_madnes_huge_bulge_madnes'), 0);
 
 		ambience = new FlxSound().loadEmbedded(Paths.sound('arcade/arcadeAmbience'));
@@ -192,8 +192,8 @@ class ArcadeState extends MusicBeatState
 		ambience.looped = true;
 		ambience.play();
 
-		var globalAntialiasing:Bool = ClientPrefs.getPref('globalAntialiasing');
-		var screenImage:FlxGraphic = Paths.image('arcade/static');
+		final globalAntialiasing:Bool = ClientPrefs.getPref('globalAntialiasing');
+		final screenImage:FlxGraphic = Paths.image('arcade/static');
 
 		screenEffects = new FlxSprite().loadGraphic(screenImage, true, screenWidth, screenHeight);
 
@@ -376,7 +376,7 @@ class ArcadeState extends MusicBeatState
 		super.create();
 	}
 
-	private function updateStickOffset(stickAnimation:String)
+	private inline function updateStickOffset(stickAnimation:String)
 	{
 		if (stickOffsets.exists(stickAnimation))
 		{
@@ -388,19 +388,15 @@ class ArcadeState extends MusicBeatState
 			stick.offset.set();
 		}
 	}
-
-	private function startFadingMusicIn()
+	private inline function startFadingMusicIn()
 	{
-		FlxG.sound.music.fadeIn(2, 1 / 10, 1 / 2);
-		FlxG.sound.music.play(true);
+		FlxG.sound.music?.fadeIn(2, 1 / 10, 1 / 2);
+		FlxG.sound.music?.play(true);
 	}
 
-	private function updateMenuText()
-	{
-		currentMenuText.text = menuNames[menuSelected].toUpperCase();
-	}
-
-	private function resetCameraPosition()
+	private inline function updateMenuText()
+		currentMenuText.text = menuNames[menuSelected]?.toUpperCase();
+	private inline function resetCameraPosition()
 	{
 		if (previousScroll != null)
 		{
@@ -411,8 +407,7 @@ class ArcadeState extends MusicBeatState
 			camScreen.scroll.set();
 		}
 	}
-
-	private function closeMenu(force:Bool = false)
+	private inline function closeMenu(force:Bool = false)
 	{
 		var closed:Bool = false;
 		if (currentMenu != null)
@@ -565,9 +560,9 @@ class ArcadeState extends MusicBeatState
 					ambience?.fadeOut(fadeDuration);
 					camOther.fade(FlxColor.BLACK, fadeDuration, false, null, true);
 
-					FlxG.sound.music.fadeOut(fadeDuration, 0, function(twn:FlxTween)
+					FlxG.sound.music?.fadeOut(fadeDuration, 0, function(twn:FlxTween)
 					{
-						FlxG.sound.music.stop();
+						FlxG.sound.music?.stop();
 
 						TitleState.playTitleMusic(0);
 						MusicBeatState.switchState(new MainMenuState());

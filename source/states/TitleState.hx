@@ -53,6 +53,8 @@ class TitleState extends MusicBeatState
 	private inline static final BACKDROP_SCALE:Float = 1.6;
 	private inline static final LOGO_SCALE:Float = 1.15;
 
+	private inline static final tooMany:Int = 24;
+
 	private inline static final TYPE:String = 'bendhard';
 	private inline static final EXITING_AT:Float = 1.5;
 
@@ -60,8 +62,6 @@ class TitleState extends MusicBeatState
 	public static var initialized:Bool = false;
 
 	private static var titleJSON:TitleData;
-	private inline static final tooMany:Int = 24;
-
 	private var sickBeats:Int = -1; // Basically curBeat but won't be skipped if you hold the tab or resize the screen
 
 	public static var closedState:Bool = false;
@@ -92,8 +92,8 @@ class TitleState extends MusicBeatState
 	private var camAngleTwn:FlxTween;
 
 	private var exiting:FlxSprite;
-	private var acceptButton:FlxSprite;
 
+	private var acceptButton:FlxSprite;
 	private var titleGroup:FlxSpriteGroup;
 
 	private var funnyLogo:FlxSprite;
@@ -242,7 +242,7 @@ class TitleState extends MusicBeatState
 
 		add(funnyLogo);
 		add(credGroup);
-		#if !web
+		#if sys
 		exiting = new FlxSprite().loadGraphic(Paths.image('ui/exiting'));
 		exiting.alpha = 0;
 
@@ -303,6 +303,7 @@ class TitleState extends MusicBeatState
 		var sinkInput:Bool = false;
 		if (!transitioning && skippedIntro)
 		{
+			#if sys
 			if (exiting != null)
 			{
 				exitElapsed = (exitElapsed + (elapsed * 4)) % (Math.PI * 2);
@@ -331,13 +332,14 @@ class TitleState extends MusicBeatState
 
 				exiting.setPosition(Math.sin(exitElapsed) * 5, Math.cos(exitElapsed) * 15);
 			}
+			#end
 			if (!sinkInput && typeArray.length > 0 #if !debug && FreeplayState.freeplaySectionUnlocked(1) #end)
 			{
 				var pressed:Int = FlxG.keys.firstJustPressed();
 				if (pressed >= 0 && FlxKey.toStringMap.exists(pressed))
 				{
 					var key:String = InputFormatter.getKeyName(pressed);
-					var letter:String = typeArray[0].toUpperCase();
+					var letter:String = typeArray[0]?.toUpperCase();
 
 					var didType:Bool = false;
 					if (key == letter)
@@ -517,7 +519,7 @@ class TitleState extends MusicBeatState
 				{
 					case 0:
 						{
-							FlxG.sound.music.fadeIn(2, .1, .7);
+							FlxG.sound.music?.fadeIn(2, .1, .7);
 							createCoolText(['the funnying team']);
 						}
 					case 2:

@@ -1,7 +1,9 @@
 package;
 
-import flixel.FlxCamera;
 import meta.data.ClientPrefs;
+import meta.data.Song.SwagSong;
+import meta.data.Song;
+import haxe.Json;
 import states.TitleState;
 import flixel.util.FlxColor;
 import flixel.FlxG;
@@ -126,7 +128,7 @@ class BALLFART extends Sprite
 		#if web
 		var host:String = Browser?.location?.hostname;
 		if (host == null || !whitelistedLocations.contains(host))
-			game.initialState = AntiPiracyState;
+			blarf.initialState = AntiPiracyState;
 		#end
 		addChild(new FlxGame(blarf.width, blarf.height, blarf.initialState, blarf.framerate, blarf.framerate, blarf.skipSplash, blarf.startFullscreen));
 

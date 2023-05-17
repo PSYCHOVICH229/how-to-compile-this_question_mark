@@ -76,7 +76,7 @@ class Achievements extends MusicBeatState
 			'benjuu',
 			'Benju Mode',
 			'Otherwise known as the FZone achievement.',
-			#if GAMEJOLT_ALLOWED 187886 #end,
+			#if GAMEJOLT_ALLOWED 187886, #end
 			true
 		],
 		['WEED', '420', 'Nice.', #if GAMEJOLT_ALLOWED 167986 #else null #end, true]

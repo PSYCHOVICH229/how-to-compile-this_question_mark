@@ -96,7 +96,7 @@ class FlashingState extends MusicBeatState
 				bg.x = FlxG.width - bg.width;
 				bg.screenCenter(Y);
 
-				FlxG.sound?.music?.stop();
+				FlxG.sound.music?.stop();
 				switch (accept)
 				{
 					default:

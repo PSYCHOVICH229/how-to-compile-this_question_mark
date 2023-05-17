@@ -509,7 +509,7 @@ class MainMenuState extends MusicBeatState
 			case 'arcade':
 				{
 					if (FlxG.sound.music != null)
-						FlxG.sound.music.fadeOut(.5);
+						FlxG.sound.music?.fadeOut(.5);
 					ArcadeState;
 				}
 

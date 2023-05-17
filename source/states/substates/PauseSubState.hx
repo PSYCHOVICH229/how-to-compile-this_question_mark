@@ -182,7 +182,7 @@ class PauseSubState extends MusicBeatSubstate
 						if (holdTime > .5)
 							curTime += 45000 * elapsed * (PlayerSettings.controls.is(UI_LEFT, PRESSED) ? -1 : 1);
 
-						var length:Float = FlxG.sound.music.length;
+						var length:Float = FlxG.sound.music?.length;
 
 						if (curTime >= length)
 						{
@@ -451,6 +451,6 @@ class PauseSubState extends MusicBeatSubstate
 	{
 		skipTimeText.text = FlxStringUtil.formatTime(Math.max(0, Math.floor(curTime / 1000)), false)
 			+ ' / '
-			+ FlxStringUtil.formatTime(Math.max(0, Math.floor(FlxG.sound.music.length / 1000)), false);
+			+ FlxStringUtil.formatTime(Math.max(0, Math.floor(FlxG.sound.music?.length / 1000)), false);
 	}
 }

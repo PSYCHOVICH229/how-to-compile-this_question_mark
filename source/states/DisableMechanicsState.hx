@@ -139,7 +139,7 @@ class DisableMechanicsState extends MusicBeatState
 				FlxG.sound.play(Paths.sound(accept ? 'confirmMenu' : 'cancelMenu'), .5);
 				FlxG.camera.fade(FlxColor.BLACK, 1, false, function()
 				{
-					FlxG.sound.music.fadeOut(1, 0, function(twn:FlxTween)
+					FlxG.sound.music?.fadeOut(1, 0, function(twn:FlxTween)
 					{
 						FlxTransitionableState.skipNextTransIn = true;
 						#if debug

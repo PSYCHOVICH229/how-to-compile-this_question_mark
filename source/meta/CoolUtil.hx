@@ -21,7 +21,7 @@ class CoolUtil
 	public static var difficulties:Array<String> = [];
 
 	public inline static function difficultyString(?num:Null<Int>):Null<String>
-		return difficulties[num ?? PlayState.storyDifficulty].toUpperCase();
+		return difficulties[num ?? PlayState.storyDifficulty]?.toUpperCase();
 
 	public inline static function getDifficultyFilePath(?num:Null<Int>)
 	{

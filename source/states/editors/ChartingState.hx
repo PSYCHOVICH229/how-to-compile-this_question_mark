@@ -1404,7 +1404,7 @@ class ChartingState extends MusicBeatState
 	{
 		if (FlxG.sound.music != null)
 		{
-			FlxG.sound.music.stop();
+			FlxG.sound.music?.stop();
 			// vocals.stop();
 		}
 
@@ -1417,7 +1417,7 @@ class ChartingState extends MusicBeatState
 
 		generateSong();
 
-		FlxG.sound.music.pause();
+		FlxG.sound.music?.pause();
 		Conductor.songPosition = sectionStartTime();
 		FlxG.sound.music.time = Conductor.songPosition;
 	}
@@ -1442,7 +1442,7 @@ class ChartingState extends MusicBeatState
 
 		FlxG.sound.music.onComplete = function()
 		{
-			FlxG.sound.music.pause();
+			FlxG.sound.music?.pause();
 			Conductor.songPosition = 0;
 
 			if (vocals != null)
@@ -1609,12 +1609,12 @@ class ChartingState extends MusicBeatState
 		curStep = recalculateSteps();
 		if (FlxG.sound.music.time < 0)
 		{
-			FlxG.sound.music.pause();
+			FlxG.sound.music?.pause();
 			FlxG.sound.music.time = 0;
 		}
-		else if (FlxG.sound.music.time > FlxG.sound.music.length)
+		else if (FlxG.sound.music.time > FlxG.sound.music?.length)
 		{
-			FlxG.sound.music.pause();
+			FlxG.sound.music?.pause();
 			FlxG.sound.music.time = 0;
 
 			changeSection();
@@ -1753,7 +1753,7 @@ class ChartingState extends MusicBeatState
 				persistentUpdate = FlxG.mouse.visible = false;
 
 				PlayState.SONG = _song;
-				FlxG.sound.music.stop();
+				FlxG.sound.music?.stop();
 
 				if (vocals != null)
 					vocals.stop();
@@ -1816,9 +1816,9 @@ class ChartingState extends MusicBeatState
 
 			if (FlxG.keys.justPressed.SPACE)
 			{
-				if (FlxG.sound.music.playing)
+				if (FlxG.sound.music?.playing)
 				{
-					FlxG.sound.music.pause();
+					FlxG.sound.music?.pause();
 					if (vocals != null)
 						vocals.pause();
 				}
@@ -1829,7 +1829,7 @@ class ChartingState extends MusicBeatState
 						vocals.pause();
 						vocals.play(true, FlxG.sound.music.time);
 					}
-					FlxG.sound.music.play();
+					FlxG.sound.music?.play();
 				}
 			}
 
@@ -1837,7 +1837,7 @@ class ChartingState extends MusicBeatState
 				resetSection(FlxG.keys.pressed.SHIFT);
 			if (FlxG.mouse.wheel != 0)
 			{
-				FlxG.sound.music.pause();
+				FlxG.sound.music?.pause();
 				if (!mouseQuant)
 				{
 					FlxG.sound.music.time -= FlxG.mouse.wheel * Conductor.stepCrochet * .8;
@@ -1862,7 +1862,7 @@ class ChartingState extends MusicBeatState
 			// ARROW VORTEX SHIT NO DEADASS
 			if (FlxG.keys.pressed.W || FlxG.keys.pressed.S)
 			{
-				FlxG.sound.music.pause();
+				FlxG.sound.music?.pause();
 
 				var holdingShift:Float = 1;
 				if (FlxG.keys.pressed.CONTROL)
@@ -1885,7 +1885,7 @@ class ChartingState extends MusicBeatState
 			}
 			if (!vortex && FlxG.keys.justPressed.UP || FlxG.keys.justPressed.DOWN)
 			{
-				FlxG.sound.music.pause();
+				FlxG.sound.music?.pause();
 				updateCurStep();
 
 				var beat:Float = curDecBeat;
@@ -1929,7 +1929,7 @@ class ChartingState extends MusicBeatState
 					var feces:Float;
 					if (FlxG.keys.justPressed.UP || FlxG.keys.justPressed.DOWN)
 					{
-						FlxG.sound.music.pause();
+						FlxG.sound.music?.pause();
 						updateCurStep();
 
 						var beat:Float = curDecBeat;
@@ -2008,12 +2008,12 @@ class ChartingState extends MusicBeatState
 
 		if (FlxG.sound.music.time < 0)
 		{
-			FlxG.sound.music.pause();
+			FlxG.sound.music?.pause();
 			FlxG.sound.music.time = 0;
 		}
-		else if (FlxG.sound.music.time > FlxG.sound.music.length)
+		else if (FlxG.sound.music.time > FlxG.sound.music?.length)
 		{
-			FlxG.sound.music.pause();
+			FlxG.sound.music?.pause();
 			FlxG.sound.music.time = 0;
 
 			changeSection();
@@ -2025,11 +2025,11 @@ class ChartingState extends MusicBeatState
 		for (i in 0...8)
 		{
 			strumLineNotes.members[i].y = strumLine.y;
-			strumLineNotes.members[i].alpha = FlxG.sound.music.playing ? 1 : .35;
+			strumLineNotes.members[i].alpha = FlxG.sound.music?.playing ? 1 : .35;
 		}
 
 		var roundedPos:Float = FlxMath.roundDecimal(Conductor.songPosition / 1000, 2);
-		var roundedLength:Float = FlxMath.roundDecimal(FlxG.sound.music.length / 1000, 2);
+		var roundedLength:Float = FlxMath.roundDecimal(FlxG.sound.music?.length / 1000, 2);
 		var roundedBeat:Float = FlxMath.roundDecimal(curDecBeat, 2);
 
 		bpmTxt.text = '$roundedPos / $roundedLength\nSection: $curSec\n\nBeat: $roundedBeat\n\nStep: $curStep\n\nBeat Snap: $quantization th';
@@ -2058,7 +2058,7 @@ class ChartingState extends MusicBeatState
 			if (note.strumTime <= Conductor.songPosition)
 			{
 				note.alpha = .4;
-				if (note.strumTime > lastConductorPos && FlxG.sound.music.playing && note.noteData > -1)
+				if (note.strumTime > lastConductorPos && FlxG.sound.music?.playing && note.noteData > -1)
 				{
 					var data:Int = note.noteData % 4;
 					var noteDataToCheck:Int = note.noteData;
@@ -2149,7 +2149,7 @@ class ChartingState extends MusicBeatState
 		var leHeight:Int = Std.int(gridBG.height);
 		var foundNextSec:Bool = false;
 
-		if (sectionStartTime(1) <= FlxG.sound.music.length)
+		if (sectionStartTime(1) <= FlxG.sound.music?.length)
 		{
 			nextGridBG = FlxGridOverlay.create(GRID_SIZE, GRID_SIZE, GRID_SIZE * 9, Std.int(GRID_SIZE * getSectionBeats(curSec + 1) * 4 * zoomList[curZoom]),
 				0xFF090909, 0xFF2A2A2A);
@@ -2466,7 +2466,7 @@ class ChartingState extends MusicBeatState
 	{
 		updateGrid();
 
-		FlxG.sound.music.pause();
+		FlxG.sound.music?.pause();
 		// Basically old shit from changeSection???
 		FlxG.sound.music.time = sectionStartTime();
 
@@ -2497,7 +2497,7 @@ class ChartingState extends MusicBeatState
 			curSec = sec;
 			if (updateMusic)
 			{
-				FlxG.sound.music.pause();
+				FlxG.sound.music?.pause();
 				FlxG.sound.music.time = sectionStartTime();
 
 				if (vocals != null)
@@ -2508,7 +2508,7 @@ class ChartingState extends MusicBeatState
 				updateCurStep();
 			}
 			if (getSectionBeats() != lastSecBeats
-				|| (sectionStartTime(1) > FlxG.sound.music.length ? 0 : getSectionBeats(curSec + 1)) != lastSecBeatsNext)
+				|| (sectionStartTime(1) > FlxG.sound.music?.length ? 0 : getSectionBeats(curSec + 1)) != lastSecBeatsNext)
 			{
 				reloadGridLayer();
 			}

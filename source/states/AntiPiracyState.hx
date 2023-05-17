@@ -59,7 +59,7 @@ class AntiPiracyState extends FlxState
 		add(fuckText);
 
 		FlxG.sound.playMusic(Paths.music('warningTheme'), 2);
-		FlxG.sound.music.pan = -1;
+		FlxG.sound.music?.pan = -1;
 	}
 
 	override function update(elapsed:Float)

@@ -170,13 +170,11 @@ class PlayState extends MusicBeatState
 	// FOOLISH
 	private var pizza:FlxSprite;
 
-	// QICO & BEND HARD
+	// QICO
 	public inline static final shootChance:Float = (1 / 3) * 100;
 
 	private var shootHealthCap:Float = 1 / 20;
 	private var shootSound:FlxSound;
-	// BEND HARD
-	private var gun:FlxSprite;
 	// KILLGAMES
 	private var evilFocused:Bool = false;
 
@@ -268,9 +266,9 @@ class PlayState extends MusicBeatState
 	public var boyfriendScrollFactor:Array<Float> = null;
 	public var opponentScrollFactor:Array<Float> = null;
 
-	public var boyfriend:Character = null;
-	public var dad:Character = null;
-	public var gf:Character = null;
+	public var boyfriend:Character;
+	public var dad:Character;
+	public var gf:Character;
 	// in bend hard: bendy
 	public var trioOpponent:Character;
 	// in bend hard: sans
@@ -1650,13 +1648,9 @@ class PlayState extends MusicBeatState
 							if (!extraWeeks.contains(FreeplayState.KILLGAMES_WEEK))
 							{
 								if (extraWeeks.contains(FreeplayState.BEND_HARD_WEEK))
-								{
 									extraWeeks.insert(extraWeeks.indexOf(FreeplayState.BEND_HARD_WEEK), FreeplayState.KILLGAMES_WEEK);
-								}
 								else
-								{
 									extraWeeks.push(FreeplayState.KILLGAMES_WEEK);
-								}
 							}
 
 							ClientPrefs.prefs.set('killgames', true);
@@ -1706,37 +1700,40 @@ class PlayState extends MusicBeatState
 		health = Math.min(health, MAX_HEALTH);
 		if (healthBar != null)
 		{
+			final healthAlpha:Float = ClientPrefs.getPref('healthBarAlpha', 1) * iconAlpha;
 			healthBar.percent = health;
+
+			healthBar.visible = healthAlpha > 0;
+			healthBar.alpha = healthAlpha;
+
 			if (iconP1 != null && iconP2 != null)
 			{
-				var curHealth:Float = (health / MAX_HEALTH) * 100;
-				var hideHUD:Bool = ClientPrefs.getPref('hideHUD');
+				final curHealth:Float = (health / MAX_HEALTH) * 100;
+				final hideHUD:Bool = ClientPrefs.getPref('hideHUD');
 
-				var bar:FlxBar = healthBar.bar;
+				final bar:FlxBar = healthBar.bar;
 
-				var healthOffset:Float = bar.offset.x;
-				var healthX:Float = bar.x + healthOffset + (bar.width * ((if (shitFlipped) curHealth else FlxMath.remapToRange(curHealth, 0, 100, 100, 0)) / 100));
+				final healthOffset:Float = bar.offset.x;
+				final healthX:Float = bar.x + healthOffset + (bar.width * ((if (shitFlipped) curHealth else FlxMath.remapToRange(curHealth, 0, 100, 100, 0)) / 100));
 
-				var p2:Character = if (shitFlipped) boyfriend else dad;
-				var p1:Character = if (shitFlipped) dad else boyfriend;
+				final otherOpponentsVisible:Bool = (duoOpponent?.visible ?? false) || (trioOpponent?.visible ?? false);
+				final dadVisible:Bool = (dad.visible || otherOpponentsVisible || (spawnAnim != null && spawnAnim.visible)) && dadGroup.visible;
 
-				var p1Group:FlxSpriteGroup = if (shitFlipped) dadGroup else boyfriendGroup;
-				var p2Group:FlxSpriteGroup = if (shitFlipped) boyfriendGroup else dadGroup;
+				final p2:Character = if (shitFlipped) boyfriend else dad;
+				final p1:Character = if (shitFlipped) dad else boyfriend;
 
-				var healthAlpha:Float = ClientPrefs.getPref('healthBarAlpha', 1) * iconAlpha;
+				final p1Group:FlxSpriteGroup = if (shitFlipped) dadGroup else boyfriendGroup;
+				final p2Group:FlxSpriteGroup = if (shitFlipped) boyfriendGroup else dadGroup;
 
-				healthBar.visible = healthAlpha > 0;
-				healthBar.alpha = healthAlpha;
-
-				iconP2.visible = !hideHUD && healthAlpha > 0 && (p2.visible || (spawnAnim != null && spawnAnim.visible)) && p2Group.visible;
-				iconP1.visible = !hideHUD && healthAlpha > 0 && p1.visible && p1Group.visible;
+				iconP1.visible = !hideHUD && healthAlpha > 0 && (if (p1 == dad) dadVisible else (p1.visible && p1Group.visible));
+				iconP2.visible = !hideHUD && healthAlpha > 0 && (if (p2 == dad) dadVisible else (p1.visible && p1Group.visible));
 
 				if (healthBar.visible && (iconP1.visible || iconP2.visible))
 				{
-					iconP1.alpha = healthAlpha * p1.alpha * p1Group.alpha;
-					iconP2.alpha = healthAlpha * p2.alpha * p2Group.alpha;
+					iconP1.alpha = healthAlpha * (if (p1 == dad && otherOpponentsVisible) 1 else p1.alpha) * p1Group.alpha;
+					iconP2.alpha = healthAlpha * (if (p2 == dad && otherOpponentsVisible) 1 else p2.alpha) * p2Group.alpha;
 
-					var inverseHealth:Float = 100 - curHealth;
+					final inverseHealth:Float = 100 - curHealth;
 
 					iconP2.setFrameOnPercentage(if (shitFlipped) curHealth else inverseHealth);
 					iconP1.setFrameOnPercentage(if (shitFlipped) inverseHealth else curHealth);
@@ -3256,6 +3253,8 @@ class PlayState extends MusicBeatState
 				case 'foursome':
 					(Conductor.crochet / 1000) * 24;
 
+				case 'bend-hard':
+					(Conductor.crochet / 1000) * 32;
 				default:
 					0;
 			};
@@ -3289,7 +3288,7 @@ class PlayState extends MusicBeatState
 		{
 			case 'pyromania' | 'murked-up':
 				6;
-			case 'foursome' | 'plot-armor':
+			case 'foursome' | 'plot-armor' | 'bend-hard':
 				24;
 
 			default:
@@ -3832,7 +3831,7 @@ class PlayState extends MusicBeatState
 
 		skipCountdown = switch (curSong)
 		{
-			case 'murked-up' | 'pyromania' | 'plot-armor' | 'foursome' | 'killgames':
+			case 'murked-up' | 'pyromania' | 'plot-armor' | 'foursome' | 'killgames' | 'bend-hard':
 				true;
 			default:
 				false;
@@ -3892,7 +3891,7 @@ class PlayState extends MusicBeatState
 		{
 			switch (curSong)
 			{
-				case 'pyromania' | 'murked-up' | 'plot-armor' | 'foursome' | 'killgames':
+				case 'pyromania' | 'murked-up' | 'plot-armor' | 'foursome' | 'killgames' | 'bend-hard':
 					{
 						coverFade = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 
@@ -5256,12 +5255,6 @@ class PlayState extends MusicBeatState
 						camGame.shake(1 / 160, duration, null, true);
 						camHUD.shake(1 / 90, duration, null, true);
 					}
-
-					switch (curSong)
-					{
-						case 'bend-hard':
-							gun.angle = FlxG.random.float(-45, 45);
-					}
 					if (mechanicsEnabled && FlxG.random.bool(shootChance))
 					{
 						if (health > shootHealthCap)
@@ -5284,18 +5277,8 @@ class PlayState extends MusicBeatState
 				}
 			case 'get-gun-out':
 				{
-					if (gun == null)
-					{
-						gun = new FlxSprite(trioOpponent.x + 250, trioOpponent.y + 350, Paths.image('gun'));
-
-						gun.setGraphicSize(Std.int(gun.width * .4));
-						gun.updateHitbox();
-
-						gun.antialiasing = ClientPrefs.getPref('globalAntialiasing');
-						gun.cameras = [camGame];
-
-						add(gun);
-					}
+					if (curStage is BendHard)
+						curStage.whipOutGun();
 				}
 
 			case 'roid':
@@ -6535,7 +6518,7 @@ class PlayState extends MusicBeatState
 										modchartTimers.push(new FlxTimer().start((Conductor.crochet * 10) / 1000, function(tmr:FlxTimer)
 										{
 											trace('tween out');
-											var tweenTime:Float = Conductor.crochet / 250;
+											final tweenTime:Float = Conductor.crochet / 250;
 
 											isCameraOnForcedPos = true;
 											lastStage.tweenOut(tweenTime);
@@ -6568,10 +6551,10 @@ class PlayState extends MusicBeatState
 												onComplete: function(twn:FlxTween)
 												{
 													boyfriend.setCharacter('funnybf-playable');
-													iconP1.changeIcon(boyfriend.healthIcon);
+													iconP1?.changeIcon(boyfriend.healthIcon);
 
 													dad.setCharacter('funnybf-youtooz');
-													iconP2.changeIcon(dad.healthIcon);
+													iconP2?.changeIcon(dad.healthIcon);
 
 													murder();
 													moveCamera(true);

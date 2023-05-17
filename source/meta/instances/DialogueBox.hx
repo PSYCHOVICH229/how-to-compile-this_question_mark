@@ -210,7 +210,7 @@ class DialogueBox extends FlxSpriteGroup
 		if (song != null && song != '')
 		{
 			FlxG.sound.playMusic(Paths.music(song), 0);
-			FlxG.sound.music.fadeIn(2, 0, 1);
+			FlxG.sound.music?.fadeIn(2, 0, 1);
 		}
 
 		bgFade = new FlxSprite(-500, -500).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.WHITE);
@@ -366,7 +366,7 @@ class DialogueBox extends FlxSpriteGroup
 					}
 
 					updateBoxOffsets(box);
-					FlxG.sound.music.fadeOut(1, 0);
+					FlxG.sound.music?.fadeOut(1, 0);
 				}
 				else
 				{
