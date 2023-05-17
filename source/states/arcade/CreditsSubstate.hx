@@ -318,6 +318,19 @@ Live love yaoi!!! * heart emoji* stay funnying! Also follow my socials',
 			SHUTTLE_TEAM_COLOR
 		],
 		[
+			'ajj',
+			'Ajj_Icon',
+			'Shuttle Man Artist',
+			'it lbefe time .',
+			[
+				'https://www.youtube.com/@AJHasAYoutube',
+				'https://twitter.com/ajj309',
+				'https://www.roblox.com/users/377750650/profile',
+				'https://gamebanana.com/members/1801723'
+			],
+			SHUTTLE_TEAM_COLOR
+		],
+		[
 			'callie',
 			'Callie_Icon',
 			'Shuttle Man Programmer, Composer',

@@ -22,12 +22,8 @@ class CoolUtil
 
 	public inline static function difficultyString(?num:Null<Int>):Null<String>
 		return difficulties[num ?? PlayState.storyDifficulty]?.toUpperCase();
-
 	public inline static function getDifficultyFilePath(?num:Null<Int>)
-	{
-		var diff:Null<String> = difficultyString(num);
-		return Paths.formatToSongPath(diff ?? defaultDifficulty);
-	}
+		return Paths.formatToSongPath(difficultyString(num) ?? defaultDifficulty);
 
 	public inline static function quantize(f:Float, snap:Float) // changed so this actually works lol
 		return Math.fround(f * snap) / snap;

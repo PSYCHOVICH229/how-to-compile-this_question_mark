@@ -1,5 +1,6 @@
 package states;
 
+import meta.data.WeekData;
 import flixel.group.FlxSpriteGroup;
 import flixel.addons.display.FlxBackdrop;
 import flixel.sound.FlxSound;
@@ -54,6 +55,10 @@ class TitleState extends MusicBeatState
 	private inline static final LOGO_SCALE:Float = 1.15;
 
 	private inline static final tooMany:Int = 24;
+
+	private inline static final SONG_LOADING:String = 'bend-hard';
+	private inline static final SONG_SAVE:String = 'bendHard';
+	private inline static final SONG_WEEK:String = 'bend';
 
 	private inline static final TYPE:String = 'bendhard';
 	private inline static final EXITING_AT:Float = 1.5;
@@ -333,7 +338,7 @@ class TitleState extends MusicBeatState
 				exiting.setPosition(Math.sin(exitElapsed) * 5, Math.cos(exitElapsed) * 15);
 			}
 			#end
-			if (!sinkInput && typeArray.length > 0 #if !debug && FreeplayState.freeplaySectionUnlocked(1) #end)
+			if (!sinkInput && typeArray.length > 0 #if !debug && FreeplayState.freeplaySectionUnlocked(1) && !ClientPrefs.getPref(SONG_SAVE) #end)
 			{
 				var pressed:Int = FlxG.keys.firstJustPressed();
 				if (pressed >= 0 && FlxKey.toStringMap.exists(pressed))
@@ -355,12 +360,12 @@ class TitleState extends MusicBeatState
 						{
 							transitioning = true;
 							// bended hard
+							ClientPrefs.prefs.set(SONG_SAVE, true);
+							ClientPrefs.saveSettings();
+
 							var extraWeeks:Array<String> = FreeplayState.panels[1][1];
 							if (!extraWeeks.contains(FreeplayState.BEND_HARD_WEEK))
 								extraWeeks.push(FreeplayState.BEND_HARD_WEEK);
-
-							ClientPrefs.prefs.set('bendHard', true);
-							ClientPrefs.saveSettings();
 
 							switch (ClientPrefs.getPref('flashing'))
 							{
@@ -372,15 +377,14 @@ class TitleState extends MusicBeatState
 
 							FlxG.sound.play(Paths.sound('confirmMenu'), .5);
 							FlxTween.tween(acceptButton, {alpha: 0}, 1, {
+								ease: FlxEase.sineInOut,
 								onComplete: function(twn:FlxTween)
 								{
-									var song:String = 'bend-hard';
+									CoolUtil.difficulties = WeekData.getWeekFile(SONG_WEEK)?.difficulties?.trim()?.split(',') ?? [ CoolUtil.defaultDifficulties[CoolUtil.defaultDifficulties.length - 1] ];
+									PlayState.storyDifficulty = CoolUtil.difficulties.length - 1;
 
-									CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
-									PlayState.storyDifficulty = CoolUtil.defaultDifficultyInt;
-
-									PlayState.isStoryMode = false;
-									PlayState.SONG = Song.loadFromJson(CoolUtil.getDifficultyFilePath(PlayState.storyDifficulty), song);
+									PlayState.isStoryMode = PlayState.isFNM = false;
+									PlayState.SONG = Song.loadFromJson(CoolUtil.getDifficultyFilePath(PlayState.storyDifficulty), SONG_LOADING);
 
 									CustomFadeTransition.nextCamera = camTransition;
 									MusicBeatState.coolerTransition = true;

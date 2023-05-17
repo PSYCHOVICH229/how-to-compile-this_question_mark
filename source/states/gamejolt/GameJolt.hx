@@ -10,12 +10,14 @@ using StringTools;
 
 class GameJolt
 {
-	public static function isLoggedIn():Bool
+	private inline static final ACHIEVEMENT_ACQUIRED:String = 'achieved';
+	public inline static function isLoggedIn():Bool
 	{
-		return FlxGameJoltCustom.username != FlxGameJoltCustom.NO_USERNAME && FlxGameJoltCustom.usertoken != FlxGameJoltCustom.NO_TOKEN;
+		return
+			(FlxGameJoltCustom.username != FlxGameJoltCustom.NO_USERNAME && FlxGameJoltCustom.usertoken != FlxGameJoltCustom.NO_TOKEN)
+			&& (FlxGameJoltCustom.username.length > 0 && FlxGameJoltCustom.usertoken.length > 0);
 	}
-
-	public static function awardAchievement(?instance:Dynamic, ?camera:FlxCamera):Void
+	public inline static function awardAchievement(?instance:Dynamic, ?camera:FlxCamera):Void
 	{
 		if (isLoggedIn() && instance != null)
 		{
@@ -25,7 +27,7 @@ class GameJolt
 		}
 	}
 
-	public static function unlockTrophy(achievement:String):Void
+	public inline static function unlockTrophy(achievement:String):Void
 	{
 		if (isLoggedIn())
 		{
@@ -45,9 +47,9 @@ class GameJolt
 		}
 	}
 
-	public static function loadAccount(username:String, token:String, award:Bool = false, ?instance:Dynamic, ?camera:FlxCamera, ?callback:() -> Void):Void
+	public static function loadAccount(?username:String, ?token:String, award:Bool = false, ?instance:Dynamic, ?camera:FlxCamera, ?callback:() -> Void):Void
 	{
-		if (isLoggedIn())
+		if (isLoggedIn() || username == null || token == null)
 			return;
 		FlxGameJoltCustom.authUser(username, token, function(successful:Bool)
 		{
@@ -56,47 +58,62 @@ class GameJolt
 				trace('logged in :3');
 				if (award)
 					awardAchievement(instance, camera);
-
-				// #if !debug
-				trace('sync game achievements !!');
-				for (name => unlocked in Achievements.achievementsUnlocked)
-				{
-					if (unlocked)
-					{
-						trace('unlock gamejolt achievement $name');
-						unlockTrophy(name);
-					}
-				}
-				// #end
 				trace('sync unlocked gamejolt achievmeents !!!');
-				var achievements:Array<Array<Dynamic>> = Achievements.achievements;
 
-				var length:Int = achievements.length - 1;
-				var iterator:Int = 0;
+				final achievements:Array<Array<Dynamic>> = Achievements.achievements;
+				final length:Int = achievements.length - 1;
 
-				function iterate()
+				if (length > 0)
 				{
-					var achievement:Array<Dynamic> = achievements[iterator];
-					if (achievement != null)
+					function recurse(index:Int)
 					{
-						FlxGameJoltCustom.fetchTrophy(achievement[3], function(fetched:Map<String, String>)
+						inline function increment()
 						{
-							if (fetched.get('success') == 'true' && (fetched.exists('achieved') && fetched.get('achieved') == 'true'))
-							{
-								var name:String = achievement[0];
+							if (index < length)
+								recurse(index + 1);
+						}
 
-								trace('SYNCING $name');
-								Achievements.unlockAchievement(name);
-							}
-							if (iterator < length)
+						final achievement:Array<Dynamic> = achievements[index];
+						if (achievement != null)
+						{
+							final trophy:Dynamic = achievement[3];
+							final name:String = achievement[0];
+
+							if (trophy != null)
 							{
-								iterator++;
-								iterate();
+								trace('$name/$trophy');
+
+								final unlocked:Bool = Achievements.isAchievementUnlocked(name);
+								FlxGameJoltCustom.fetchTrophy(trophy, function(fetched:Map<String, String>)
+								{
+									if (fetched.get('success') == 'true')
+									{
+										// !fetched.exists('trophies') is only there because hidden achievements are fucked for some reason, hope this is fixed soon
+										if (!fetched.exists('trophies') && (!fetched.exists(ACHIEVEMENT_ACQUIRED) || (fetched.get(ACHIEVEMENT_ACQUIRED) != 'false')))
+										{
+											trace('SYNCING INGAME UNLOCK $name/$trophy');
+											if (!unlocked)
+												Achievements.unlockAchievement(name);
+											increment();
+										}
+										else if (unlocked)
+										{
+											trace('SYNCING GAMEJOLT TROPHY $name/$trophy');
+											FlxGameJoltCustom.addTrophy(trophy, function(map:Map<String, String>)
+											{
+												trace('trophy unlocked: $map');
+												increment();
+											});
+										}
+										return;
+									}
+									increment();
+								});
 							}
-						});
+						}
 					}
+					recurse(0);
 				}
-				iterate();
 
 				ClientPrefs.prefs.set('gameJoltUsername', FlxGameJoltCustom.username);
 				ClientPrefs.prefs.set('gameJoltToken', FlxGameJoltCustom.usertoken);

@@ -30,32 +30,32 @@ class Achievements extends MusicBeatState
 		[
 			'week1',
 			'Gastrointestinal Disease',
-			'FC the first week on ' + CoolUtil.defaultDifficulties[1] + ' or ' + CoolUtil.defaultDifficulties[2] + '.'
-			#if GAMEJOLT_ALLOWED, 162818 #end
+			'FC the first week on ' + CoolUtil.defaultDifficulties[1] + ' or ' + CoolUtil.defaultDifficulties[2] + '.' #if GAMEJOLT_ALLOWED,
+			162818 #end
 		],
 		[
 			'week2',
 			'Funny Homosexuals',
-			'FC the second week.'
-			#if GAMEJOLT_ALLOWED, 162838 #end
+			'FC the second week.' #if GAMEJOLT_ALLOWED,
+			162838 #end
 		],
 		[
 			'unblammy',
 			'Unblammy',
-			'FC the third week.'
-			#if GAMEJOLT_ALLOWED, 193458 #end
+			'FC the third week.' #if GAMEJOLT_ALLOWED,
+			193458 #end
 		],
 		[
 			'unbshuttlery',
 			'Awesome Times Four',
-			'FC the fourth week.'
-			#if GAMEJOLT_ALLOWED, 193459 #end
+			'FC the fourth week.' #if GAMEJOLT_ALLOWED,
+			193459 #end
 		],
 		[
 			'badminton_champion',
 			'Badminton Champion',
-			'FC and hit every birdie pass on Hotshot.'
-			#if GAMEJOLT_ALLOWED, 162788 #end
+			'FC and hit every birdie pass on Hotshot.' #if GAMEJOLT_ALLOWED,
+			162788 #end
 		],
 		#if GAMEJOLT_ALLOWED ['game_joooj', 'GameJOOOOOOOOOJ', 'Log into your GameJolt account.', 162787], #end
 		[
@@ -76,7 +76,7 @@ class Achievements extends MusicBeatState
 			'benjuu',
 			'Benju Mode',
 			'Otherwise known as the FZone achievement.',
-			#if GAMEJOLT_ALLOWED 187886, #end
+			#if GAMEJOLT_ALLOWED 187886 #else null #end,
 			true
 		],
 		['WEED', '420', 'Nice.', #if GAMEJOLT_ALLOWED 167986 #else null #end, true]

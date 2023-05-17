@@ -552,13 +552,13 @@ class PlayState extends MusicBeatState
 	private var canPause:Bool = true;
 
 	// FNM
+	private static final FNM_PLAYER_COLOR:Array<Int> = [0, 0, 255];
+	private static final FNM_ENEMY_COLOR:Array<Int> = [255, 0, 0];
+
+	private inline static final FNM_ICON_BOP:Float = .5;
+
 	public static var isFNM:Bool = false;
-
-	private var fnmPlayerColor:Array<Int> = [0, 0, 255];
-	private var fnmEnemyColor:Array<Int> = [255, 0, 0];
-
 	private var fnmElapsed:Float = 0;
-	private var fnmIconBop:Float = .5;
 
 	private var storyDifficultyText:String;
 	// Discord RPC variables
@@ -1871,9 +1871,9 @@ class PlayState extends MusicBeatState
 		if (isFNM)
 		{
 			fnmElapsed += elapsed;
-			if (fnmElapsed >= fnmIconBop)
+			if (fnmElapsed >= FNM_ICON_BOP)
 			{
-				fnmElapsed %= fnmIconBop;
+				fnmElapsed %= FNM_ICON_BOP;
 				iconBop();
 			}
 		}
@@ -3676,9 +3676,7 @@ class PlayState extends MusicBeatState
 			if (storyPlaylist.length <= 0 && !ClientPrefs.getGameplaySetting('botplay', false) && (Paths.formatToSongPath(storyDifficultyText) != Paths.formatToSongPath(CoolUtil.defaultDifficulties[0])))
 			{
 				var curWeek:String = WeekData.weeksList[storyWeek];
-
 				StoryMenuState.weekCompleted.set(curWeek, true);
-				trace(curWeek);
 
 				var achievementName:Null<String> = switch (curWeek)
 				{
@@ -3709,6 +3707,11 @@ class PlayState extends MusicBeatState
 							ClientPrefs.prefs.set('unlocked', unlocked);
 						}
 				}
+
+				trace(curWeek);
+				trace(achievementName);
+				trace(campaignMisses);
+
 				if (achievementName != null && campaignMisses <= 0)
 				{
 					trace('SUPER FC. $achievementName');
@@ -4078,7 +4081,7 @@ class PlayState extends MusicBeatState
 		{
 			if (isFNM)
 			{
-				healthBar.updateHealthColor(fnmPlayerColor, fnmEnemyColor);
+				healthBar.updateHealthColor(FNM_PLAYER_COLOR, FNM_ENEMY_COLOR);
 			}
 			else
 			{
@@ -4086,9 +4089,7 @@ class PlayState extends MusicBeatState
 				var p2Character:Character = dad;
 
 				if (curStage is Candy && curStage.evilBeast != null && evilFocused)
-				{
 					p2Character = curStage.evilBeast;
-				}
 				healthBar.updateHealthColor(p1Character.healthColorArray, p2Character.healthColorArray);
 			}
 		}
@@ -6556,6 +6557,8 @@ class PlayState extends MusicBeatState
 													dad.setCharacter('funnybf-youtooz');
 													iconP2?.changeIcon(dad.healthIcon);
 
+													reloadHealthBarColors();
+
 													murder();
 													moveCamera(true);
 
@@ -7079,9 +7082,9 @@ class PlayState extends MusicBeatState
 						iconP1.scale.set(newScaling, newScaling);
 						iconP2.scale.set(newScaling, newScaling);
 
-						modchartTweens.push(FlxTween.tween(iconP1, {'scale.x': HealthIcon.FNM_SCALING, 'scale.y': HealthIcon.FNM_SCALING}, fnmIconBop / 2,
+						modchartTweens.push(FlxTween.tween(iconP1, {'scale.x': HealthIcon.FNM_SCALING, 'scale.y': HealthIcon.FNM_SCALING}, FNM_ICON_BOP / 2,
 							{ease: FlxEase.linear, onComplete: cleanupTween}));
-						modchartTweens.push(FlxTween.tween(iconP2, {'scale.x': HealthIcon.FNM_SCALING, 'scale.y': HealthIcon.FNM_SCALING}, fnmIconBop / 2,
+						modchartTweens.push(FlxTween.tween(iconP2, {'scale.x': HealthIcon.FNM_SCALING, 'scale.y': HealthIcon.FNM_SCALING}, FNM_ICON_BOP / 2,
 							{ease: FlxEase.linear, onComplete: cleanupTween}));
 					}
 				default:
