@@ -274,6 +274,8 @@ class PlayState extends MusicBeatState
 	// in bend hard: sans
 	public var duoOpponent:Character;
 
+	private var opponentsThatSung:Array<Character> = new Array();
+	private var playersThatSung:Array<Character> = new Array();
 	// NOTES
 	private var noteKillOffset:Float = Note.noteWidth * 2;
 
@@ -1492,69 +1494,28 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
-			var curSwagSection:SwagSection = SONG.notes[curSection];
-			var lerpVal:Float = FlxMath.bound(elapsed * 2.4 * cameraSpeed, 0, 1);
+			final curSwagSection:SwagSection = SONG.notes[curSection];
+			final lerpVal:Float = FlxMath.bound(elapsed * 2.4 * cameraSpeed, 0, 1);
 
 			if (generatedMusic && curSwagSection != null && !endingSong && !isCameraOnForcedPos)
 				moveCameraSection();
 
-			var dadSinging:Bool = characterIsSinging(dad);
-
-			var cancelBoyfriend:Bool = true;
-			var cancelDad:Bool = true;
-
-			if (duoOpponent != null)
-			{
-				if (curStage is Carnival && cancelBoyfriend)
-				{
-					if (!characterIsSinging(boyfriend))
-						cancelCameraDelta(duoOpponent);
-					if (characterIsSinging(duoOpponent))
-						cancelBoyfriend = false;
-				}
-				else if (!dadSinging && cancelDad)
-				{
-					cancelCameraDelta(duoOpponent, true);
-					if (characterIsSinging(duoOpponent))
-						cancelDad = false;
-				}
-			}
-			if (trioOpponent != null && cancelDad)
-			{
-				if (!dadSinging)
-					cancelCameraDelta(trioOpponent, true);
-				if (characterIsSinging(trioOpponent))
-					cancelDad = false;
-			}
 			switch (Type.getClass(curStage))
 			{
 				case Hell:
-					{
-						var itsAHorse:Character = curStage.itsAHorse;
-						if (itsAHorse != null)
-						{
-							if (!dadSinging)
-								cancelCameraDelta(itsAHorse, true);
-							if (characterIsSinging(itsAHorse))
-								cancelDad = false;
-						}
-					}
+					checkSecondarySinging(curStage.itsAHorse);
 				case Squidgame:
-					{
-						var pinkSoldier:Character = curStage.pinkSoldier;
-						if (pinkSoldier != null)
-							cancelCameraDelta(pinkSoldier);
-					}
+					checkSecondarySinging(curStage.pinkSoldier);
 			}
-			if (cancelBoyfriend)
-				cancelCameraDelta(boyfriend);
-			if (cancelDad)
-				cancelCameraDelta(dad);
+			if (!checkSinging(playersThatSung))
+				playerDelta.set();
+			if (!checkSinging(opponentsThatSung))
+				opponentDelta.set();
 
-			var usePlayerDelta:Bool = curSwagSection != null && curSwagSection.mustHitSection;
+			final usePlayerDelta:Bool = curSwagSection != null && curSwagSection.mustHitSection;
 
-			var point:FlxPoint = usePlayerDelta ? playerDelta : opponentDelta;
-			var multiplier:Float = (ClientPrefs.getPref('reducedMotion') || isFNM) ? 0 : cameraOffset;
+			final point:FlxPoint = if (usePlayerDelta) playerDelta else opponentDelta;
+			final multiplier:Float = (ClientPrefs.getPref('reducedMotion') || isFNM) ? 0 : cameraOffset;
 
 			var followX:Float = camFollow.x + (point.x * multiplier);
 			var followY:Float = camFollow.y + (point.y * multiplier);
@@ -1564,8 +1525,8 @@ class PlayState extends MusicBeatState
 				var newZoom:Float = stageData.defaultZoom;
 				if (!usePlayerDelta)
 				{
-					var secondX:Float = secondOpponentDelta.x;
-					var secondY:Float = secondOpponentDelta.y;
+					final secondX:Float = secondOpponentDelta.x;
+					final secondY:Float = secondOpponentDelta.y;
 
 					followX += secondX * multiplier;
 					followY += secondY * multiplier;
@@ -1577,7 +1538,7 @@ class PlayState extends MusicBeatState
 
 						if (curStage is Squidgame)
 						{
-							var pinkSoldier:Character = curStage.pinkSoldier;
+							final pinkSoldier:Character = curStage.pinkSoldier;
 							if (pinkSoldier != null)
 								newZoom += .35;
 						}
@@ -1716,8 +1677,13 @@ class PlayState extends MusicBeatState
 				final healthOffset:Float = bar.offset.x;
 				final healthX:Float = bar.x + healthOffset + (bar.width * ((if (shitFlipped) curHealth else FlxMath.remapToRange(curHealth, 0, 100, 100, 0)) / 100));
 
-				final otherOpponentsVisible:Bool = (duoOpponent?.visible ?? false) || (trioOpponent?.visible ?? false);
-				final dadVisible:Bool = (dad.visible || otherOpponentsVisible || (spawnAnim != null && spawnAnim.visible)) && dadGroup.visible;
+				var otherOpponentsVisible:Bool = false;
+				if (duoOpponent != null && !(curStage is Carnival && duoOpponent == curStage.eggbob))
+					otherOpponentsVisible = duoOpponent.visible && duoOpponent.alive && duoOpponent.exists && duoOpponent.alpha > 0;
+				if (!otherOpponentsVisible && trioOpponent != null)
+					otherOpponentsVisible = trioOpponent.visible && trioOpponent.alive && trioOpponent.exists && duoOpponent.alpha > 0;
+
+				final dadVisible:Bool = ((dad.visible && dad.alpha > 0) || otherOpponentsVisible || (spawnAnim != null && spawnAnim.visible)) && dadGroup.visible && dadGroup.alpha > 0;
 
 				final p2:Character = if (shitFlipped) boyfriend else dad;
 				final p1:Character = if (shitFlipped) dad else boyfriend;
@@ -4498,8 +4464,13 @@ class PlayState extends MusicBeatState
 					var didPlay:Bool = false;
 					for (char in chars)
 					{
-						var thisCharPlayed:Bool = playCharacterAnim(char, animToPlay, note);
-						didPlay = didPlay || thisCharPlayed;
+						if (char != null)
+						{
+							var thisCharPlayed:Bool = playCharacterAnim(char, animToPlay, note);
+							if (thisCharPlayed && !playersThatSung.contains(char))
+								playersThatSung.push(char);
+							didPlay = didPlay || thisCharPlayed;
+						}
 					}
 					if (didPlay)
 						playerDelta = getNoteDataPoint(leData);
@@ -4636,10 +4607,13 @@ class PlayState extends MusicBeatState
 			{
 				case 'exTricky':
 					{
-						dad.playAnim('Hank', true);
+						if (dad.animOffsets.exists('Hank'))
+						{
+							dad.playAnim('Hank', true);
 
-						dad.specialAnim = true;
-						dad.heyTimer = Conductor.crochet / 1000;
+							dad.specialAnim = true;
+							dad.heyTimer = Conductor.crochet / 1000;
+						}
 					}
 				default:
 					{
@@ -4658,7 +4632,7 @@ class PlayState extends MusicBeatState
 			var chars:Array<Character> = [dad];
 			var altAnim:String = '';
 
-			var section:SwagSection = SONG.notes[curSection];
+			final section:SwagSection = SONG.notes[curSection];
 			if (section != null)
 			{
 				if ((section.altAnim || formattedNoteType == 'alt-animation') && !section.gfSection)
@@ -4726,12 +4700,14 @@ class PlayState extends MusicBeatState
 			}
 			if (!isEndNote)
 			{
-				var leData:Int = Std.int(Math.abs(note.noteData));
+				final leData:Int = Std.int(Math.abs(note.noteData));
 				for (char in chars)
 				{
 					if (char != null)
 					{
-						var thisCharPlayed:Bool = playCharacterAnim(char, singAnimations[leData] + altAnim, note);
+						final thisCharPlayed:Bool = playCharacterAnim(char, singAnimations[leData] + altAnim, note);
+						if (thisCharPlayed && !(isAlternative && secondOpponentDelta != null) && !opponentsThatSung.contains(char))
+							opponentsThatSung.push(char);
 						didPlay = didPlay || thisCharPlayed;
 					}
 				}
@@ -4768,21 +4744,19 @@ class PlayState extends MusicBeatState
 
 		if (vocals != null)
 			vocals.volume = 1;
-		var time:Float = .15;
 
-		if (note.isSustainNote && !isEndNote)
-			time *= 2;
+		var time:Float = .15 * (if (note.isSustainNote && !isEndNote) 2 else 1);
 		if (mechanicsEnabled)
 		{
-			var difficultyClamp = Math.max(storyDifficulty, 1);
+			final difficultyClamp = Math.max(storyDifficulty, 1);
 
-			var fixedDrain:Float = healthDrain * (difficultyClamp / 3);
-			var fixedDrainCap:Float = healthDrainCap / difficultyClamp;
+			final fixedDrain:Float = healthDrain * (difficultyClamp / 3);
+			final fixedDrainCap:Float = healthDrainCap / difficultyClamp;
 
-			var drainDiv:Dynamic = healthDrainMap.exists(curSong) ? healthDrainMap.get(curSong) : null;
+			final drainDiv:Dynamic = healthDrainMap.exists(curSong) ? healthDrainMap.get(curSong) : null;
 			if (drainDiv != null && drainDiv[1] <= storyDifficulty && !note.isSustainNote)
 			{
-				var divider:Float = drainDiv[0];
+				final divider:Float = drainDiv[0];
 				if (health > fixedDrainCap)
 					health = Math.max(health - ((fixedDrain / divider) * healthLoss), fixedDrainCap);
 			}
@@ -5216,12 +5190,20 @@ class PlayState extends MusicBeatState
 							final baseColor:FlxColor = subtitlesTxt.color;
 							final invertedColor:FlxColor = baseColor.getInverted().getComplementHarmony();
 
-							final brightness:Float = ((baseColor.red + baseColor.green + baseColor.blue) / 3) / 255;
+							final brightness:Float = baseColor.brightness;
+							// fixes the issue of just blue being too hard to see, i.e bobfriend's subtitles
+							// but also makes it so the killgames subtitles aren't blasted with a white outline
+							subtitlesTxt.borderColor =
+								if (brightness < .5)
+									invertedColor.getLightened(1 - (brightness * .5))
+								else if (baseColor.blue > (baseColor.red + baseColor.green))
+									invertedColor.getLightened(Math.min((baseColor.blueFloat + baseColor.blueFloat) * .7, 1));
+								else
+									invertedColor.getDarkened(brightness);
 
-							subtitlesTxt.borderColor = if (brightness < .5) invertedColor.getLightened(1 - (brightness * .5)) else invertedColor.getDarkened(brightness);
 							subtitlesTxt.alpha = .8;
-
 							subtitlesTxt.visible = true;
+
 							add(subtitlesTxt);
 						}
 						else
@@ -6874,19 +6856,23 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	private inline function cancelCameraDelta(char:Character, forceDad:Bool = false)
+	private inline function checkSecondarySinging(?char:Character):Void
 	{
-		if (!characterIsSinging(char))
+		if (char != null && !characterIsSinging(char))
+			secondOpponentDelta?.set();
+	}
+	private inline function checkSinging(chars:Array<Character>):Bool
+	{
+		var index:Int = 0;
+		while (index < chars.length)
 		{
-			var deltaCancel:FlxPoint = switch (char.isPlayer)
-			{
-				default:
-					(char == dad || forceDad) ? opponentDelta : secondOpponentDelta;
-				case true:
-					playerDelta;
-			};
-			deltaCancel.set();
+			var character:Character = chars[index];
+			if (character == null || !characterIsSinging(character))
+				chars.remove(character);
+			else
+				index++;
 		}
+		return chars.length > 0;
 	}
 
 	private inline function tweenCamZoom(opponent:Bool = false)
